@@ -1,0 +1,73 @@
+---
+
+backend:
+  name: gitlab
+  repo: abdullhakim-sami/sanabil-al-firdaws # Path to your GitLab repository
+  auth_type: pkce # Required for pkce
+  app_id: 2ee82e334e1e08e1461a2b1f72d48650bbcc15845395d372b3cb718faa9260b9 # Application ID from your GitLab settings
+  branch: main
+  # name: test-repo
+collections:
+  - create: true
+    fields:
+      - label: محتوى المقال
+        name: body
+        widget: markdown
+      - label: عنوان المقال
+        name: title
+        widget: string
+      - label: رابط المقال
+        name: slug
+        widget: string
+        required: true
+      - label: المؤلفون
+        name: contributors
+        widget: list
+      - label: مسودة
+        name: draft
+        widget: boolean
+        default: true
+      - label: العلامات
+        name: tags
+        required: false
+        widget: list
+      - label: تاريخ كتابة المقال
+        name: date
+        widget: datetime
+      - label: اخر تحديث
+        name: lastmod
+        widget: datetime
+      - label: فصل
+        name: folderName
+        widget: select
+        options:
+          - label: الإسلام
+            value: al-islam
+          - label: الإيمان
+            value: al-eman
+          - label: الإحسان
+            value: al-ehsan
+          
+        
+    folder: src/content/docs/ar
+    identifier_field: '{{fields.title}}'
+    slug: 'aqida/{{fields.folderName}}/{{fields.slug}}'
+    path: '{{slug}}'
+   
+    label: كتاب العقيدة
+    name: aqida
+    nested:
+      depth: 100
+local_backend: false
+logo_url : /favicon.svg
+media_folder:
+  public/img
+  # - label: "منهاج المسلم"
+  #   name: "docs"
+  #   folder: "content/docs"
+  #   create: true
+  #   fields:
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - { label: "Publish Date", name: "date", widget: "datetime" }
+  #     # - { label: "Featured Image", name: "thumbnail", widget: "image" }
+  #     - { label: "Body", name: "body", widget: "markdown" }# backend:
