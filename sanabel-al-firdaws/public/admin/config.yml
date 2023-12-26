@@ -51,7 +51,7 @@ collections:
         
     folder: src/content/docs/ar
     identifier_field: '{{fields.title}}'
-    slug: 'aqida/{{fields.folderName}}/{{fields.slug}}'
+    slug: 'aqida/{{fields.folderName}}/{{fields.name}}'
     path: '{{slug}}'
    
     label: كتاب العقيدة
