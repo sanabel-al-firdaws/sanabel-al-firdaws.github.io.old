@@ -1,10 +1,13 @@
 ---
 # when using the default proxy server port
-local_backend: true
+# local_backend: true
 
 backend:
-  name: git-gateway
-  
+  name: github
+  repo: sanabel-al-firdaws/sanabel-al-firdaws.github.io
+  branch: main
+  base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev/
+
 # backend:
 #   name: gitlab
 #   repo: abdullhakim-sami/sanabil-al-firdaws # Path to your GitLab repository
