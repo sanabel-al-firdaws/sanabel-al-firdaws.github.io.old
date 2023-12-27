@@ -1,6 +1,15 @@
 ---
 # when using the default proxy server port
+# * for devolopment
+
 # local_backend: true
+
+# backend:
+#   name: git-gateway
+
+# * for devolopment
+
+# ! for Production
 
 backend:
   name: github
@@ -8,12 +17,7 @@ backend:
   branch: main
   base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev/
 
-# backend:
-#   name: gitlab
-#   repo: abdullhakim-sami/sanabil-al-firdaws # Path to your GitLab repository
-#   auth_type: pkce # Required for pkce
-#   app_id: 2ee82e334e1e08e1461a2b1f72d48650bbcc15845395d372b3cb718faa9260b9 # Application ID from your GitLab settings
-#   branch: main
+# ! for Production
 
 collections:
   - create: true
@@ -57,14 +61,18 @@ collections:
             value: al-ehsan
           
         
-    folder: src/content/docs/ar
+    folder: src/content/docs/ar/aqida
+
     identifier_field: '{{fields.title}}'
-    slug: 'aqida/{{fields.folderName}}/{{fields.fileName}}'
+    slug: '{{fields.folderName}}/{{fields.fileName}}'
     path: '{{slug}}'
    
     label: كتاب العقيدة
     name: aqida
-    
+    nested:
+      depth: 5 # max depth to show in the collection tree
+
+site_url: https://sanabel-al-firdaws.github.io/
 
 logo_url : /favicon.svg
 media_folder: public/img

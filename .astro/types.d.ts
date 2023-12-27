@@ -185,6 +185,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"docs": {
+"ar/aqida/al-islam/test.md": {
+	id: "ar/aqida/al-islam/test.md";
+  slug: "ar/aqida/al-islam/test";
+  body: string;
+  collection: "docs";
+  data: any
+} & { render(): Render[".md"] };
 "ar/aqida/intro.md": {
 	id: "ar/aqida/intro.md";
   slug: "ar/aqida/intro";
