@@ -1,0 +1,91 @@
+---
+# when using the default proxy server port
+# * for devolopment
+
+# local_backend: true
+
+# backend:
+#   name: git-gateway
+
+# # * for devolopment
+
+# ! for Production
+
+backend:
+  name: github
+  repo: sanabel-al-firdaws/sanabel-al-firdaws.github.io
+  branch: main
+  base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev/
+
+# ! for Production
+
+collections:
+  - create: true
+    fields:
+      - label: محتوى المقال
+        name: body
+        widget: markdown
+      - label: عنوان المقال
+        name: title
+        widget: string
+      - label: رابط المقال
+        name: fileName
+        widget: string
+        required: true
+      - label: المؤلفون
+        name: contributors
+        widget: list
+      - label: مسودة
+        name: draft
+        widget: boolean
+        default: true
+      - label: العلامات
+        name: tags
+        required: false
+        widget: list
+      - label: تاريخ كتابة المقال
+        name: date
+        widget: datetime
+      - label: اخر تحديث
+        name: lastmod
+        widget: datetime
+      - label: فصل
+        name: folderName
+        widget: select
+        required: true
+        options:
+          - label:  مقدمة كتاب العقيدة
+            value: '/'
+          - label: الإسلام
+            value: al-islam
+          - label: الإيمان
+            value: al-eman
+          - label: الإحسان
+            value: al-ehsan
+          
+    extension: mdoc
+    format: frontmatter
+    folder: src/content/docs/ar/aqida
+
+    identifier_field: '{{fields.title}}'
+    slug: '{{fields.folderName}}/{{fields.fileName}}'
+    path: '{{slug}}'
+   
+    label: كتاب العقيدة
+    name: aqida
+    nested:
+      depth: 100 # max depth to show in the collection tree
+
+site_url: https://sanabel-al-firdaws.github.io/
+
+logo_url : /favicon.svg
+media_folder: public/img
+  # - label: "منهاج المسلم"
+  #   name: "docs"
+  #   folder: "content/docs"
+  #   create: true
+  #   fields:
+  #     - { label: "Title", name: "title", widget: "string" }
+  #     - { label: "Publish Date", name: "date", widget: "datetime" }
+  #     # - { label: "Featured Image", name: "thumbnail", widget: "image" }
+  #     - { label: "Body", name: "body", widget: "markdown" }# backend:
