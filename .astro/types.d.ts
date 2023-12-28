@@ -190,42 +190,42 @@ declare module 'astro:content' {
   slug: "ar/aqida/al-islam/test";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
 "ar/aqida/intro.md": {
 	id: "ar/aqida/intro.md";
   slug: "ar/aqida/intro";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
 "ar/index.mdx": {
 	id: "ar/index.mdx";
   slug: "ar";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "en/aqida/intro.md": {
 	id: "en/aqida/intro.md";
   slug: "en/aqida/intro";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
 "en/index.mdx": {
 	id: "en/index.mdx";
   slug: "en";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "index.mdx": {
 	id: "index.mdx";
   slug: "index";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 };
 
@@ -237,5 +237,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = never;
+	type ContentConfig = typeof import("../src/content/config");
 }

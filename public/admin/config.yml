@@ -70,7 +70,7 @@ collections:
     label: كتاب العقيدة
     name: aqida
     nested:
-      depth: 5 # max depth to show in the collection tree
+      depth: 100 # max depth to show in the collection tree
 
 site_url: https://sanabel-al-firdaws.github.io/
 
