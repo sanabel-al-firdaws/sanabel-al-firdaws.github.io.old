@@ -10,7 +10,7 @@ export default defineConfig({
   integrations: [starlight({
     title: 'سنابل الفردوس',
     description:'موقع يهتم بنشر العلم النافع',
-    titleDelimiter: '-',
+    // titleDelimiter: '-',
     defaultLocale: 'ar',
     locales: {
       ar: {
