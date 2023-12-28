@@ -10,6 +10,15 @@ declare module 'astro:content' {
 
 declare module 'astro:content' {
 	interface Render {
+		'.mdoc': Promise<{
+			Content(props: Record<string, any>): import('astro').MarkdownInstance<{}>['Content'];
+			headings: import('astro').MarkdownHeading[];
+		}>;
+	}
+}
+
+declare module 'astro:content' {
+	interface Render {
 		'.md': Promise<{
 			Content: import('astro').MarkdownInstance<{}>['Content'];
 			headings: import('astro').MarkdownHeading[];
@@ -185,20 +194,20 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"docs": {
-"ar/aqida/al-islam/test.md": {
-	id: "ar/aqida/al-islam/test.md";
-  slug: "ar/aqida/al-islam/test";
+"ar/aqida/al-islam/intro.mdoc": {
+	id: "ar/aqida/al-islam/intro.mdoc";
+  slug: "ar/aqida/al-islam/intro";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
-"ar/aqida/intro.md": {
-	id: "ar/aqida/intro.md";
+} & { render(): Render[".mdoc"] };
+"ar/aqida/intro.mdoc": {
+	id: "ar/aqida/intro.mdoc";
   slug: "ar/aqida/intro";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdoc"] };
 "ar/index.mdx": {
 	id: "ar/index.mdx";
   slug: "ar";
@@ -206,6 +215,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"en/aqida/al-islam/intro.mdoc": {
+	id: "en/aqida/al-islam/intro.mdoc";
+  slug: "en/aqida/al-islam/intro";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdoc"] };
 "en/aqida/intro.md": {
 	id: "en/aqida/intro.md";
   slug: "en/aqida/intro";

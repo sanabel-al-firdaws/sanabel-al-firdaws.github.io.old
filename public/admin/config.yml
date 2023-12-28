@@ -7,7 +7,7 @@
 # backend:
 #   name: git-gateway
 
-# * for devolopment
+# # * for devolopment
 
 # ! for Production
 
@@ -52,7 +52,10 @@ collections:
       - label: فصل
         name: folderName
         widget: select
+        required: true
         options:
+          - label:  مقدمة كتاب العقيدة
+            value: '/'
           - label: الإسلام
             value: al-islam
           - label: الإيمان
@@ -60,7 +63,8 @@ collections:
           - label: الإحسان
             value: al-ehsan
           
-        
+    extension: mdoc
+    format: frontmatter
     folder: src/content/docs/ar/aqida
 
     identifier_field: '{{fields.title}}'
