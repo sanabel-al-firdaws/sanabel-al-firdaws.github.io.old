@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/docs/ar/aqida/intro.mdoc",
+                "file": "src/content/docs/ar/aqida/al-islam/intro.mdoc",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "src/content/docs/ar/aqida/intro.mdoc",
+            "file": "src/content/docs/ar/aqida/al-islam/intro.mdoc",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "src/content/docs/ar/aqida/intro.mdoc",
+            "file": "src/content/docs/ar/aqida/al-islam/intro.mdoc",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "src/content/docs/ar/aqida/intro.mdoc"
+            "file": "src/content/docs/ar/aqida/al-islam/intro.mdoc"
           }
         }
       }
@@ -133,6 +133,7 @@
   },
   "active": "ce87fa6ec4836de1",
   "lastOpenFiles": [
+    "src/content/docs/ar/aqida/intro.mdoc",
     "webmanifest.json",
     "tsconfig.json",
     "src/styles/custom.css",
@@ -144,7 +145,6 @@
     "src/content/docs/en/aqida/al-islam/intro.mdoc",
     "src/content/docs/ar/theme.mdx",
     "src/content/docs/ar/index.mdx",
-    "src/content/docs/ar/aqida/intro.mdoc",
     "src/assets/houston.webp",
     "public/pwa-64x64.png",
     "public/pwa-512x512.png",
