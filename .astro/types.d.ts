@@ -201,6 +201,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
+"ar/aqida/al-islam/test.mdoc": {
+	id: "ar/aqida/al-islam/test.mdoc";
+  slug: "ar/aqida/al-islam/test";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdoc"] };
 "ar/aqida/intro.mdoc": {
 	id: "ar/aqida/intro.mdoc";
   slug: "ar/aqida/intro";
@@ -218,6 +225,13 @@ declare module 'astro:content' {
 "en/aqida/al-islam/intro.mdoc": {
 	id: "en/aqida/al-islam/intro.mdoc";
   slug: "en/aqida/al-islam/intro";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdoc"] };
+"en/aqida/al-islam/test.mdoc": {
+	id: "en/aqida/al-islam/test.mdoc";
+  slug: "en/aqida/al-islam/test";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">

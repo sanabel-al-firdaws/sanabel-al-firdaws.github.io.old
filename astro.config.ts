@@ -11,7 +11,21 @@ import manifest from "./webmanifest.json";
 export default defineConfig({
   site: 'https://sanabel-al-firdaws.github.io',
   // base: '/<project-name>',
-  integrations: [starlight({
+  integrations: [  AstroPWA({
+    mode: "production",
+    registerType: "autoUpdate",
+    includeAssets: ["favicon.svg"],
+    workbox: {
+      navigateFallback: "/",
+      globPatterns: ["**/*.{css,js,html,svg,png,ico,txt,json}"],
+    },
+    experimental: {
+      directoryAndTrailingSlashHandler: true,
+    },
+    manifest: manifest as Partial<ManifestOptions>,
+  }),
+    
+    starlight({
     components: {
       // Override the default `SocialIcons` component.
       ThemeProvider : './src/components/ThemeProvider.astro',
@@ -76,6 +90,11 @@ export default defineConfig({
               link: '/aqida/intro/'
             },
             {
+              label: 'اختبار',
+              translations: {'en': 'Test for the book of Aqida'},
+              link: '/aqida/test/'
+            },
+            {
               label: 'باب الإسلام',
               translations: {'en': 'Islam Chapter'},
 
@@ -103,18 +122,5 @@ export default defineConfig({
     // 	autogenerate: { directory: 'test' },
     // },
     ]
-  }), markdoc(),
-  AstroPWA({
-    mode: "production",
-    registerType: "autoUpdate",
-    includeAssets: ["favicon.svg"],
-    workbox: {
-      navigateFallback: "/",
-      globPatterns: ["**/*.{css,js,html,svg,png,ico,txt}"],
-    },
-    experimental: {
-      directoryAndTrailingSlashHandler: true,
-    },
-    manifest: manifest as Partial<ManifestOptions>,
-  }),]
+  }), markdoc()]
 });
