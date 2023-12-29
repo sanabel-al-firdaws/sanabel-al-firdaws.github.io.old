@@ -90,11 +90,6 @@ export default defineConfig({
               link: '/aqida/intro/'
             },
             {
-              label: 'اختبار',
-              translations: {'en': 'Test for the book of Aqida'},
-              link: '/aqida/test/'
-            },
-            {
               label: 'باب الإسلام',
               translations: {'en': 'Islam Chapter'},
 
@@ -103,6 +98,11 @@ export default defineConfig({
                   label: 'مقدمة باب الإسلام',
                   link: '/aqida/al-islam/intro/',
                   translations: {'en': 'Intro for Islam Chapter'},
+                },
+                {
+                  label: 'اختبار',
+                  translations: {'en': 'Test for the book of Aqida'},
+                  link: '/aqida/al-islam/test/'
                 },
              
               ]
