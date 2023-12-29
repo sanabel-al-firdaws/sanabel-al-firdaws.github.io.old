@@ -1,8 +1,0 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "io.github.sanabel_al_firdaws.twa",
-        "sha256_cert_fingerprints": ["A5:67:9C:E9:16:23:DC:44:31:B5:88:98:EE:D7:8A:4A:D5:8F:1B:40:2F:5B:E7:2F:51:71:FB:61:B4:E3:50:D5"]
-      }
-    }]
