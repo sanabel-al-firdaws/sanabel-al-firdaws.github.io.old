@@ -1,13 +1,21 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-
 import markdoc from "@astrojs/markdoc";
+
+
+import AstroPWA from "@vite-pwa/astro";
+import type { ManifestOptions } from "vite-plugin-pwa";
+import manifest from "./webmanifest.json";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://sanabel-al-firdaws.github.io',
   // base: '/<project-name>',
   integrations: [starlight({
+    components: {
+      // Override the default `SocialIcons` component.
+      ThemeProvider : './src/components/ThemeProvider.astro',
+    },
     title: 'سنابل الفردوس',
     description:'موقع يهتم بنشر العلم النافع',
     // titleDelimiter: '-',
@@ -95,5 +103,18 @@ export default defineConfig({
     // 	autogenerate: { directory: 'test' },
     // },
     ]
-  }), markdoc()]
+  }), markdoc(),
+  AstroPWA({
+    mode: "production",
+    registerType: "autoUpdate",
+    includeAssets: ["favicon.svg"],
+    workbox: {
+      navigateFallback: "/",
+      globPatterns: ["**/*.{css,js,html,svg,png,ico,txt}"],
+    },
+    experimental: {
+      directoryAndTrailingSlashHandler: true,
+    },
+    manifest: manifest as Partial<ManifestOptions>,
+  }),]
 });

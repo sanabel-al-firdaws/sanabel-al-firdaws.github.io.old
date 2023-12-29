@@ -1,0 +1,35 @@
+{
+    "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+    "id": "sanabel-al-firdaws-starlight",
+    "name": "سنابل الفردوس | Sanabel Al Firdaws",
+    "short_name": "Sanabel Al Firdaws",
+    "description": "موقع يهتم بنشر العلم النافع",
+    "orientation": "portrait",
+    "display": "standalone",
+    "theme_color": "#ff5d01",
+    "background_color": "#11191f",
+    "icons": [
+      {
+        "src": "pwa-64x64.png",
+        "sizes": "64x64",
+        "type": "image/png"
+      },
+      {
+        "src": "pwa-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "pwa-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any"
+      },
+      {
+        "src": "maskable-icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      }
+    ]
+  }
