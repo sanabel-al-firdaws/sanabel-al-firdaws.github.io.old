@@ -15,8 +15,11 @@
     "@astrojs/markdoc": "^0.8.2",
     "@astrojs/starlight": "^0.15.1",
     "astro": "^4.0.1",
+    "lucid-color-picker": "^0.1.0",
     "sharp": "^0.32.5",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "culori": "^3.2.0",  "@types/culori": "^2.0.0"
+
   },
   "devDependencies": {
     "@vite-pwa/assets-generator": "^0.2.2",

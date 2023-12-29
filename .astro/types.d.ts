@@ -222,6 +222,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"ar/theme.mdx": {
+	id: "ar/theme.mdx";
+  slug: "ar/theme";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "en/aqida/al-islam/intro.mdoc": {
 	id: "en/aqida/al-islam/intro.mdoc";
   slug: "en/aqida/al-islam/intro";

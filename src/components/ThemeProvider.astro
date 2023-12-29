@@ -21,6 +21,15 @@ import { pwaInfo } from "virtual:pwa-info";
 
 {/* This is intentionally inlined to avoid FOUC. */}
 <script is:inline>
+
+  const c_primary = localStorage.getItem('--c-primary');
+if (c_primary !== null) {
+  document.documentElement.style.setProperty('--c-primary', c_primary);
+}
+const c_font_color = localStorage.getItem('--c-font-color');
+if (c_font_color !== null) {
+  document.documentElement.style.setProperty('--c-font-color', c_font_color);
+}
 	window.StarlightThemeProvider = (() => {
 		const storedTheme =
 			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');

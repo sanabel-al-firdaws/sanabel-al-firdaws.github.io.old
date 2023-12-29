@@ -1,0 +1,43 @@
+/* Dark mode colors. */
+:root {
+	--sl-color-accent-low: #131e4f;
+	--sl-color-accent: #3447ff;
+	--sl-color-accent-high: #b3c7ff;
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #eceef2;
+	--sl-color-gray-2: #c0c2c7;
+	--sl-color-gray-3: #888b96;
+	--sl-color-gray-4: #545861;
+	--sl-color-gray-5: #353841;
+	--sl-color-gray-6: #24272f;
+	--sl-color-black: #17181c;
+}
+/* Light mode colors. */
+:root[data-theme='light'] {
+	--sl-color-accent-low: #c7d6ff;
+	--sl-color-accent: #364bff;
+	--sl-color-accent-high: #182775;
+	--sl-color-white: #17181c;
+	--sl-color-gray-1: #24272f;
+	--sl-color-gray-2: #353841;
+	--sl-color-gray-3: #545861;
+	--sl-color-gray-4: #888b96;
+	--sl-color-gray-5: #c0c2c7;
+	--sl-color-gray-6: #eceef2;
+	--sl-color-gray-7: #f5f6f8;
+	--sl-color-black: #ffffff;
+}
+
+:root[data-theme='custom'] {
+	--sl-color-accent-low: var(--c-sl-color-accent-low);
+	--sl-color-accent: var(--c-sl-color-accent);
+	--sl-color-accent-high:  var(--c-sl-color-accent-high);
+	--sl-color-white:  var(--c-sl-color-white);
+	--sl-color-gray-1:  var(--c-sl-color-gray-1);
+	--sl-color-gray-2: var(--c-sl-color-gray-2);
+	--sl-color-gray-3: var(--c-sl-color-gray-3);
+	--sl-color-gray-4: var(--c-sl-color-gray-4);
+	--sl-color-gray-5: var(--c-sl-color-gray-5);
+	--sl-color-gray-6: var(--c-sl-color-gray-6);
+	--sl-color-black: var(--c-sl-color-black);
+}
