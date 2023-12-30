@@ -1,4 +1,10 @@
 [
   "obsidian-git",
-  "markdoc"
+  "markdoc",
+  "obsidian-rtl",
+  "OA-file-hider",
+  "quick-latex",
+  "obsidian-custom-file-extensions-plugin",
+  "file-explorer-plus",
+  "obsidian-kanban"
 ]

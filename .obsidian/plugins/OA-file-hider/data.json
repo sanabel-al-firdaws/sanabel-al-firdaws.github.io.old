@@ -1,0 +1,10 @@
+{
+  "hidden": true,
+  "hiddenList": [
+    "src/styles",
+    "README.md",
+    "src/components",
+    "src/assets",
+    "public"
+  ]
+}

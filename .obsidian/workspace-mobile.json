@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/docs/ar/aqida/al-islam/intro.mdoc",
+                "file": "src/content/docs/ar/hadith/hadiths.mdoc",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "src/content/docs/ar/aqida/al-islam/intro.mdoc",
+            "file": "src/content/docs/ar/hadith/hadiths.mdoc",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "src/content/docs/ar/aqida/al-islam/intro.mdoc",
+            "file": "src/content/docs/ar/hadith/hadiths.mdoc",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "src/content/docs/ar/aqida/al-islam/intro.mdoc"
+            "file": "src/content/docs/ar/hadith/hadiths.mdoc"
           }
         }
       }
@@ -131,11 +131,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ce87fa6ec4836de1",
+  "active": "6dfb091215100b12",
   "lastOpenFiles": [
-    "src/content/docs/ar/aqida/al-islam/test.mdoc",
-    "src/content/docs/ar/aqida/al-islam/intro.mdoc",
+    "test/Untitled.canvas",
+    "src/content/docs/ar/hadith/hadiths.mdoc",
     "src/content/docs/ar/aqida/intro.mdoc",
+    "src/content/docs/ar/hadith/test.mdoc.md",
+    "src/content/docs/ar/test.mdoc.md",
+    "src/content/docs/ar/aqida/al-islam/intro.mdoc",
+    "test",
+    "src/content/docs/ar/hadith",
     "public/maskable-icon-512x512.png",
     "public/pwa-192x192.png",
     "public/pwa-512x512.png",
@@ -149,8 +154,6 @@
     "webmanifest.json",
     "tsconfig.json",
     "src/styles/custom.css",
-    "src/env.d.ts",
-    "src/content/docs/index.mdx",
-    "src/content/docs/en/index.mdx"
+    "src/env.d.ts"
   ]
 }
