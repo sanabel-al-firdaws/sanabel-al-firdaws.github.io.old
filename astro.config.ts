@@ -26,6 +26,7 @@ export default defineConfig({
   }),
     
     starlight({
+    tableOfContents:  { minHeadingLevel: 1, maxHeadingLevel: 6, },
       customCss: [
         // Relative path to your custom CSS file
         './src/styles/custom.css',
@@ -57,28 +58,8 @@ export default defineConfig({
       github: 'https://github.com/sanabel-al-firdaws/sanabel-al-firdaws.github.io/'
     },
     sidebar: [
-    //{
-    // label: 'Guides',
-    // items: [
-    //   { label: 'Components', link: '/guides/components/' },
-    //   { label: 'Internationalization (i18n)', link: '/guides/i18n/' },
-    //   // A nested group of links.
-    //   {
-    // 	label: 'Styling',
-    // 	items: [
-
-    // 		{
-    // 			label: 'Styling2',
-    // 			items: [
-    // 			  { label: 'CSS', link: '/guides/css-and-tailwind/' },
-    // 			  { label: 'Tailwind', link: '/guides/css-and-tailwind/' },
-    // 				{ label: 'Shiki', link: '/guides/css-and-tailwind/' },
-    // 			]
-    // 	  }
-    // 	],
-    //   },
-    // ],
-    //},
+    
+   
     {
       label: 'كتاب العقيدة',
       translations: {
@@ -104,17 +85,18 @@ export default defineConfig({
                   translations: {'en': 'Intro for Islam Chapter'},
                 },
                 {
-                  label: 'اختبار',
-                  translations: {'en': 'Test for the book of Aqida'},
-                  link: '/aqida/al-islam/test/'
-                },
+                  label: 'كتاب الحديث',
+                  link: '/hadith/hadiths',
+                  translations: {'en': 'hadith book'},
+                }
+               
              
               ]
             },
     			
     			]
     	  
-    }
+      }
     // {
     // 	label: 'Reference',
     // 	collapsed: true,

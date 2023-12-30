@@ -201,16 +201,16 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
-"ar/aqida/al-islam/test.mdoc": {
-	id: "ar/aqida/al-islam/test.mdoc";
-  slug: "ar/aqida/al-islam/test";
+"ar/aqida/intro.mdoc": {
+	id: "ar/aqida/intro.mdoc";
+  slug: "ar/aqida/intro";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
-"ar/aqida/intro.mdoc": {
-	id: "ar/aqida/intro.mdoc";
-  slug: "ar/aqida/intro";
+"ar/hadith/hadiths.mdoc": {
+	id: "ar/hadith/hadiths.mdoc";
+  slug: "ar/hadith/hadiths";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -243,13 +243,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
-"en/aqida/intro.md": {
-	id: "en/aqida/intro.md";
+"en/aqida/intro.mdoc": {
+	id: "en/aqida/intro.mdoc";
   slug: "en/aqida/intro";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdoc"] };
 "en/index.mdx": {
 	id: "en/index.mdx";
   slug: "en";
