@@ -26,6 +26,7 @@ export default defineConfig({
   }),
     
     starlight({
+    lastUpdated: true,
     tableOfContents:  { minHeadingLevel: 1, maxHeadingLevel: 6, },
       customCss: [
         // Relative path to your custom CSS file
