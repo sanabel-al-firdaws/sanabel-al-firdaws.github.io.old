@@ -18,9 +18,25 @@ backend:
   base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev/
 
 # ! for Production
+# i18n:
+#   # Required and can be one of multiple_folders, multiple_files or single_file
+#   # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
+#   # multiple_files - persists files in `<folder>/<slug>.<locale>.<extension>`
+#   # single_file - persists a single file in `<folder>/<slug>.<extension>`
+#   structure: multiple_folders
 
+#   # Required - a list of locales to show in the editor UI
+#   locales: [ar, en]
+
+#   # Optional, defaults to the first item in locales.
+#   # The locale to be used for fields validation and as a baseline for the entry.
+#   # defaultLocale: ar
 collections:
-  - create: true
+
+  - label: باب الإسلام
+    name: al-islam
+    create: true
+  
     fields:
       - label: محتوى المقال
         name: body
@@ -28,51 +44,86 @@ collections:
       - label: عنوان المقال
         name: title
         widget: string
+
       - label: رابط المقال
-        name: fileName
+        name: filename
         widget: string
-        required: true
-      - label: المؤلفون
-        name: contributors
-        widget: list
-      - label: مسودة
-        name: draft
-        widget: boolean
-        default: true
-      - label: العلامات
-        name: tags
-        required: false
-        widget: list
-      - label: تاريخ كتابة المقال
-        name: date
-        widget: datetime
-      - label: اخر تحديث
-        name: lastmod
-        widget: datetime
-      - label: فصل
-        name: folderName
-        widget: select
-        required: true
-        options:
-          - label:  مقدمة كتاب العقيدة
-            value: '/'
-          - label: الإسلام
-            value: al-islam
-          - label: الإيمان
-            value: al-eman
-          - label: الإحسان
-            value: al-ehsan
-          
+      
+      # - label: العلامات
+      #   name: tags
+      #   required: false
+      #   widget: list
+
+    # path: "{{slug}}"
+    slug: "{{fields.filename}}"
     extension: mdoc
     format: frontmatter
-    folder: src/content/docs/ar/aqida
+    folder: src/content/docs/ar/aqida/al-islam
+    # path: '/aqida/al-ehsan/{{fields.path}}.{{extension}}'
 
-    identifier_field: '{{fields.title}}'
-    slug: '{{fields.folderName}}/{{fields.fileName}}'
-    path: '{{slug}}'
-   
-    label: كتاب العقيدة
-    name: aqida
+
+    nested:
+      depth: 100 # max depth to show in the collection tree
+  - label: باب الإيمان
+    name: al-eman
+    create: true
+  
+    fields:
+      - label: محتوى المقال
+        name: body
+        widget: markdown
+      - label: عنوان المقال
+        name: title
+        widget: string
+
+      - label: رابط المقال
+        name: filename
+        widget: string
+      
+      # - label: العلامات
+      #   name: tags
+      #   required: false
+      #   widget: list
+
+    # path: "{{slug}}"
+    slug: "{{fields.filename}}"
+    extension: mdoc
+    format: frontmatter
+    folder: src/content/docs/ar/aqida/al-eman
+    # path: '/aqida/al-ehsan/{{fields.path}}.{{extension}}'
+
+
+    nested:
+      depth: 100 # max depth to show in the collection tree
+  - label: باب الإحسان
+    name: al-ehsan
+    create: true
+  
+    fields:
+      - label: محتوى المقال
+        name: body
+        widget: markdown
+      - label: عنوان المقال
+        name: title
+        widget: string
+
+      - label: رابط المقال
+        name: filename
+        widget: string
+      
+      # - label: العلامات
+      #   name: tags
+      #   required: false
+      #   widget: list
+
+    # path: "{{slug}}"
+    slug: "{{fields.filename}}"
+    extension: mdoc
+    format: frontmatter
+    folder: src/content/docs/ar/aqida/al-ehsan
+    # path: '/aqida/al-ehsan/{{fields.path}}.{{extension}}'
+
+
     nested:
       depth: 100 # max depth to show in the collection tree
 
@@ -80,6 +131,9 @@ site_url: https://sanabel-al-firdaws.github.io/
 
 logo_url : /favicon.svg
 media_folder: public/img
+
+
+
   # - label: "منهاج المسلم"
   #   name: "docs"
   #   folder: "content/docs"

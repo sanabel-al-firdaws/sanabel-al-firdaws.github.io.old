@@ -199,84 +199,91 @@ declare module 'astro:content' {
   slug: "ar/aqida/al-ehsan/intro";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
 "ar/aqida/al-eman/intro.mdoc": {
 	id: "ar/aqida/al-eman/intro.mdoc";
   slug: "ar/aqida/al-eman/intro";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdoc"] };
+"ar/aqida/al-islam/arkan.mdoc": {
+	id: "ar/aqida/al-islam/arkan.mdoc";
+  slug: "ar/aqida/al-islam/arkan";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
 "ar/aqida/al-islam/intro.mdoc": {
 	id: "ar/aqida/al-islam/intro.mdoc";
   slug: "ar/aqida/al-islam/intro";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
 "ar/aqida/intro.mdoc": {
 	id: "ar/aqida/intro.mdoc";
   slug: "ar/aqida/intro";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
 "ar/hadith/hadiths.mdoc": {
 	id: "ar/hadith/hadiths.mdoc";
   slug: "ar/hadith/hadiths";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
 "ar/index.mdx": {
 	id: "ar/index.mdx";
   slug: "ar";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "ar/theme.mdx": {
 	id: "ar/theme.mdx";
   slug: "ar/theme";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "en/aqida/al-islam/intro.mdoc": {
 	id: "en/aqida/al-islam/intro.mdoc";
   slug: "en/aqida/al-islam/intro";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
 "en/aqida/al-islam/test.mdoc": {
 	id: "en/aqida/al-islam/test.mdoc";
   slug: "en/aqida/al-islam/test";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
 "en/aqida/intro.mdoc": {
 	id: "en/aqida/intro.mdoc";
   slug: "en/aqida/intro";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
 "en/index.mdx": {
 	id: "en/index.mdx";
   slug: "en";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 "index.mdx": {
 	id: "index.mdx";
   slug: "index";
   body: string;
   collection: "docs";
-  data: any
+  data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
 };
 
@@ -288,5 +295,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = never;
+	type ContentConfig = typeof import("../src/content/config");
 }
