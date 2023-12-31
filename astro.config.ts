@@ -77,21 +77,20 @@ export default defineConfig({
             {
               label: 'باب الإسلام',
               translations: {'en': 'Islam Chapter'},
-
-              items: [
-                {
-                  label: 'مقدمة باب الإسلام',
-                  link: '/aqida/al-islam/intro/',
-                  translations: {'en': 'Intro for Islam Chapter'},
-                },
-                {
-                  label: 'كتاب الحديث',
-                  link: '/hadith/hadiths',
-                  translations: {'en': 'hadith book'},
-                }
-               
-             
-              ]
+              autogenerate: {directory: 'aqida/al-islam'},
+  
+            },
+            {
+              label: 'باب الإيمان',
+              translations: {'en': 'Eman Chapter'},
+              autogenerate: {directory: 'aqida/al-eman'},
+  
+            },
+            {
+              label: 'باب الإحسان',
+              translations: {'en': 'Ehsan Chapter'},
+              autogenerate: {directory: 'aqida/al-ehsan'},
+  
             },
     			
     			]
