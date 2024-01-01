@@ -57,7 +57,7 @@ export default defineConfig({
     },
     social: {
       github: 'https://github.com/sanabel-al-firdaws/sanabel-al-firdaws.github.io/',
-      gitlab: 'https://sanabel-al-firdaws.github.io/admin'
+      gitlab: 'https://sanabel-al-firdaws.github.io/admin/index.html'
     },
     sidebar: [
     
