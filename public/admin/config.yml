@@ -15,7 +15,7 @@ backend:
   name: github
   repo: sanabel-al-firdaws/sanabel-al-firdaws.github.io
   branch: main
-  base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev/
+  base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev
 
 # * for Production
 
