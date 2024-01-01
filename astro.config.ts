@@ -56,7 +56,8 @@ export default defineConfig({
       baseUrl: 'https://github.com/sanabel-al-firdaws/sanabel-al-firdaws.github.io/edit/main/',
     },
     social: {
-      github: 'https://github.com/sanabel-al-firdaws/sanabel-al-firdaws.github.io/'
+      github: 'https://github.com/sanabel-al-firdaws/sanabel-al-firdaws.github.io/',
+      gitlab: 'https://sanabel-al-firdaws.github.io'
     },
     sidebar: [
     
