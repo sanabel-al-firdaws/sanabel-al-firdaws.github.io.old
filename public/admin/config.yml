@@ -5,7 +5,7 @@
 # local_backend: true
 
 # backend:
-#   name: git-gateway
+#   name: local
 
 # * for devolopment
 
@@ -46,7 +46,7 @@ collections:
     slug: "{{fields.filename}}"
     extension: mdoc
     format: frontmatter
-    folder: src/content/docs/ar/aqida/al-islam
+    folder: /src/content/docs/ar/aqida/al-islam
     # path: '/aqida/al-ehsan/{{fields.path}}.{{extension}}'
 
 
