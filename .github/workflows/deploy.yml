@@ -18,6 +18,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: rename files from md to mdoc
+        run:  find src/content/ -name "*.txt" | rename "s/\.txt$/.mdoc/"
+        
       - name: Checkout your repository using git
         uses: actions/checkout@v3
       - name: Install, build, and upload your site
