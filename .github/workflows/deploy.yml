@@ -14,10 +14,12 @@ permissions:
   pages: write
   id-token: write
 
-jobs:
+jobs: 
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: install rename 
+        run: apt install rename
       - name: rename files from md to mdoc
         run:  find src/content/ -name "*.txt" | rename "s/\.txt$/.mdoc/"
         
