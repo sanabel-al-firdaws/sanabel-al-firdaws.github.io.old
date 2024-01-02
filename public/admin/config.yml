@@ -209,10 +209,11 @@ collections:
     # nested:
     #   depth: 100 # max depth to show in the collection tree
 
+disable_local_backup: false
 
 site_url: https://sanabel-al-firdaws.github.io/
 
 logo_url : /favicon.svg
 media_folder: public/img
 
-
+## todo change slug and path to allow you to use i18n features
