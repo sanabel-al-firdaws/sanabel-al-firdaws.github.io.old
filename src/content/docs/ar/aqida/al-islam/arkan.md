@@ -1,6 +1,7 @@
 ---
 title: أركان الإسلام
 
+
 ---
 فصل أركان الإسلام 
 
@@ -8,6 +9,6 @@ title: أركان الإسلام
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxODM1MTY5NiwtMTc4NTgwODk0LDEwMT
-gzNTE2OTYsLTExNzc2NTk1NTQsMTAxODM1MTY5Nl19
+eyJoaXN0b3J5IjpbLTE3ODU4MDg5NCwxMDE4MzUxNjk2LC0xNz
+g1ODA4OTQsMTAxODM1MTY5NiwtMTE3NzY1OTU1NF19
 -->
