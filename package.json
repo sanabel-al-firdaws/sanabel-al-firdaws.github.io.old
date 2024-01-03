@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "scripts": { 
     "dev": "npm run r2mdoc && astro dev ",
-    "r2mdoc": "npx renamer --find /.md$/ --replace .mdoc  src/content/**",
-    "r2md": "renamer --find /.mdoc$/ --replace .md  src/content/**",
+    "r2mdoc": "npx renamer --find /.md$/ --replace .mdoc src/content/**",
+    "r2md": "npx renamer --find /.mdoc$/ --replace .md src/content/**",
 
     "build": "renamer --find /.md$/ --replace .mdoc  src/content/** && astro check && astro build",
     "preview": "astro preview",
