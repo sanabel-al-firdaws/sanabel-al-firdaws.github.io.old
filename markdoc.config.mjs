@@ -5,7 +5,7 @@ export default defineMarkdocConfig({
     ayah: {
       // inline:true,
       render: component('./src/components/Test.astro'),
-      children: ['paragraph'],
+  
       // attributes: {
       //   // Markdoc requires type defs for each attribute.
       //   // These should mirror the `Props` type of the component
