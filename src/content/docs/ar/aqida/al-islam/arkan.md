@@ -3,12 +3,12 @@ title: أركان الإسلام
 
 
 ---
-فصل أركان الإسلام 
+فصل أركان الإسلام .
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODU4MDg5NCwxMDE4MzUxNjk2LC0xNz
-g1ODA4OTQsMTAxODM1MTY5NiwtMTE3NzY1OTU1NF19
+eyJoaXN0b3J5IjpbMjA1MzY5ODM1NiwtMTc4NTgwODk0LDEwMT
+gzNTE2OTYsMTAxODM1MTY5NiwtMTE3NzY1OTU1NF19
 -->
