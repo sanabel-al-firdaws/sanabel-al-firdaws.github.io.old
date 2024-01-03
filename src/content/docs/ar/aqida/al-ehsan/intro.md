@@ -37,7 +37,7 @@ title: مقدمة باب الإحسان
 {% /tab %}
 
 {% tab label="المذهب الحنفي" %}
-كذا كذا كذا كذا
+كذا كذا كذا كذا كذا
 
 {% /tab %}
 
@@ -45,6 +45,6 @@ title: مقدمة باب الإحسان
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTk1NDEyNTksLTE1ODc5Mzc4MDEsNz
-Y0MTMzMDQxXX0=
+eyJoaXN0b3J5IjpbMzA5MzYwNTkxLC0xNTg3OTM3ODAxLDc2ND
+EzMzA0MV19
 -->
