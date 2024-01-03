@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": { 
     "dev": "npm run r2mdoc && astro dev ",
-    "r2mdoc": "renamer --find /.md$/ --replace .mdoc  src/content/**",
+    "r2mdoc": "npx renamer --find /.md$/ --replace .mdoc  src/content/**",
     "r2md": "renamer --find /.mdoc$/ --replace .md  src/content/**",
 
     "build": "npm run r2mdoc && astro check && astro build",
