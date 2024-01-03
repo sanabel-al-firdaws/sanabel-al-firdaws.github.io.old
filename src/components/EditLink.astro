@@ -1,0 +1,36 @@
+---
+
+import Icon from '../../node_modules/@astrojs/starlight/user-components/Icon.astro';
+import type { Props } from '@astrojs/starlight/props';
+
+const { editUrl, labels } = Astro.props;
+
+// function getLastPart(editUrl: string) {
+//   const parts = editUrl.split('.');
+//   return parts.at(-1);
+// }
+const MdocEditUrl = editUrl?.toString().slice(0, -4) + 'md';
+const MdocEditUrl2 = new URL("", MdocEditUrl ) 
+---
+
+{
+	MdocEditUrl2 && (
+	
+		<a href={MdocEditUrl2} class="sl-flex">
+			<Icon name="pencil" size="1.2em" />
+			{labels['page.editLink']}
+		</a>
+	)
+}
+
+<style>
+	a {
+		gap: 0.5rem;
+		align-items: center;
+		text-decoration: none;
+		color: var(--sl-color-gray-3);
+	}
+	a:hover {
+		color: var(--sl-color-white);
+	}
+</style>

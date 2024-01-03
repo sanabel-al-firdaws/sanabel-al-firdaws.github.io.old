@@ -3,7 +3,9 @@ import { defineMarkdocConfig, component } from '@astrojs/markdoc/config';
 export default defineMarkdocConfig({
   tags: {
     ayah: {
-      render: component('./src/components/Test.astro')
+      // inline:true,
+      render: component('./src/components/Test.astro'),
+      children: ['paragraph'],
       // attributes: {
       //   // Markdoc requires type defs for each attribute.
       //   // These should mirror the `Props` type of the component

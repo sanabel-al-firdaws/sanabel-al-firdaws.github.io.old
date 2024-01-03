@@ -11,7 +11,7 @@ import manifest from "./webmanifest.json";
 export default defineConfig({
   site: 'https://sanabel-al-firdaws.github.io',
   // base: '/<project-name>',
-  integrations: [  AstroPWA({
+  integrations: [AstroPWA({
     mode: "production",
     registerType: "autoUpdate",
     includeAssets: ["favicon.svg"],
@@ -24,20 +24,21 @@ export default defineConfig({
     },
     manifest: manifest as Partial<ManifestOptions>,
   }),
-    
-    starlight({
-  
-    tableOfContents:  { minHeadingLevel: 1, maxHeadingLevel: 6, },
-      customCss: [
-        // Relative path to your custom CSS file
-        './src/styles/custom.css',
-      ],
+
+  starlight({
+
+    tableOfContents: { minHeadingLevel: 1, maxHeadingLevel: 6, },
+    customCss: [
+      // Relative path to your custom CSS file
+      './src/styles/custom.css',
+    ],
     components: {
       // Override the default `SocialIcons` component.
-      ThemeProvider : './src/components/ThemeProvider.astro',
+      ThemeProvider: './src/components/ThemeProvider.astro',
+      EditLink: './src/components/EditLink.astro'
     },
     title: 'سنابل الفردوس',
-    description:'موقع يهتم بنشر العلم النافع',
+    description: 'موقع يهتم بنشر العلم النافع',
     // titleDelimiter: '-',
     defaultLocale: 'ar',
     locales: {
@@ -60,54 +61,77 @@ export default defineConfig({
       gitlab: 'https://sanabel-al-firdaws.github.io/admin/index.html'
     },
     sidebar: [
-    
-   
-    {
-      label: 'كتاب العقيدة',
-      translations: {
-        'en': 'The Book Of Aqida'
+
+
+      {
+        label: 'كتاب العقيدة',
+        translations: {
+          'en': 'The Book Of Aqida'
+        },
+        collapsed: true,
+
+
+        items: [
+
+          {
+            collapsed: true,
+            label: 'مقدمة كتاب العقيدة',
+            translations: { 'en': 'Intro for the book of Aqida' },
+            link: '/aqida/intro/'
+          },
+          {
+            collapsed: true,
+            label: 'باب الإسلام',
+            translations: { 'en': 'Islam Chapter' },
+            autogenerate: { directory: 'aqida/al-islam' },
+
+          },
+          {
+            collapsed: true,
+            label: 'باب الإيمان',
+            translations: { 'en': 'Eman Chapter' },
+            autogenerate: { directory: 'aqida/al-eman' },
+
+          },
+          {
+            collapsed: true,
+            label: 'باب الإحسان',
+            translations: { 'en': 'Ehsan Chapter' },
+            autogenerate: { directory: 'aqida/al-ehsan' },
+
+          },
+
+        ]
+
       },
-      collapsed: true,
-     
-    	
-    			items: [
-            {
-              label: 'مقدمة كتاب العقيدة',
-              translations: {'en': 'Intro for the book of Aqida'},
-              link: '/aqida/intro/'
-            },
-            {
-              label: 'باب الإسلام',
-              translations: {'en': 'Islam Chapter'},
-              autogenerate: {directory: 'aqida/al-islam'},
-  
-            },
-            {
-              label: 'باب الإيمان',
-              translations: {'en': 'Eman Chapter'},
-              autogenerate: {directory: 'aqida/al-eman'},
-  
-            },
-            {
-              label: 'باب الإحسان',
-              translations: {'en': 'Ehsan Chapter'},
-              autogenerate: {directory: 'aqida/al-ehsan'},
-  
-            },
-    			
-    			]
-    	  
+      {
+        collapsed: true,
+        label: 'كتاب الأحاديث',
+        translations: { 'en': 'The Book Of Hadith' },
+
+
+
+        items: [
+          {
+            collapsed: true,
+            label: 'أحاديث مختارة',
+            translations: { 'en': 'Collection of hadiths' },
+            link: '/hadith/hadiths/'
+          },
+
+        ]
+
       }
-    // {
-    // 	label: 'Reference',
-    // 	collapsed: true,
-    // 	autogenerate: { directory: 'reference' },
-    // },
-    // {
-    // 	label: 'Testing',
-    // 	collapsed: true,
-    // 	autogenerate: { directory: 'test' },
-    // },
+      // {
+      // 	label: 'Reference',
+      // 	collapsed: true,
+      // 	autogenerate: { directory: 'reference' },
+      // },
+      // {
+      // 	label: 'Testing',
+      // 	collapsed: true,
+      // 	autogenerate: { directory: 'test' },
+      // },
     ]
   }), markdoc()]
 });
