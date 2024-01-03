@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "rename": "npx renamer --find texty --replace mdoc *",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
@@ -14,12 +15,13 @@
     "@astrojs/check": "^0.3.4",
     "@astrojs/markdoc": "^0.8.2",
     "@astrojs/starlight": "^0.15.1",
+    "@types/culori": "^2.0.0",
     "astro": "^4.0.1",
+    "culori": "^3.2.0",
     "lucid-color-picker": "^0.1.0",
+    "replace-ext": "^2.0.0",
     "sharp": "^0.32.5",
-    "typescript": "^5.3.3",
-    "culori": "^3.2.0",  "@types/culori": "^2.0.0"
-
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
     "@vite-pwa/assets-generator": "^0.2.2",
