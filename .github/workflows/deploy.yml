@@ -16,10 +16,12 @@ permissions:
 
 jobs:
   build:
-    cancel-in-progress: true
+    
     runs-on: ubuntu-latest
+    concurrency:
+      cancel-in-progress: true
     steps:
-
+  
 # rename 's/\.html$/\.txt/' *.html
       # - name: rename files
       #   run: npm run rename
