@@ -16,6 +16,7 @@ permissions:
 
 jobs:
   build:
+    cancel-in-progress: true
     runs-on: ubuntu-latest
     steps:
 
