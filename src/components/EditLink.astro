@@ -9,14 +9,14 @@ const { editUrl, labels } = Astro.props;
 //   const parts = editUrl.split('.');
 //   return parts.at(-1);
 // }
-const MdocEditUrl = editUrl?.toString().slice(0, -4) + 'md';
-const MdocEditUrl2 = new URL("", MdocEditUrl ) 
+// const MdocEditUrl = ;
+// const MdocEditUrl2 = new URL("", MdocEditUrl ) 
 ---
 
 {
-	MdocEditUrl2 && (
+	editUrl?.toString().slice(0, -4) + 'md' && (
 	
-		<a href={MdocEditUrl2} class="sl-flex">
+		<a href={editUrl?.toString().slice(0, -4) + 'md'} class="sl-flex">
 			<Icon name="pencil" size="1.2em" />
 			{labels['page.editLink']}
 		</a>
