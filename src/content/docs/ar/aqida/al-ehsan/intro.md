@@ -10,6 +10,24 @@ title: مقدمة باب الإحسان
 {% /ayah %}
 
  {سُورَةُ البَقَرَةِ: ٢٥٧}
+{% tabs %}
+{% tab label="المذهب المالكي" %}
+
+
+كذا كذا
+
+{% /tab %}
+
+{% tab label="المذهب الشافعي" %}
+
+
+كذا كذا كذا
+
+{% /tab %}
+
+{% /tabs %}
+
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE1ODc5Mzc4MDEsNzY0MTMzMDQxXX0=
 -->
