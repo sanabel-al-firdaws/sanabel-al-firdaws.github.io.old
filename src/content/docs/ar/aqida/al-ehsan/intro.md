@@ -41,10 +41,14 @@ title: مقدمة باب الإحسان
 
 {% /tab %}
 
+
+{% tab label="المذهب كذا" %}
+كذا كذا كذا كذا كذا{% /tab %}
+
 {% /tabs %}
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA5MzYwNTkxLC0xNTg3OTM3ODAxLDc2ND
-EzMzA0MV19
+eyJoaXN0b3J5IjpbLTE2Mjk1MjM5MTAsLTE1ODc5Mzc4MDEsNz
+Y0MTMzMDQxXX0=
 -->
