@@ -2,9 +2,9 @@
   "name": "sanabel-al-firdaws-starlight",
   "type": "module",
   "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+  "scripts": { 
+    "dev": "renamer --find /.md$/ --replace .mdoc  'src/content/**' && astro dev && renamer --find /.mdoc$/ --replace .md  'src/content/**'",
+    "start": "renamer --find /.md$/ --replace .mdoc  'src/content/**' && astro dev && renamer --find /.mdoc$/ --replace .md  'src/content/**'",
     "build": "renamer --find /.md$/ --replace .mdoc  'src/content/**' && astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",

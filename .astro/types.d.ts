@@ -194,48 +194,48 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"docs": {
-"ar/aqida/al-ehsan/intro.mdoc": {
-	id: "ar/aqida/al-ehsan/intro.mdoc";
+"ar/aqida/al-ehsan/intro.md": {
+	id: "ar/aqida/al-ehsan/intro.md";
   slug: "ar/aqida/al-ehsan/intro";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdoc"] };
-"ar/aqida/al-eman/intro.mdoc": {
-	id: "ar/aqida/al-eman/intro.mdoc";
+} & { render(): Render[".md"] };
+"ar/aqida/al-eman/intro.md": {
+	id: "ar/aqida/al-eman/intro.md";
   slug: "ar/aqida/al-eman/intro";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdoc"] };
-"ar/aqida/al-islam/arkan.mdoc": {
-	id: "ar/aqida/al-islam/arkan.mdoc";
+} & { render(): Render[".md"] };
+"ar/aqida/al-islam/arkan.md": {
+	id: "ar/aqida/al-islam/arkan.md";
   slug: "ar/aqida/al-islam/arkan";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdoc"] };
-"ar/aqida/al-islam/intro.mdoc": {
-	id: "ar/aqida/al-islam/intro.mdoc";
+} & { render(): Render[".md"] };
+"ar/aqida/al-islam/intro.md": {
+	id: "ar/aqida/al-islam/intro.md";
   slug: "ar/aqida/al-islam/intro";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdoc"] };
-"ar/aqida/intro.mdoc": {
-	id: "ar/aqida/intro.mdoc";
+} & { render(): Render[".md"] };
+"ar/aqida/intro.md": {
+	id: "ar/aqida/intro.md";
   slug: "ar/aqida/intro";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdoc"] };
-"ar/hadith/hadiths.mdoc": {
-	id: "ar/hadith/hadiths.mdoc";
+} & { render(): Render[".md"] };
+"ar/hadith/hadiths.md": {
+	id: "ar/hadith/hadiths.md";
   slug: "ar/hadith/hadiths";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdoc"] };
+} & { render(): Render[".md"] };
 "ar/index.mdx": {
 	id: "ar/index.mdx";
   slug: "ar";
@@ -250,34 +250,41 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"en/aqida/al-eman/intro.mdoc": {
-	id: "en/aqida/al-eman/intro.mdoc";
+"en/aqida/al-ehsan/intro.md": {
+	id: "en/aqida/al-ehsan/intro.md";
+  slug: "en/aqida/al-ehsan/intro";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"en/aqida/al-eman/intro.md": {
+	id: "en/aqida/al-eman/intro.md";
   slug: "en/aqida/al-eman/intro";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdoc"] };
-"en/aqida/al-islam/arkan.mdoc": {
-	id: "en/aqida/al-islam/arkan.mdoc";
+} & { render(): Render[".md"] };
+"en/aqida/al-islam/arkan.md": {
+	id: "en/aqida/al-islam/arkan.md";
   slug: "en/aqida/al-islam/arkan";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdoc"] };
-"en/aqida/al-islam/intro.mdoc": {
-	id: "en/aqida/al-islam/intro.mdoc";
+} & { render(): Render[".md"] };
+"en/aqida/al-islam/intro.md": {
+	id: "en/aqida/al-islam/intro.md";
   slug: "en/aqida/al-islam/intro";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdoc"] };
-"en/aqida/intro.mdoc": {
-	id: "en/aqida/intro.mdoc";
+} & { render(): Render[".md"] };
+"en/aqida/intro.md": {
+	id: "en/aqida/intro.md";
   slug: "en/aqida/intro";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdoc"] };
+} & { render(): Render[".md"] };
 "en/index.mdx": {
 	id: "en/index.mdx";
   slug: "en";
