@@ -16,10 +16,10 @@ permissions:
 
 jobs:
   build:
-    
-    runs-on: ubuntu-latest
     concurrency:
+      group: building
       cancel-in-progress: true
+    runs-on: ubuntu-latest
     steps:
   
 # rename 's/\.html$/\.txt/' *.html
