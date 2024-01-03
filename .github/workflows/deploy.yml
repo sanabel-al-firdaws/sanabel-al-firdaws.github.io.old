@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: rename files from md to mdoc
-          run: for f in *.txt; do mv -- "$f" "${f%.txt}.mdoc"; done
+        run: for f in *.txt; do mv -- "$f" "${f%.txt}.mdoc"; done
 
 # rename 's/\.html$/\.txt/' *.html
 
