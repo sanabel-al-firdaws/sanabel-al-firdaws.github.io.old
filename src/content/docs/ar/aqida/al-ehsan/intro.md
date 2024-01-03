@@ -17,7 +17,7 @@ title: مقدمة باب الإحسان
 {% tab label="المذهب المالكي" %}
 
 
-كذا كذا
+### كذا 
 
 {% /tab %}
 
@@ -26,25 +26,25 @@ title: مقدمة باب الإحسان
 {% tab label="المذهب الشافعي" %}
 
 
-كذا كذا كذا
+### كذا كذا 
 
 {% /tab %}
 
 
 {% tab label="المذهب الحنبلي" %}
-كذا كذا كذا كذا
+### كذا كذا كذا 
 
 {% /tab %}
 
 {% tab label="المذهب الحنفي" %}
-كذا كذا كذا كذا كذا
+### كذا كذا كذا كذا 
 
 {% /tab %}
 
 
 {% tab label="المذهب كذا" %}
 
-كذا كذا كذا كذا كذا
+### كذا كذا كذا كذا كذا
 
 {% /tab %}
 
@@ -52,6 +52,6 @@ title: مقدمة باب الإحسان
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MDAxMDE2NCwtMTU4NzkzNzgwMSw3Nj
+eyJoaXN0b3J5IjpbMTQ4MDk1MzkxNSwtMTU4NzkzNzgwMSw3Nj
 QxMzMwNDFdfQ==
 -->
