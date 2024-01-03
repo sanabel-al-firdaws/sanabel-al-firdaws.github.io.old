@@ -30,10 +30,21 @@ title: مقدمة باب الإحسان
 
 {% /tab %}
 
+
+{% tab label="المذهب الحنبلي" %}
+كذا كذا كذا كذا
+
+{% /tab %}
+
+{% tab label="المذهب الحنفي" %}
+كذا كذا كذا كذا
+
+{% /tab %}
+
 {% /tabs %}
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTAwMTgyNjIsLTE1ODc5Mzc4MDEsNz
+eyJoaXN0b3J5IjpbLTEzOTk1NDEyNTksLTE1ODc5Mzc4MDEsNz
 Y0MTMzMDQxXX0=
 -->
