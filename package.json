@@ -3,10 +3,9 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-  
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npx renamer --find md --replace mdoc '**' && astro check && astro build",
+    "build": "renamer --find /.md$/ --replace .mdoc  'src/content/**' && astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "generate-pwa-assets": "pwa-assets-generator --preset minimal public/favicon.svg"
@@ -26,6 +25,7 @@
   "devDependencies": {
     "@vite-pwa/assets-generator": "^0.2.2",
     "@vite-pwa/astro": "^0.2.0",
+    "renamer": "^4.0.0",
     "workbox-window": "^7.0.0"
   }
 }
