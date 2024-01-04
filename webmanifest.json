@@ -4,10 +4,10 @@
     "name": "Sanabel Al Firdaws | سنابل الفردوس",
     "short_name": "Sanabel Al Firdaws",
     "description": "موقع يهتم بنشر العلم النافع",
-    "orientation": "portrait",
-    "display": "standalone",
-    "theme_color": "#ff5d01",
-    "background_color": "#11191f",
+    "orientation": "any",
+    "display": "fullscreen",
+    "theme_color": "#073737",
+    "background_color": "#073737",
     "icons": [
       {
         "src": "pwa-64x64.png",
