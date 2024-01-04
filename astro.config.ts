@@ -5,7 +5,6 @@ import AstroPWA from "@vite-pwa/astro";
 import type { ManifestOptions } from "vite-plugin-pwa";
 import manifest from "./webmanifest.json";
 
-import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
