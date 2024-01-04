@@ -236,20 +236,20 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
-"ar/index.mdx": {
-	id: "ar/index.mdx";
+"ar/index.mdoc": {
+	id: "ar/index.mdoc";
   slug: "ar";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"ar/theme.mdx": {
-	id: "ar/theme.mdx";
+} & { render(): Render[".mdoc"] };
+"ar/theme.mdoc": {
+	id: "ar/theme.mdoc";
   slug: "ar/theme";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
+} & { render(): Render[".mdoc"] };
 "en/aqida/al-ehsan/intro.mdoc": {
 	id: "en/aqida/al-ehsan/intro.mdoc";
   slug: "en/aqida/al-ehsan/intro";
@@ -285,20 +285,20 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
-"en/index.mdx": {
-	id: "en/index.mdx";
+"en/index.mdoc": {
+	id: "en/index.mdoc";
   slug: "en";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
-"index.mdx": {
-	id: "index.mdx";
+} & { render(): Render[".mdoc"] };
+"index.mdoc": {
+	id: "index.mdoc";
   slug: "index";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdx"] };
+} & { render(): Render[".mdoc"] };
 };
 
 	};
