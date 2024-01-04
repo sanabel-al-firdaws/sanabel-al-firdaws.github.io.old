@@ -2,6 +2,9 @@ import { defineMarkdocConfig, component } from '@astrojs/markdoc/config';
 
 export default defineMarkdocConfig({
   tags: {
+    themechange:{
+      render: component('./src/components/ThemeChange.astro'),
+    },
     tab: {
       render: component('./node_modules/@astrojs/starlight/user-components/TabItem.astro'),
       attributes: {

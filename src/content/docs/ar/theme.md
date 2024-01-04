@@ -15,9 +15,8 @@ template: splash
 #     #   link: https://starlight.astro.build
 #     #   icon: external
 ---
-// import ThemeChange from '/src/components/ThemeChange.astro'
 
 
-{/* <ThemeChange/> */}
+{% themechange %}
 
-
+{% /themechange %}
