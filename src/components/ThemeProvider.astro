@@ -23,6 +23,57 @@ import { pwaInfo } from "virtual:pwa-info";
 
 {/* This is intentionally inlined to avoid FOUC. */}
 <script is:inline>
+	  const c_sl_color_accent_low = localStorage.getItem('--c-sl-color-accent-low');
+	  const c_sl_color_accent = localStorage.getItem('--c-sl-color-accent');
+	  const c_sl_color_accent_high = localStorage.getItem('--c-sl-color-accent-high');
+	  const c_sl_color_white = localStorage.getItem('--c-sl-color-white');
+	  const c_sl_color_gray_1 = localStorage.getItem('--c-sl-color-gray-1');
+	  const c_sl_color_gray_2 = localStorage.getItem('--c-sl-color-gray-2');
+	  const c_sl_color_gray_3 = localStorage.getItem('--c-sl-color-gray-3');
+	  const c_sl_color_gray_4 = localStorage.getItem('--c-sl-color-gray-4');
+	  const c_sl_color_gray_5 = localStorage.getItem('--c-sl-color-gray-5');
+	  const c_sl_color_gray_6 = localStorage.getItem('--c-sl-color-gray-6');
+	  const c_sl_color_gray_7 = localStorage.getItem('--c-sl-color-gray-7');
+	  const c_sl_color_black = localStorage.getItem('--c-sl-color-black');
+
+if (c_sl_color_accent_low !== null) {
+  document.documentElement.style.setProperty('--c-sl-color-accent-low', c_sl_color_accent_low);
+}
+if (c_sl_color_accent !== null) {
+  document.documentElement.style.setProperty('--c-sl-color-accent', c_sl_color_accent);
+}
+if (c_sl_color_accent_high !== null) {
+  document.documentElement.style.setProperty('--c-sl-color-accent-high', c_sl_color_accent_high);
+}
+if (c_sl_color_white !== null) {
+  document.documentElement.style.setProperty('--c-sl-color-white', c_sl_color_white);
+}
+if (c_sl_color_gray_1 !== null) {
+  document.documentElement.style.setProperty('--c-sl-color-gray-1', c_sl_color_gray_1);
+}
+if (c_sl_color_gray_2 !== null) {
+  document.documentElement.style.setProperty('--c-sl-color-gray-2', c_sl_color_gray_2);
+}
+if (c_sl_color_gray_3 !== null) {
+  document.documentElement.style.setProperty('--c-sl-color-gray-3', c_sl_color_gray_3);
+}
+if (c_sl_color_gray_4 !== null) {
+  document.documentElement.style.setProperty('--c-sl-color-gray-4', c_sl_color_gray_4);
+}
+if (c_sl_color_gray_5 !== null) {
+  document.documentElement.style.setProperty('--c-sl-color-gray-5', c_sl_color_gray_5);
+}
+if (c_sl_color_gray_6 !== null) {
+  document.documentElement.style.setProperty('--c-sl-color-gray-6', c_sl_color_gray_6);
+}
+if (c_sl_color_gray_7 !== null) {
+  document.documentElement.style.setProperty('--c-sl-color-gray-7', c_sl_color_gray_7);
+}
+if (c_sl_color_black !== null) {
+  document.documentElement.style.setProperty('--c-sl-color-black', c_sl_color_black);
+}
+
+
 	// ☝️ This script prevent the FART effect.
 	if (localStorage.getItem("theme") === null) {
 	  document.documentElement.setAttribute("data-theme", "blue");

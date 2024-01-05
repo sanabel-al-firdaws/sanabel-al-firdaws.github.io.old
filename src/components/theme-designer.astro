@@ -1,0 +1,123 @@
+---
+import { TabItem, Tabs } from '@astrojs/starlight/components';
+import ColorEditor, { type Props as EditorProps } from './theme-designer/color-editor.astro';
+import Presets, { type Props as PresetsProps } from './theme-designer/presets.astro';
+import Preview from './theme-designer/preview.astro';
+
+interface Props {
+	labels: {
+		presets: PresetsProps['labels'];
+		editor: EditorProps['labels'] & { accentColor: string; grayColor: string };
+		preview: Record<
+			'darkMode' | 'lightMode' | 'bodyText' | 'linkText' | 'dimText' | 'inlineCode',
+			string
+		>;
+	};
+}
+const {
+	labels: { presets, editor, preview },
+} = Astro.props;
+---
+
+<Presets labels={presets} />
+
+<div>
+	<theme-designer>
+		<div class="sl-flex controls not-content">
+			<ColorEditor key="accent" legend={editor.accentColor} labels={editor} />
+			<ColorEditor key="gray" legend={editor.grayColor} labels={editor} />
+		</div>
+
+		<div class="preview" data-accent-preview>
+			<Preview labels={preview} data-dark />
+			<Preview labels={preview} data-light />
+		</div>
+
+	
+	</theme-designer>
+</div>
+
+<script>
+	import { getPalettes } from './theme-designer/color-lib';
+	import { store } from './theme-designer/store';
+
+	class ThemeDesigner extends HTMLElement {
+		#stylesheet = new CSSStyleSheet();
+
+		constructor() {
+			super();
+			// Add our stylesheet to the document.
+			document.adoptedStyleSheets = [...document.adoptedStyleSheets, this.#stylesheet]; 
+			// Update theme palettes on user input.
+			const onInput = () => this.#update();
+			store.accent.setKey('chroma',Number( localStorage.getItem("accent-chroma")))
+			store.accent.setKey('hue',Number( localStorage.getItem("accent-hue")))
+			
+			store.gray.setKey('chroma',Number( localStorage.getItem("gray-chroma")))
+			store.gray.setKey('hue',Number( localStorage.getItem("gray-hue")))
+			
+
+			store.accent.subscribe(onInput);
+			store.gray.subscribe(onInput);
+		}
+
+		#update() {
+		
+			const palettes = getPalettes({ accent: store.accent.get(), gray: store.gray.get() });
+
+			localStorage.setItem("accent-chroma", store.accent.get().chroma.toString());
+			localStorage.setItem("accent-hue", store.accent.get().hue.toString());
+		
+			localStorage.setItem("gray-chroma", store.gray.get().chroma.toString());
+			localStorage.setItem("gray-hue", store.gray.get().hue.toString());
+
+			this.#updatePreview(palettes);
+	
+		}
+
+		/** Apply the generated palettes to the style attributes of the in-content preview panes. */
+		#updatePreview({ dark, light }: ReturnType<typeof getPalettes>) {
+			const previews = this.querySelectorAll<HTMLDivElement>('[data-accent-preview] > *');
+			previews.forEach((preview) => {
+				const theme = 'light' in preview.dataset ? dark : light;
+				var r = document.querySelector(':root') as HTMLInputElement | null;
+				Object.entries(theme).forEach(([key, color]) => {
+					preview.style.setProperty(`--sl-color-${key}`, color);
+					r?.style.setProperty(`--c-sl-color-${key}`, color);
+					localStorage.setItem(`--c-sl-color-${key}`, color);
+				});
+			});
+		}
+
+
+
+	
+		
+	}
+
+	customElements.define('theme-designer', ThemeDesigner);
+</script>
+
+<style>
+
+	
+	.controls {
+		flex-wrap: wrap;
+		gap: 1.5rem;
+	}
+	.controls > :global(*) {
+		flex: 1 1;
+	}
+	.preview {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5rem;
+	}
+
+	.generated-code {
+		height: 16rem;
+		background-color: var(--astro-code-color-background);
+		overflow: auto scroll;
+		user-select: all;
+	}
+</style>

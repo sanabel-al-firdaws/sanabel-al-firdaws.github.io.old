@@ -1,0 +1,52 @@
+---
+title: المظهر
+template: splash
+// description: موقع يهتم بنشر العلم النافع
+// template: splash
+// hero:
+//   tagline: حلية طالب العلم بإسلوب سلس ومبسط
+//     image:
+//       file: ../../assets/houston.webp
+//    actions:
+//      - text: كتاب العقيدة
+//        link: /ar/aqida/intro/
+//        icon: left-arrow
+//        variant: primary
+//       - text: Read the Starlight docs
+//         link: https://starlight.astro.build
+//         icon: external
+---
+
+import ThemeDesigner from '../../../components/theme-designer.astro';
+
+<ThemeDesigner
+	labels={{
+		presets: {
+			label: 'Presets',
+			ocean: 'Ocean',
+			forest: 'Forest',
+			oxide: 'Oxide',
+			nebula: 'Nebula',
+			default: 'Default',
+			random: 'Random',
+		},
+		editor: {
+			accentColor: 'Accent',
+			grayColor: 'Gray',
+			hue: 'Hue',
+			chroma: 'Chroma',
+			pickColor: 'Pick color',
+		},
+		preview: {
+			darkMode: 'Dark mode',
+			lightMode: 'Light mode',
+			bodyText:
+				'Body text is displayed in a gray shade with a high contrast with the background.',
+			linkText: 'Links are colored.',
+			dimText: 'Some text, like the table of contents, has a lower contrast.',
+			inlineCode: 'Inline code has a distinct background.',
+		},
+	}}
+>
+
+</ThemeDesigner>

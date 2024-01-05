@@ -1,9 +1,9 @@
 ---
 title: Sanabel AL Firdaws
-description: Get started building your docs site with Starlight.
+description: A website deticated to spreading the true message of islam
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: A website deticated to spreading the true message of islam
 #   image:
 #     file: ../../assets/houston.webp
   actions:
@@ -11,25 +11,11 @@ hero:
       link: /en/aqida/intro/
       icon: right-arrow
       variant: primary
+    - text: Themes
+      link: /en/theme
+      icon: right-arrow
+      variant: primary
    
 ---
 
-{/* 
-import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
-
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid> */}

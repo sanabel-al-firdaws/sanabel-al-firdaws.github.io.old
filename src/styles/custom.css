@@ -1,18 +1,36 @@
-/* :root{
+:root{
 
-		--sl-color-accent-low: transparent;
-		--sl-color-accent:transparent ;
-		--sl-color-accent-high: transparent;
-		--sl-color-white: transparent;
-		--sl-color-gray-1: transparent;
-		--sl-color-gray-2: transparent;
-		--sl-color-gray-3: transparent;
-		--sl-color-gray-4: transparent;
-		--sl-color-gray-5: transparent;
-		--sl-color-gray-6:transparent ;
-		--sl-color-black: transparent;
+	--sl-color-accent-low: #232424;
+	--sl-color-accent: #666b6a;
+	--sl-color-accent-high: #c7c9c9;
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #e9eef9;
+	--sl-color-gray-2: #bcc2d0;
+	--sl-color-gray-3: #808ba5;
+	--sl-color-gray-4: #4e5870;
+	--sl-color-gray-5: #2e384e;
+	--sl-color-gray-6: #1e263b;
+	--sl-color-black: #141822;
+
+
 	
-} */
+	
+}
+:root[data-theme='custom'] {
+	--sl-color-accent-low: var(--c-sl-color-accent-low);
+	--sl-color-accent: var(--c-sl-color-accent);
+	--sl-color-accent-high: var(--c-sl-color-accent-high);
+	--sl-color-white: var(--c-sl-color-white);
+	--sl-color-gray-1: var(--c-sl-color-gray-1);
+	--sl-color-gray-2: var(--c-sl-color-gray-2);
+	--sl-color-gray-3: var(--c-sl-color-gray-3);
+	--sl-color-gray-4: var(--c-sl-color-gray-4);
+	--sl-color-gray-5: var(--c-sl-color-gray-5);
+	--sl-color-gray-6: var(--c-sl-color-gray-6);
+	--sl-color-gray-7: var(--c-sl-color-gray-7);
+	--sl-color-black: var(--c-sl-color-black);
+}
+
 :root[data-theme='dark'] {
 	--sl-color-accent-low: #232424;
 	--sl-color-accent: #666b6a;
@@ -27,19 +45,6 @@
 	--sl-color-black: #141822;
 }
 
-:root[data-theme='custom'] {
-	--sl-color-accent-low: var(--c-sl-color-accent-low);
-	--sl-color-accent: var(--c-sl-color-accent);
-	--sl-color-accent-high: var(--c-sl-color-accent-high);
-	--sl-color-white: var(--c-sl-color-white);
-	--sl-color-gray-1: var(--c-sl-color-gray-1);
-	--sl-color-gray-2: var(--c-sl-color-gray-1);
-	--sl-color-gray-3: var(--c-sl-color-gray-1);
-	--sl-color-gray-4: var(--c-sl-color-gray-1);
-	--sl-color-gray-5: var(--c-sl-color-gray-1);
-	--sl-color-gray-6: var(--c-sl-color-gray-1);
-	--sl-color-black: var(--c-sl-color-black);
-}
 
 /* Dark mode colors. */
 

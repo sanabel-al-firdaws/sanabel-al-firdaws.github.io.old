@@ -243,13 +243,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
-"ar/theme.mdoc": {
-	id: "ar/theme.mdoc";
+"ar/theme.mdx": {
+	id: "ar/theme.mdx";
   slug: "ar/theme";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".mdoc"] };
+} & { render(): Render[".mdx"] };
 "en/aqida/al-ehsan/intro.mdoc": {
 	id: "en/aqida/al-ehsan/intro.mdoc";
   slug: "en/aqida/al-ehsan/intro";
@@ -292,6 +292,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
+"en/theme.mdx": {
+	id: "en/theme.mdx";
+  slug: "en/theme";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "index.mdoc": {
 	id: "index.mdoc";
   slug: "index";
