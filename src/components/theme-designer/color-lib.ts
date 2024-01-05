@@ -1,3 +1,4 @@
+//@ts-ignore
 import { useMode, modeOklch, modeRgb, formatHex, clampChroma } from 'culori/fn';
 
 const rgb = useMode(modeRgb);

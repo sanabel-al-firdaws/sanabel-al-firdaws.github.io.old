@@ -44,6 +44,7 @@ const initialColor = oklchToHex(52, chroma, hue);
 			this.#colorInput.addEventListener('input', (e) => {
 				if (!(e.target instanceof HTMLInputElement)) return;
 				const old = this.#store.get();
+				//@ts-ignore
 				const { c, h } = { ...oklch(e.target.value) };
 				this.#store.set({ hue: h ?? old.hue, chroma: c ?? old.chroma });
 			});
