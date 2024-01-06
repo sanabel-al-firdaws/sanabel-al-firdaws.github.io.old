@@ -28,6 +28,37 @@ backend:
 # * for Production
 
 collections:
+  - label: كتاب العقيدة
+    name: aqida
+    create: true
+  
+    fields:
+      - label: محتوى المقال
+        name: body
+        widget: markdown
+      - label: عنوان المقال
+        name: title
+        widget: string
+
+      - label: رابط المقال
+        name: filename
+        widget: string
+
+      - label: رابط تعديل المقال
+        name: editUrl
+        widget: string 
+        required: false
+      # - label: العلامات
+      #   name: tags
+      #   required: false
+      #   widget: list
+
+    # path: "{{slug}}"
+    slug: "{{fields.filename}}"
+    extension: mdoc
+    format: frontmatter
+    folder: /src/content/docs/ar/aqida
+
   - label: كتاب الحديث
     name: hadith
     create: true
