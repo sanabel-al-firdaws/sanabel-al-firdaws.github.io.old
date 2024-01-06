@@ -13,28 +13,12 @@
 </head>
 
 <body>
-  <script src="https://unpkg.com/stackedit-js@1.0.7/docs/lib/stackedit.min.js"></script>
+<!--  <script src="https://unpkg.com/stackedit-js@1.0.7/docs/lib/stackedit.min.js"></script> -->
   <!-- Include the script that builds the page and powers Static CMS -->
   <script src="https://unpkg.com/@staticcms/app@^4.0.0/dist/static-cms-app.js"></script>
   <script>
   
     window.CMS.init();
-
-    const el = document.querySelectorAll('[role="textbox"]');
-  const stackedit = new Stackedit();
-
-  // Open the iframe
-  stackedit.openFile({
-    name: 'Filename', // with an optional filename
-    content: {
-      text: el.value // and the Markdown content.
-    }
-  });
-
-  // Listen to StackEdit events and apply the changes to the textarea.
-  stackedit.on('fileChange', (file) => {
-    el.value = file.content.text;
-  });
   </script>
   <!-- Include the script that builds the page and powers Sveltia CMS -->
    <!-- <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script> -->
