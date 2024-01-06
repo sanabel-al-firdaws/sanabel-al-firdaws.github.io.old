@@ -37,7 +37,7 @@ export default defineConfig({
     components: {
       // Override the default `SocialIcons` component.
       ThemeProvider: './src/components/ThemeProvider.astro',
-      EditLink: './src/components/EditLink.astro',
+      
       ThemeSelect: './src/components/ThemeSelect.astro'
     },
     title: 'سنابل الفردوس',
