@@ -16,7 +16,13 @@ backend:
   repo: sanabel-al-firdaws/sanabel-al-firdaws.github.io
   branch: main
   base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev
-
+  commit_messages:
+    create: Create {{collection}} "{{title}}"
+    update: Update {{collection}} "{{title}}"
+    delete: Delete {{collection}} "{{title}}"
+    uploadMedia: Upload "{{path}}"
+    deleteMedia: Delete "{{path}}"
+  
 # * for Production
 
 collections:
