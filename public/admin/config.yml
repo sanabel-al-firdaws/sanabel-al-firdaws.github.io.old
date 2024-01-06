@@ -10,11 +10,12 @@
 # * for devolopment
 
 # * for Production
-
+publish_mode: editorial_workflow
 backend:
   name: github
   repo: sanabel-al-firdaws/sanabel-al-firdaws.github.io
   branch: main
+  open_authoring: true
   base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev
   commit_messages:
     create: "{{slug}} أضفت {{collection}}"
