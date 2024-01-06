@@ -61,7 +61,8 @@ export default defineConfig({
     },
     social: {
       github: 'https://github.com/sanabel-al-firdaws/sanabel-al-firdaws.github.io/',
-      gitlab: 'https://sanabel-al-firdaws.github.io/admin/index.html'
+      gitlab: 'https://sanabel-al-firdaws.github.io/admin/index.html',
+      'x.com': 'https://sanabel-al-firdaws.github.io/admin-en/index.html'
     },
     sidebar: [{
       label: 'كتاب العقيدة',
