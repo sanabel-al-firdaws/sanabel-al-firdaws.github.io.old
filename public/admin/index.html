@@ -17,6 +17,9 @@
   <!-- Include the script that builds the page and powers Static CMS -->
   <script src="https://unpkg.com/@staticcms/app@^4.0.0/dist/static-cms-app.js"></script>
   <script>
+  
+    window.CMS.init();
+
     const el = document.querySelector('textarea');
   const stackedit = new Stackedit();
 
@@ -32,7 +35,6 @@
   stackedit.on('fileChange', (file) => {
     el.value = file.content.text;
   });
-    window.CMS.init();
   </script>
   <!-- Include the script that builds the page and powers Sveltia CMS -->
    <!-- <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script> -->
