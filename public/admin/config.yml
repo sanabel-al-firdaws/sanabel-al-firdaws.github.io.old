@@ -40,6 +40,7 @@ collections:
       - label: رابط تعديل المقال
         name: editUrl
         widget: string 
+        required: false
       # - label: العلامات
       #   name: tags
       #   required: false
