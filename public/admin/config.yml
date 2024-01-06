@@ -15,6 +15,7 @@ backend:
   name: github
   repo: sanabel-al-firdaws/sanabel-al-firdaws.github.io
   branch: main
+  auth_scope: repo
   open_authoring: true
   base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev
   commit_messages:
