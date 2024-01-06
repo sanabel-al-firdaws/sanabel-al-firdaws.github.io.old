@@ -17,9 +17,9 @@ backend:
   branch: main
   base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev
   commit_messages:
-    create: أضفت {{collection}} "{{slug}}"
-    update: غيرت على {{collection}} "{{slug}}"
-    delete: حذفت {{collection}} "{{slug}}"
+    create: "أضفت {{collection}} {{slug}}"
+    update: " غيرت على {{collection}} {{slug}}"
+    delete: "حذفت {{collection}} {{slug}}"
     uploadMedia: Upload "{{path}}"
     deleteMedia: Delete "{{path}}"
   
