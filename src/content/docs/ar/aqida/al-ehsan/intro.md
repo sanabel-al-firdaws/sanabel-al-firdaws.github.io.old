@@ -4,7 +4,7 @@ title: مقدمة باب الإحسان
 ---
 {% ayah %} { ٱللَّهُ وَلِیُّ ٱلَّذِینَ ءَامَنُوا۟ یُخۡرِجُهُم مِّنَ ٱلظُّلُمَـٰتِ إِلَى ٱلنُّورِۖ وَٱلَّذِینَ كَفَرُوۤا۟ أَوۡلِیَاۤؤُهُمُ ٱلطَّـٰغُوتُ یُخۡرِجُونَهُم مِّنَ ٱلنُّورِ إِلَى ٱلظُّلُمَـٰتِۗ أُو۟لَـٰۤىِٕكَ أَصۡحَـٰبُ ٱلنَّارِۖ هُمۡ فِیهَا خَـٰلِدُونَ } {% /ayah %}  
 
-سُورَةُ البَقَرَةِ: ٢٥٧ 
+سُورَةُ البَقَرَةِ:٢٥٧ 
 
 
 
@@ -44,6 +44,6 @@ title: مقدمة باب الإحسان
 
 {% /tabs %}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyOTA4OTQwOCwxNjkxMzcxMDMyLC0xMT
-I4Nzg4NzIwLC01MTM0MzczNzAsNDQ3NDUxNzIyXX0=
+eyJoaXN0b3J5IjpbLTIxMzAxMDE0MjYsMTY5MTM3MTAzMiwtMT
+EyODc4ODcyMCwtNTEzNDM3MzcwLDQ0NzQ1MTcyMl19
 -->
