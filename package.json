@@ -6,7 +6,7 @@
     "dev": "astro dev ",
     "r2mdoc": " renamer --find /.md$/ --replace .mdoc src/content/**",
     "r2md": " renamer --find /.mdoc$/ --replace .md src/content/**",
-    "build": " astro check && astro build",
+    "build": "npx renamer --find /.md$/ --replace .mdoc 'src/content/**' && astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "generate-pwa-assets": "pwa-assets-generator --preset minimal public/favicon.svg"
