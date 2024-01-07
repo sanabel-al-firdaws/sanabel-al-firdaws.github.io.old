@@ -4,8 +4,6 @@ description: موقع يهتم بنشر العلم النافع
 template: splash
 hero:
   tagline: حلية طالب العلم بإسلوب سلس ومبسط
-#   image:
-#     file: ../../assets/houston.webp
   actions:
     - text: كتاب العقيدة
       link: /ar/aqida/intro/
@@ -20,3 +18,6 @@ hero:
     #   icon: external
 ---
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMzU1MzY4MzcyXX0=
+-->
