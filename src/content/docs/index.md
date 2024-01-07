@@ -1,20 +1,26 @@
+
 ---
 title: سنابل الفردوس
 description: موقع يهتم بنشر العلم النافع
 template: splash
 hero:
   tagline: حلية طالب العلم بإسلوب سلس ومبسط
-#   image:
-#     file: ../../assets/houston.webp
   actions:
+    - text: نبذة عن الموقع
+      link: /ar/intro
+      icon: left-arrow
+      variant: primary
     - text: كتاب العقيدة
-      link: /ar/aqida/intro/
+      link: /ar/aqida/intro
       icon: left-arrow
       variant: primary
     - text: المظهر
-      link:  /ar/theme/
+      link: /ar/theme
       icon: left-arrow
 	  variant: primary
- 
+
 ---
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzMzMDI3NDUwXX0=
+-->
