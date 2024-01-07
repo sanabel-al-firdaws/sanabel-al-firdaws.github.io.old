@@ -10,18 +10,16 @@ hero:
       icon: left-arrow
       variant: primary
     - text: كتاب العقيدة
-      link: /ar/aqida/intro/
+      link: /ar/aqida/intro
       icon: left-arrow
       variant: primary
     - text: المظهر
-      link:  /ar/theme/
+      link: /ar/theme
       icon: left-arrow
 	  variant: primary
-    # - text: Read the Starlight docs
-    #   link: https://starlight.astro.build
-    #   icon: external
+
 ---
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMjM0ODk1OV19
+eyJoaXN0b3J5IjpbLTE3MzMyNjI4NzJdfQ==
 -->
