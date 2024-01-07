@@ -5,7 +5,7 @@ template: splash
 hero:
   tagline: A website deticated to spreading the true message of islam
   actions:
-    - text: نبذة عن الموقع
+    - text: About Us
       link: /en/intro
       icon: left-arrow
       variant: primary
@@ -13,7 +13,7 @@ hero:
       link: /en/aqida/intro
       icon: left-arrow
       variant: primary
-    - text: المظهر
+    - text: Themes
       link: /ar/theme
       icon: left-arrow
 	  variant: primary
@@ -21,5 +21,5 @@ hero:
 ---
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk5NjExNzkzXX0=
+eyJoaXN0b3J5IjpbLTE3MjczNjI3NV19
 -->
