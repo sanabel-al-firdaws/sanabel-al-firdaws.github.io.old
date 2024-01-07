@@ -4,8 +4,8 @@ description: What are Sanabel Al Firdaws ?
 
 ---
 
-in the name of Allah the Most Gracious, the Most Merciful,  I greet you 
+in the name of Allah the Most Gracious, the Most Merciful,  I greet you with the same greeting 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3ODE5NjI4NiwtMTQyMjQyMzU0LC0yMD
+eyJoaXN0b3J5IjpbMTk1OTg1Mzk4NCwtMTQyMjQyMzU0LC0yMD
 g4NzQ2NjEyXX0=
 -->
