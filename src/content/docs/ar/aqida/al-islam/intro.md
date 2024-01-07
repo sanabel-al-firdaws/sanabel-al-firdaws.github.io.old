@@ -1,7 +1,7 @@
 ---
 title: مقدمة باب الإسلام
 filename: intro
-editUrl: https://sanabel-al-firdaws.github.io/admin/index.html#/collections/al-islam/entries/intro
+
 ---
 {% ayah %}
 
@@ -10,3 +10,6 @@ editUrl: https://sanabel-al-firdaws.github.io/admin/index.html#/collections/al-i
 {% /ayah %}
 
 [سُورَةُ البَقَرَةِ: ٢٥٧].
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMjA0NDUwNzgxMF19
+-->
