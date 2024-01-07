@@ -4,18 +4,22 @@ description: A website deticated to spreading the true message of islam
 template: splash
 hero:
   tagline: A website deticated to spreading the true message of islam
-#   image:
-#     file: ../../assets/houston.webp
   actions:
-    - text: The book of Aqida
-      link: /en/aqida/intro/
-      icon: right-arrow
+    - text: نبذة عن الموقع
+      link: /en/intro
+      icon: left-arrow
       variant: primary
-    - text: Themes
-      link: /en/theme
-      icon: right-arrow
+    - text: The Book Of Aqida
+      link: /en/aqida/intro
+      icon: left-arrow
       variant: primary
-   
+    - text: المظهر
+      link: /ar/theme
+      icon: left-arrow
+	  variant: primary
+
 ---
 
-
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbODk5NjExNzkzXX0=
+-->
