@@ -5,7 +5,7 @@ template: splash
 hero:
   tagline: A website dedicated to spreading the true message of Islam
   actions:
-    - text: About Us
+    - text: About The Project 
       link: /en/intro
       icon: left-arrow
       variant: primary
@@ -23,5 +23,5 @@ hero:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMTc4ODQxNywtNzkwMTkxMzIzXX0=
+eyJoaXN0b3J5IjpbMTMyNjEwNzk2MSwtNzkwMTkxMzIzXX0=
 -->
