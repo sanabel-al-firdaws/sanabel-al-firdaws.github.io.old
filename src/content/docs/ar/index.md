@@ -5,6 +5,10 @@ template: splash
 hero:
   tagline: حلية طالب العلم بإسلوب سلس ومبسط
   actions:
+      - text: كتاب العقيدة
+      link: /ar/aqida/intro/
+      icon: left-arrow
+      variant: primary
     - text: كتاب العقيدة
       link: /ar/aqida/intro/
       icon: left-arrow
@@ -19,5 +23,5 @@ hero:
 ---
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU1MzY4MzcyXX0=
+eyJoaXN0b3J5IjpbOTc2MTMxODBdfQ==
 -->
