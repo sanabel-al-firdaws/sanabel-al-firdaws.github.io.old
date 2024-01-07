@@ -37,7 +37,7 @@ export default defineConfig({
     components: {
       // Override the default `SocialIcons` component.
       ThemeProvider: './src/components/ThemeProvider.astro',
-      
+      EditLink: './src/components/EditLink.astro',
       ThemeSelect: './src/components/ThemeSelect.astro'
     },
     title: 'سنابل الفردوس',
@@ -61,8 +61,8 @@ export default defineConfig({
     },
     social: {
       github: 'https://github.com/sanabel-al-firdaws/sanabel-al-firdaws.github.io/',
-      gitlab: 'https://sanabel-al-firdaws.github.io/admin/index.html',
-      'x.com': 'https://sanabel-al-firdaws.github.io/admin-en/index.html'
+      // gitlab: 'https://sanabel-al-firdaws.github.io/admin/index.html',
+      // 'x.com': 'https://sanabel-al-firdaws.github.io/admin-en/index.html'
     },
     sidebar: [{
       label: 'كتاب العقيدة',
