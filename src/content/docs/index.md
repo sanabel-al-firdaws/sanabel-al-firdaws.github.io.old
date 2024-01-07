@@ -1,6 +1,5 @@
-
 ---
-title: سنابل الفردوس
+title:  سنابل الفردوس
 description: موقع يهتم بنشر العلم النافع
 template: splash
 hero:
@@ -22,5 +21,5 @@ hero:
 ---
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMzMDI3NDUwXX0=
+eyJoaXN0b3J5IjpbLTc0NzY3MDg2Nl19
 -->
