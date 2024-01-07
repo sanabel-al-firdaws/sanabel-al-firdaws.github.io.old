@@ -1,7 +1,6 @@
 ---
 title: مقدمة باب الإحسان
-filename: intro
-editUrl: https://sanabel-al-firdaws.github.io/admin/index.html#/collections/al-ehsan/entries/intro
+
 ---
 {% ayah %}
 
@@ -44,3 +43,6 @@ editUrl: https://sanabel-al-firdaws.github.io/admin/index.html#/collections/al-e
 {% /tab %}
 
 {% /tabs %}
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNDQ3NDUxNzIyXX0=
+-->
