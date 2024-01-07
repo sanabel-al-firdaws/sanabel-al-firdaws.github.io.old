@@ -1,9 +1,9 @@
 ---
-title: Sanabel AL Firdaws
-description: A website deticated to spreading the true message of islam
+title: Sanabel Al Firdaws
+description: A website dedicated to spreading the true message of Islam
 template: splash
 hero:
-  tagline: A website deticated to spreading the true message of islam
+  tagline: A website dedicated to spreading the true message of Islam
   actions:
     - text: About Us
       link: /en/intro
@@ -14,12 +14,12 @@ hero:
       icon: left-arrow
       variant: primary
     - text: Themes
-      link: /ar/theme
+      link: /en/theme
       icon: left-arrow
 	  variant: primary
 
 ---
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjczNjI3NV19
+eyJoaXN0b3J5IjpbLTc5MDE5MTMyM119
 -->
