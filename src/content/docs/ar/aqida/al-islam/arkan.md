@@ -1,6 +1,9 @@
 ---
 title: أركان الإسلام
 filename: arkan
-editUrl: https://sanabel-al-firdaws.github.io/admin/index.html#/collections/al-islam/entries/arkan
+
 ---
 فصل أركان الإسلام .
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTE3NDU0MTIyODZdfQ==
+-->
