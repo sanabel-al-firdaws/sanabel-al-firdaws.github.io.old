@@ -1,10 +1,12 @@
 ---
 title: مقدمة كتاب العقيدة
-filename: intro
-editUrl: https://sanabel-al-firdaws.github.io/admin/index.html#/collections/aqida/entries/intro
+
 ---
 مقدمة كتاب العقيدة
 
 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzNDU3ODkyMTJdfQ==
+-->
