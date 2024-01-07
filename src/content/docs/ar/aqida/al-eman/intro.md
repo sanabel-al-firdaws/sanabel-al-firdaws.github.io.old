@@ -1,7 +1,6 @@
 ---
 title: مقدمة باب الإيمان
-filename: intro
-editUrl: https://sanabel-al-firdaws.github.io/admin/index.html#/collections/al-eman/entries/intro
+
 ---
 {% ayah %}
 
@@ -12,3 +11,6 @@ editUrl: https://sanabel-al-firdaws.github.io/admin/index.html#/collections/al-e
 [سُورَةُ البَقَرَةِ: ٢٥٧]
 
  
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyMDk2NjE4NjBdfQ==
+-->
