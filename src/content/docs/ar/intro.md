@@ -9,9 +9,9 @@ template: splash
 
 {% ayah v=4 s=1 /%}  
 
-{% hadith  id="vgLc7Z6G" /%}
+{% hadith  id="L1qlXvoJ" /%}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTY0MzYwMjksLTEyNjE4NjEwNDksMz
-AzNzQxNDE0LC0yMDI0MTY0Mzg1XX0=
+eyJoaXN0b3J5IjpbLTE1ODY0NjkyNzQsLTE3OTY0MzYwMjksLT
+EyNjE4NjEwNDksMzAzNzQxNDE0LC0yMDI0MTY0Mzg1XX0=
 -->
