@@ -1,6 +1,6 @@
 ---
 title: مقدمة باب الإسلام
-filename: intro
+
 
 ---
   {% ayah v=4 s=1  /%}
@@ -19,6 +19,6 @@ filename: intro
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MDE0ODU4NCwxODg1Mzk2MTI1LDIwND
-Q1MDc4MTBdfQ==
+eyJoaXN0b3J5IjpbMTg4NDg5NjU2MCwxNjUwMTQ4NTg0LDE4OD
+UzOTYxMjUsMjA0NDUwNzgxMF19
 -->
