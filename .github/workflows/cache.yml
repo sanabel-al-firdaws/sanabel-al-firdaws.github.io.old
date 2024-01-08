@@ -1,4 +1,6 @@
 name: Clear all Github actions caches on sundays
+permissions: 
+      actions: write
 on:
   schedule:
     - cron: "0 0 * * 0"
