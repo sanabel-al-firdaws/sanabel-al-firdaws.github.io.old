@@ -1,6 +1,6 @@
 ---
 title: أركان الإسلام
-filename: arkan
+
 
 ---
 فصل أركان الإسلام .
@@ -9,6 +9,6 @@ filename: arkan
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTkwNzkxNzQsLTE3NDU0MTIyODZdfQ
-==
+eyJoaXN0b3J5IjpbMjA1MzY5ODM1NiwtMTE5OTA3OTE3NCwtMT
+c0NTQxMjI4Nl19
 -->
