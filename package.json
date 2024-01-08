@@ -3,10 +3,10 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "  astro dev  | node dorar-hadith-api/app.js ",
+    "dev": "  astro dev  | node dorar-hadith-api-1/app.js ",
     "r2mdoc": " renamer --find /.md$/ --replace .mdoc src/content/**",
     "r2md": " renamer --find /.mdoc$/ --replace .md src/content/**",
-    "build": " node 'dorar-hadith-api/app.js' | npx renamer --find /.md$/ --replace .mdoc 'src/content/**' &&  astro check && astro build",
+    "build": " node 'dorar-hadith-api-1/app.js' | npx renamer --find /.md$/ --replace .mdoc 'src/content/**' &&  astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "generate-pwa-assets": "pwa-assets-generator --preset minimal public/favicon.svg"
