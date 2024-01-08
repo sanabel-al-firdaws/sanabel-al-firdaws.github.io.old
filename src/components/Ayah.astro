@@ -12,7 +12,7 @@ if (!v) {
 if (!s) {
 	throw new Error('Missing prop `s` on `<ayah>` component.');
 }
-const Response =await fetch(`https://api.alquran.cloud/v1/ayah/${s}:${v}`)
+var Response =await fetch(`https://api.alquran.cloud/v1/ayah/${s}:${v}`)
 const data = await Response.json()
 ---
 
