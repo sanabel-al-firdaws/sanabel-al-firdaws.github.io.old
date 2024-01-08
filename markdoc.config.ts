@@ -16,9 +16,25 @@ export default defineMarkdocConfig({
     tabs: {
       render: component('./node_modules/@astrojs/starlight/user-components/Tabs.astro'),
     },
+    hadith: {
+      render: component('./src/components/Hadith.astro'),
+      attributes: {
+        id: {
+          type: String
+        },
+      }
+    },
     ayah: {
-      render: component('./src/components/Test.astro'),
-
+      render: component('./src/components/Ayah.astro'),
+      attributes: {
+        v: {
+          type: Number
+        },
+        s: {
+          type: Number
+        }
+        
+      }
     },
   },
 });

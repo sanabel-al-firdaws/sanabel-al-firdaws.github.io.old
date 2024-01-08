@@ -3,15 +3,23 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev ",
+    "dev": "  astro dev  | node dorar-hadith-api/app.js ",
     "r2mdoc": " renamer --find /.md$/ --replace .mdoc src/content/**",
     "r2md": " renamer --find /.mdoc$/ --replace .md src/content/**",
-    "build": "npx renamer --find /.md$/ --replace .mdoc 'src/content/**' && astro check && astro build",
+    "build": "npx renamer --find /.md$/ --replace .mdoc 'src/content/**' && node dorar-hadith-api/app.js | astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "generate-pwa-assets": "pwa-assets-generator --preset minimal public/favicon.svg"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "express-rate-limit": "^6.9.0",
+    "html-entities": "^2.3.3",
+    "linkedom": "^0.14.25",
+    "node-cache": "^5.1.2",
+    "node-fetch": "^2.6.9",
+
     "@astrojs/check": "^0.3.4",
     "@astrojs/markdoc": "^0.8.2",
     "@astrojs/starlight": "^0.15.1",
@@ -23,6 +31,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "nodemon": "^2.0.15",
     "@vite-pwa/assets-generator": "^0.2.2",
     "@vite-pwa/astro": "^0.2.0",
     "renamer": "^4.0.0",

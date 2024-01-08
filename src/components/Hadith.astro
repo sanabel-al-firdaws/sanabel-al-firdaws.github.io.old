@@ -1,0 +1,22 @@
+---
+interface Props {
+	id: String
+}
+
+const { id } = Astro.props;
+
+if (!id) {
+	throw new Error('Missing prop `id` on `<hadith>` component.');
+}
+const test = "/v1/site/hadith/45wXAdej"
+
+const Response =await fetch(`http://localhost:5000/v1/site/hadith/${id}`)
+const data = await Response.json()
+---
+
+<span class= " not-content">
+
+{data.data.hadith}
+
+
+</span>
