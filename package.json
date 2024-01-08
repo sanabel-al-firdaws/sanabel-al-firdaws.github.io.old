@@ -6,7 +6,7 @@
     "dev": "  astro dev  | node dorar-hadith-api-1/app.js ",
     "r2mdoc": " renamer --find /.md$/ --replace .mdoc src/content/**",
     "r2md": " renamer --find /.mdoc$/ --replace .md src/content/**",
-    "build": "  npx renamer --find /.md$/ --replace .mdoc \"src/content/**\" && conc \" node \"_dorar-hadith-api-1/app.js\" \" \" astro build \"    --kill-others  --success \"last\" ",
+    "build": "  npx renamer --find /.md$/ --replace .mdoc \"src/content/**\" && conc \" node \"_dorar-hadith-api-1/app.js\" \" \" astro build \"   --success \"first\" --kill-others",
     "preview": "astro preview",
     "astro": "astro",
     "generate-pwa-assets": "pwa-assets-generator --preset minimal public/favicon.svg"
