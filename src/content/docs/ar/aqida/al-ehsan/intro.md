@@ -2,7 +2,7 @@
 title: مقدمة باب الإحسان
 
 ---
-{% ayah v=4 s=1 /%}
+{% ayah v=1 s=3 /%}
 
 
 
@@ -44,7 +44,7 @@ title: مقدمة باب الإحسان
 
 {% /tabs %}
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NjkyMjY3MSwxMDU4MzE3Njc4LDE2OT
-EzNzEwMzIsLTExMjg3ODg3MjAsLTUxMzQzNzM3MCw0NDc0NTE3
-MjJdfQ==
+eyJoaXN0b3J5IjpbMTI3MTYxMjY1OCwtNDQ2OTIyNjcxLDEwNT
+gzMTc2NzgsMTY5MTM3MTAzMiwtMTEyODc4ODcyMCwtNTEzNDM3
+MzcwLDQ0NzQ1MTcyMl19
 -->
