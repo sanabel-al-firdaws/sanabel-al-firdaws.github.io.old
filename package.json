@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "  astro dev  | node dorar-hadith-api-1/app.js ",
+    "dev": "  conc \" node \"_dorar-hadith-api-1/app.js\" \" \" astro dev \"   --success \"first\" --kill-others",
     "r2mdoc": " renamer --find /.md$/ --replace .mdoc src/content/**",
     "r2md": " renamer --find /.mdoc$/ --replace .md src/content/**",
     "build": "  npx renamer --find /.md$/ --replace .mdoc \"src/content/**\" && conc \" node \"_dorar-hadith-api-1/app.js\" \" \" astro build \"   --success \"first\" --kill-others",
