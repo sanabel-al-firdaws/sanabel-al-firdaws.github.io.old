@@ -36,5 +36,13 @@ export default defineMarkdocConfig({
         
       }
     },
+    greet: {
+      render: component('./src/components/lit/my-element-client.astro'),
+      attributes: {
+        name: {
+          type: String
+        },
+      }
+    }
   },
 });
