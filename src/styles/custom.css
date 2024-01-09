@@ -1,4 +1,12 @@
+/* .ayah {
+	font-family: 'Amiri Quran';
+} */
+main {
+	font-family: 'new times roman';
+}
 :root{
+	
+
 
 	--sl-color-accent-low: #232424;
 	--sl-color-accent: #666b6a;
