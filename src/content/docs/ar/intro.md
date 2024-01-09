@@ -6,15 +6,16 @@ template: splash
 
 بسم الله الرحمن الرحيم
 
-{% ayah v=50 s=2 /%}
+
+{% ayah v=504 s=21 /%}
   
   
     
 
-{% hadith  id="L1qlXvoJ" /%}
+{% hadith  id="L1qlXvoJ45wXAdej" /%}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUzMzE2NzEwLC0xNTg2NDY5Mjc0LC0xNz
-k2NDM2MDI5LC0xMjYxODYxMDQ5LDMwMzc0MTQxNCwtMjAyNDE2
-NDM4NV19
+eyJoaXN0b3J5IjpbLTY1NTEwNTUwNyw3NTMzMTY3MTAsLTE1OD
+Y0NjkyNzQsLTE3OTY0MzYwMjksLTEyNjE4NjEwNDksMzAzNzQx
+NDE0LC0yMDI0MTY0Mzg1XX0=
 -->
