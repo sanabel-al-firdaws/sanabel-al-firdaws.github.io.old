@@ -7,12 +7,11 @@ template: splash
 بسم الله الرحمن الرحيم
 
 
-{% ayah v=504 s=21 /%}
+{% ayah v=54 s=2 /%}  
   
-  
-    
+---
 
-{% hadith  id="L1qlXvoJ45wXAdej" /%}
+{% hadith  id="hHwPuwmA" /%}
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTY1NTEwNTUwNyw3NTMzMTY3MTAsLTE1OD
