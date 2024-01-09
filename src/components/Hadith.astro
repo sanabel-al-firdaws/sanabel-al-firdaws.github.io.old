@@ -14,10 +14,9 @@ let Response =await fetch(`http://localhost:5000/v1/site/hadith/${id}`)
 let data = await Response.json()
 ---
 
-
-
 	<span class=" pbuh">قال رسول الله صلى الله عليه وسلم: </span>
-	{data.data.hadith}
+<br>
+	<span class="hadith">{data.data.hadith}</span>
 	<hr>
 	الراوي:
 	{data.data.rawi} 
@@ -36,5 +35,8 @@ let data = await Response.json()
 <style is:inline>
 	.pbuh {
 		color: var(--sl-color-accent-high);
+	}
+	.hadith{
+		color: var(--sl-color-gray-1);
 	}
 </style>

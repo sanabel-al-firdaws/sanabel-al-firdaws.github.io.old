@@ -3,17 +3,14 @@ title: نبذة عن الموقع
 template: splash
 
 ---
+قال تعالى  {% ayah v=50 s=3 /%}  و قال تعالى مخبرا عن قول نبيه عيسى  عليه السلام {% ayah v=36 s=19 /%}  
+     
 
-
- {% ayah v=4 s=1 /%} و قال تعالى {% ayah v=4 s=1 /%} قال تعالى   
-   
-   
-
-{% hadith  id="45wXAdej" /%} قال رسول الله صلى الله عليه وسلم 
+{% hadith  id="45wXAdej" /%}
 
 
 
-{% greet name="Bob" /%}
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTg5MDA2MjQ4NywzMDM3NDE0MTRdfQ==
 -->
