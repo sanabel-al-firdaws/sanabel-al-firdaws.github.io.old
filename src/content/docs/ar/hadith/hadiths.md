@@ -5,6 +5,10 @@ title: كتاب الحديث
   
 
 ---
+{% ayah v=54 s=2 /%}
+
+{% hadith  id="45wXAdej" /%}
+{% hadith  id="45wXAdej" /%}  
 
   
   
