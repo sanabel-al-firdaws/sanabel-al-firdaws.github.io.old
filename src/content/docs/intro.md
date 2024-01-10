@@ -1,8 +1,8 @@
 ---
-title: نبذة عن الموقع
+titlنبذة عن الموقع
 template: splash
 
-
+{% ayah v=54 s=2 /%}  
   
 ---
 
@@ -12,6 +12,7 @@ template: splash
 {% hadith  id="45wXAdej" /%}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg0Mjk0MjUwLC00NzA1NTY5NDYsMTI1Mj
-U4MjQzMCwtODkwMDYyNDg3LDMwMzc0MTQxNF19
+eyJoaXN0b3J5IjpbODE0MTc5NDE3LDY4NDI5NDI1MCwtNDcwNT
+U2OTQ2LDEyNTI1ODI0MzAsLTg5MDA2MjQ4NywzMDM3NDE0MTRd
+fQ==
 -->
