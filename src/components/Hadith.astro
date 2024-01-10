@@ -13,115 +13,39 @@ let Response = await fetch(`http://localhost:5000/v1/site/hadith/${id}`);
 let data = await Response.json();
 
 
-import CardGrid from "./starlight/CardGrid.astro"
+
 import Card  from './starlight/Card.astro'
 ---
 
-<div class="container">
-	<span class="pbuh"></span>
-	<br />
+
+
+		<Card title=" ">  
+			<span class="hadith">{data.data.hadith}</span>
+		<Card title='الراوي:' >
+			
+			{data.data.rawi}
+		</Card>
+		<Card title='المحدث:'>
+			
+			{data.data.mohdith}
+		</Card>
+
+		<Card title='المصدر:' >
+		
+			{data.data.book}
+		</Card>
+		<Card title='الصفحة أو الرقم :'>
+			
+			{data.data.numberOrPage}
+		</Card>
+
+		<Card title='خلاصة حكم المحدث :'>
+			
+			{data.data.grade}
+		</Card>
+		</Card>
 	
 
-	<CardGrid stagger="true">
-		<Card title=" ">  
-			<span class="hadith">{data.data.hadith}</span>
-		<Card title='الراوي:' >
-			
-			{data.data.rawi}
-		</Card>
-		<Card title='المحدث:'>
-			
-			{data.data.mohdith}
-		</Card>
-
-		<Card title='المصدر:' >
-		
-			{data.data.book}
-		</Card>
-		<Card title='الصفحة أو الرقم :'>
-			
-			{data.data.numberOrPage}
-		</Card>
-
-		<Card title='خلاصة حكم المحدث :'>
-			
-			{data.data.grade}
-		</Card>
-		</Card>
-		<Card title=" ">  
-			<span class="hadith">{data.data.hadith}</span>
-		<Card title='الراوي:' >
-			
-			{data.data.rawi}
-		</Card>
-		<Card title='المحدث:'>
-			
-			{data.data.mohdith}
-		</Card>
-
-		<Card title='المصدر:' >
-		
-			{data.data.book}
-		</Card>
-		<Card title='الصفحة أو الرقم :'>
-			
-			{data.data.numberOrPage}
-		</Card>
-
-		<Card title='خلاصة حكم المحدث :'>
-			
-			{data.data.grade}
-		</Card>
-		</Card>	<Card title=" ">  
-			<span class="hadith">{data.data.hadith}</span>
-		<Card title='الراوي:' >
-			
-			{data.data.rawi}
-		</Card>
-		<Card title='المحدث:'>
-			
-			{data.data.mohdith}
-		</Card>
-
-		<Card title='المصدر:' >
-		
-			{data.data.book}
-		</Card>
-		<Card title='الصفحة أو الرقم :'>
-			
-			{data.data.numberOrPage}
-		</Card>
-
-		<Card title='خلاصة حكم المحدث :'>
-			
-			{data.data.grade}
-		</Card>
-		</Card>	<Card title=" ">  
-			<span class="hadith">{data.data.hadith}</span>
-		<Card title='الراوي:' >
-			
-			{data.data.rawi}
-		</Card>
-		<Card title='المحدث:'>
-			
-			{data.data.mohdith}
-		</Card>
-
-		<Card title='المصدر:' >
-		
-			{data.data.book}
-		</Card>
-		<Card title='الصفحة أو الرقم :'>
-			
-			{data.data.numberOrPage}
-		</Card>
-
-		<Card title='خلاصة حكم المحدث :'>
-			
-			{data.data.grade}
-		</Card>
-		</Card>
-</CardGrid>
 
 <style is:inline>
 	.pbuh {

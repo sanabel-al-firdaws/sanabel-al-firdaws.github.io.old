@@ -1,6 +1,6 @@
 ---
 title: نبذة عن الموقع
-template: splash
+
 
 ---
 
@@ -11,6 +11,10 @@ template: splash
   
 ---
 
+# hm
+
+{% hadith  id="hHwPuwmA" /%}
+{% hadith  id="hHwPuwmA" /%}
 {% hadith  id="hHwPuwmA" /%}
 
 <!--stackedit_data:
