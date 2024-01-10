@@ -27,13 +27,9 @@ title: كتاب الحديث
 
 ## إثبات صفة الرجل لله سبحانه
 
-تَحاجَّتِ الجَنَّةُ والنَّارُ؛ فَقالتِ النَّارُ: أُوثِرْتُ بالمُتَكَبِّرِينَ والمُتَجَبِّرِينَ، وقالتِ الجَنَّةُ: ما لي لا يَدْخُلُنِي إلَّا ضُعَفاءُ النَّاسِ وسَقَطُهُمْ؟ قالَ اللَّهُ تَبارَكَ وتَعالَى لِلْجَنَّةِ: أنْتِ رَحْمَتي، أرْحَمُ بكِ مَن أشاءُ مِن عِبادِي، وقالَ لِلنَّارِ: إنَّما أنْتِ عَذابِي، أُعَذِّبُ بكِ مَن أشاءُ مِن عِبادِي، ولِكُلِّ واحِدَةٍ منهما مِلْؤُها، فأمَّا النَّارُ فلا تَمْتَلِئُ حتَّى يَضَعَ رِجْلَهُ، فَتَقُولُ: قَطْ قَطْ، فَهُنالِكَ تَمْتَلِئُ ويُزْوَى بَعْضُها إلى بَعْضٍ، ولا يَظْلِمُ اللَّهُ عزَّ وجلَّ مِن خَلْقِهِ أحَدًا، وأَمَّا الجَنَّةُ فإنَّ اللَّهَ عزَّ وجلَّ يُنْشِئُ لها خَلْقًا.
 
-الراوي : أبو هريرة | المحدث : البخاري | المصدر : صحيح البخاري
+{% hadith  id="Wopzf64O" /%}  
 
-الصفحة أو الرقم: 4850 | خلاصة حكم المحدث : [صحيح]
-
-التخريج : أخرجه البخاري (4850)، ومسلم (2846
 
 # كتاب الصلاة
 
@@ -1787,10 +1783,10 @@ title: كتاب الحديث
 
 /
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTUxNDIzMDIsLTE2NTY0MjIzMjgsLT
-kxNjQ3NzM5OSwtMjA0NzUxNzQzNSwtMTExMTg2NTg5NywtMTQ2
-NTY5MzE1MywtMTExMTg2NTg5NywtMTE2Njg2MjE0MywxMjM2Mz
-Y5ODMyLC0xMDQ1MzQ2MzQ2LC0xMTI5MTIxMDA1LC0xMDQ1MzQ2
-MzQ2LC00MTkwMDU5OCwtMjIwMDU4NTQ4LC0xOTgzMjA4ODgxLC
-01MDk5NzYxNzddfQ==
+eyJoaXN0b3J5IjpbLTEwNjYwOTI1NjQsLTE4OTUxNDIzMDIsLT
+E2NTY0MjIzMjgsLTkxNjQ3NzM5OSwtMjA0NzUxNzQzNSwtMTEx
+MTg2NTg5NywtMTQ2NTY5MzE1MywtMTExMTg2NTg5NywtMTE2Nj
+g2MjE0MywxMjM2MzY5ODMyLC0xMDQ1MzQ2MzQ2LC0xMTI5MTIx
+MDA1LC0xMDQ1MzQ2MzQ2LC00MTkwMDU5OCwtMjIwMDU4NTQ4LC
+0xOTgzMjA4ODgxLC01MDk5NzYxNzddfQ==
 -->
