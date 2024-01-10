@@ -2,18 +2,14 @@
 title: نبذة عن الموقع
 
 ---
-title: hm
-
-
-
----
 بسم الله الرحمن الرحيم
+
+
 {% ayah v=54 s=2 /%}
 
 {% hadith  id="45wXAdej" /%}
 {% hadith  id="45wXAdej" /%}  
 
----
 
 {% hadith  id="L1qlXvoJ" /%}
 
