@@ -1,5 +1,5 @@
 ---
-titlنبذة عن الموقع
+title: نبذة عن الموقع
 template: splash
 
 {% ayah v=54 s=2 /%}  
@@ -14,6 +14,6 @@ template: splash
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjc5NDQ1MTksLTQ3MDU1Njk0NiwxMj
-UyNTgyNDMwLC04OTAwNjI0ODcsMzAzNzQxNDE0XX0=
+eyJoaXN0b3J5IjpbNjg0Mjk0MjUwLC00NzA1NTY5NDYsMTI1Mj
+U4MjQzMCwtODkwMDYyNDg3LDMwMzc0MTQxNF19
 -->
