@@ -1,16 +1,14 @@
 ---
 title: نبذة عن الموقع
 
+---
+title: hm
+
+
 
 ---
-
 بسم الله الرحمن الرحيم
-
-
 {% ayah v=54 s=2 /%}  
-  
----
-
 # hm
 
 {% hadith  id="hHwPuwmA" /%}
@@ -18,7 +16,7 @@ title: نبذة عن الموقع
 {% hadith  id="hHwPuwmA" /%}
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NTEwNTUwNyw3NTMzMTY3MTAsLTE1OD
-Y0NjkyNzQsLTE3OTY0MzYwMjksLTEyNjE4NjEwNDksMzAzNzQx
-NDE0LC0yMDI0MTY0Mzg1XX0=
+eyJoaXN0b3J5IjpbLTEzODQ2NDQzOSwtNjU1MTA1NTA3LDc1Mz
+MxNjcxMCwtMTU4NjQ2OTI3NCwtMTc5NjQzNjAyOSwtMTI2MTg2
+MTA0OSwzMDM3NDE0MTQsLTIwMjQxNjQzODVdfQ==
 -->
