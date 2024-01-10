@@ -1,7 +1,16 @@
 @font-face {
     font-family: 'Amiri Quran';
     /* Use a relative path to the local font file in `url()`. */
-    src: url('./CustomFont.ttf') format('ttf');
+    src: url('./AmiriQuran-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'hafs';
+    /* Use a relative path to the local font file in `url()`. */
+    src: url('./HafsSmart_08.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

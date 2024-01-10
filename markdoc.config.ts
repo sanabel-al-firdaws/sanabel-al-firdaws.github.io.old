@@ -24,10 +24,6 @@ export default defineMarkdocConfig({
         },
       }
     },
-    hadithgroup: {
-      render: component('./src/components/HadithGroup.astro'),
-
-    },
     ayah: {
       render: component('./src/components/Ayah.astro'),
       attributes: {

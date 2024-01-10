@@ -32,7 +32,7 @@ export default defineConfig({
     customCss: [
     // Relative path to your custom CSS file
     './src/styles/custom.css',
-    './src/fonts/font-face.css',
+    './src/fonts/font-face.css'
   ],
     components: {
       // Override the default `SocialIcons` component.

@@ -17,6 +17,8 @@ let data = await Response.json();
 import Card  from './starlight/Card.astro'
 ---
 
+<span class="hadith">{data.data.hadith}</span>
+<!-- 
 
 
 		<Card title=" ">  
@@ -44,16 +46,14 @@ import Card  from './starlight/Card.astro'
 			{data.data.grade}
 		</Card>
 		</Card>
-	
+	 -->
 
 
 <style is:inline>
-	.pbuh {
-		color: var(--sl-color-accent-high);
-	}
+
 	.hadith {
 		color: var(--sl-color-gray-1);
-		font-size: var(  --sl-text-3xl);
+	
 	}
 
 

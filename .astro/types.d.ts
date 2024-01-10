@@ -229,13 +229,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdoc"] };
-"ar/hadith/hadiths.mdoc": {
-	id: "ar/hadith/hadiths.mdoc";
-  slug: "ar/hadith/hadiths";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".mdoc"] };
 "ar/index.mdoc": {
 	id: "ar/index.mdoc";
   slug: "ar";
