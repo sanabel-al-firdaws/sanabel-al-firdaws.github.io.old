@@ -1,32 +1,17 @@
+---
+title: نبذة عن الموقع
+template: splash
 
 ---
+قال تعالى  {% ayah v=50 s=3 /%}  و قال تعالى مخبرا عن قول نبيه عيسى  عليه السلام {% ayah v=36 s=19 /%}  
+     
 
-title: About The Project
+{% hadith  id="45wXAdej" /%}
 
-description: What are Sanabel Al Firdaws ?
 
-  
 
----
-
-  
-
-## In the name of Allah the Most Gracious, the Most Merciful, I greet you with the same greeting of Mosses Muhammad and Aisa peace be upon them, Assalamualaikum Warahmatullahi Wabarakatuh.
-
-Why did I make such project ? its for the lack of Simple ,Easy to use, Completely free, way to learn about Islam.
-
-  
-
-This issue isn't just for English speakers but also for Arabic speakers ...You can feel lost not knowing where to go if you want to find a peice of information about prayer, fasting , Or just wondering about is something halal or not, This should be
 
 <!--stackedit_data:
-
-eyJoaXN0b3J5IjpbMTM4NDYwOTcwMywxNzIzOTI3MTE5LDEwNT
-
-U1NzI4NDIsLTE0MjI0MjM1NCwtMjA4ODc0NjYxMl19
-
--->
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MjU4MjQzMCwtODkwMDYyNDg3LDMwMz
-c0MTQxNF19
+eyJoaXN0b3J5IjpbLTQ3MDU1Njk0NiwxMjUyNTgyNDMwLC04OT
+AwNjI0ODcsMzAzNzQxNDE0XX0=
 -->
