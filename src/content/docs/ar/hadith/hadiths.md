@@ -39,10 +39,6 @@ title: كتاب الحديث
 
 ---
 
-خَرَجَ رَسولُ اللهِ صَلَّى اللَّهُ عليه وسلَّمَ علَى أَهْلِ قُبَاءَ وَهُمْ يُصَلُّونَ، فَقالَ: صَلَاةُ الأوَّابِينَ إذَا رَمِضَتِ الفِصَالُ.
-
-الراوي : زيد بن أرقم | المحدث : مسلم | المصدر : صحيح مسلم | الصفحة أو الرقم : 748 | خلاصة حكم المحدث : [صحيح]
-
 أنَّ زَيْدَ بنَ أَرْقَمَ رَأَى قَوْمًا يُصَلُّونَ مِنَ الضُّحَى، فَقالَ: أَمَا لقَدْ عَلِمُوا أنَّ الصَّلَاةَ في غيرِ هذِه السَّاعَةِ أَفْضَلُ؛ إنَّ رَسولَ اللهِ صَلَّى اللَّهُ عليه وسلَّمَ قالَ: صَلَاةُ الأوَّابِينَ حِينَ تَرْمَضُ الفِصَالُ.
 
 الراوي : زيد بن أرقم | المحدث : مسلم | المصدر : صحيح مسلم
@@ -1783,10 +1779,10 @@ title: كتاب الحديث
 
 /
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjYwOTI1NjQsLTE4OTUxNDIzMDIsLT
-E2NTY0MjIzMjgsLTkxNjQ3NzM5OSwtMjA0NzUxNzQzNSwtMTEx
-MTg2NTg5NywtMTQ2NTY5MzE1MywtMTExMTg2NTg5NywtMTE2Nj
-g2MjE0MywxMjM2MzY5ODMyLC0xMDQ1MzQ2MzQ2LC0xMTI5MTIx
-MDA1LC0xMDQ1MzQ2MzQ2LC00MTkwMDU5OCwtMjIwMDU4NTQ4LC
-0xOTgzMjA4ODgxLC01MDk5NzYxNzddfQ==
+eyJoaXN0b3J5IjpbOTc2NzM0MTM3LC0xODk1MTQyMzAyLC0xNj
+U2NDIyMzI4LC05MTY0NzczOTksLTIwNDc1MTc0MzUsLTExMTE4
+NjU4OTcsLTE0NjU2OTMxNTMsLTExMTE4NjU4OTcsLTExNjY4Nj
+IxNDMsMTIzNjM2OTgzMiwtMTA0NTM0NjM0NiwtMTEyOTEyMTAw
+NSwtMTA0NTM0NjM0NiwtNDE5MDA1OTgsLTIyMDA1ODU0OCwtMT
+k4MzIwODg4MSwtNTA5OTc2MTc3XX0=
 -->
