@@ -2,14 +2,14 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    paths:
-    - 'src/content/docs/_run.md'
-    - 'src/content/docs/ar/_run.md'
-    - 'src/content/docs/en/_run.md'
+  #  paths:
+  # - 'src/content/docs/_run.md'
+  # - 'src/content/docs/ar/_run.md'
+  # - 'src/content/docs/en/_run.md'
   # Trigger the workflow every time you push to the `main` branch
   # Using a different branch name? Replace `main` with your branch’s name
   # push:
-  #   branches: [ main ]
+    branches: [ main ]
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
