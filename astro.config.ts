@@ -60,9 +60,9 @@ export default defineConfig({
       baseUrl: 'https://github.com/sanabel-al-firdaws/sanabel-al-firdaws.github.io/edit/main/'
     },
     social: {
-      github: 'https://github.com/sanabel-al-firdaws/sanabel-al-firdaws.github.io/'
-      // gitlab: 'https://sanabel-al-firdaws.github.io/admin/index.html',
-      // 'x.com': 'https://sanabel-al-firdaws.github.io/admin-en/index.html'
+      github: 'https://github.com/sanabel-al-firdaws/sanabel-al-firdaws.github.io/',
+      gitlab: 'https://sanabel-al-firdaws.github.io/admin/index.html',
+      'x.com': 'https://sanabel-al-firdaws.github.io/admin-en/index.html'
     },
     sidebar: [{
       label: 'كتاب العقيدة',
