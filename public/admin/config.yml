@@ -40,7 +40,7 @@ collections:
       - label: محتوى المقال
         name: body
         widget: markdown
-        show_raw: true
+         
 
       - label: عنوان المقال
         name: title
@@ -88,7 +88,7 @@ collections:
       - label: محتوى المقال
         name: body
         widget: markdown
-        show_raw: true
+         
       - label: عنوان المقال
         name: title
         widget: string
@@ -131,7 +131,7 @@ collections:
       - label: محتوى المقال
         name: body
         widget: markdown
-        show_raw: true
+         
 
       - label: عنوان المقال
         name: title
@@ -178,7 +178,7 @@ collections:
       - label: محتوى المقال
         name: body
         widget: markdown
-        show_raw: true
+         
 
   
       - label: عنوان المقال
@@ -227,7 +227,7 @@ collections:
       - label: محتوى المقال
         name: body
         widget: markdown
-        show_raw: true
+         
       - label: عنوان المقال
         name: title
         widget: string
