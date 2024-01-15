@@ -40,6 +40,7 @@ collections:
       - label: محتوى المقال
         name: body
         widget: markdown
+        show_raw: true
 
       - label: عنوان المقال
         name: title
@@ -47,12 +48,27 @@ collections:
 
       - label: رابط المقال
         name: filename
+        hint: الرابط لازم يكون بالانجليزي وبدون فواصل
         widget: string
 
-      - label: رابط تعديل المقال
-        name: editUrl
-        widget: string 
-        required: false
+      - label: تاريخ تعديل المقال 
+        name: lastUpdated
+        widget: 'datetime' # e.g. 24.12.2022
+        time_format: false
+        format: 'yyyy-MM-dd' # e.g. 2022-12-24
+      - label: القائمة
+        widget: object
+        name: sidebar
+        fields:
+          -  name: order
+             label: الترتيب
+             widget: number
+             default: 1
+             value_type: int
+             min: 1
+     
+
+
       # - label: العلامات
       #   name: tags
       #   required: false
@@ -72,18 +88,30 @@ collections:
       - label: محتوى المقال
         name: body
         widget: markdown
+        show_raw: true
       - label: عنوان المقال
         name: title
         widget: string
 
       - label: رابط المقال
         name: filename
-        widget: string
-
-      - label: رابط تعديل المقال
-        name: editUrl
-        widget: string 
-        required: false
+        hint: الرابط لازم يكون بالانجليزي وبدون فواصل
+      - label: تاريخ تعديل المقال 
+        name: lastUpdated
+        widget: 'datetime' # e.g. 24.12.2022
+        time_format: false
+        format: 'yyyy-MM-dd' # e.g. 2022-12-24
+      - label: القائمة
+        widget: object
+        name: sidebar
+        fields:
+          -  name: order
+             label: الترتيب
+             widget: number
+             default: 1
+             value_type: int
+             min: 1
+     
       # - label: العلامات
       #   name: tags
       #   required: false
@@ -104,18 +132,29 @@ collections:
         name: body
         widget: markdown
         show_raw: true
+
       - label: عنوان المقال
         name: title
         widget: string
-
       - label: رابط المقال
         name: filename
-        widget: string
-
-      - label: رابط تعديل المقال
-        name: editUrl
-        widget: string 
-        required: false
+        hint: الرابط لازم يكون بالانجليزي وبدون فواصل
+      - label: تاريخ تعديل المقال 
+        name: lastUpdated
+        widget: 'datetime' # e.g. 24.12.2022
+        time_format: false
+        format: 'yyyy-MM-dd' # e.g. 2022-12-24
+      - label: القائمة
+        widget: object
+        name: sidebar
+        fields:
+          -  name: order
+             label: الترتيب
+             widget: number
+             default: 1
+             value_type: int
+             min: 1
+     
       # - label: العلامات
       #   name: tags
       #   required: false
@@ -139,17 +178,33 @@ collections:
       - label: محتوى المقال
         name: body
         widget: markdown
+        show_raw: true
+
+  
       - label: عنوان المقال
         name: title
         widget: string
 
       - label: رابط المقال
         name: filename
+        hint: الرابط لازم يكون بالانجليزي وبدون فواصل
         widget: string
-      - label: رابط تعديل المقال
-        name: editUrl
-        widget: string 
-        required: false
+      - label: تاريخ تعديل المقال 
+        name: lastUpdated
+        widget: 'datetime' # e.g. 24.12.2022
+        time_format: false
+        format: 'yyyy-MM-dd' # e.g. 2022-12-24
+      - label: القائمة
+        widget: object
+        name: sidebar
+        fields:
+          -  name: order
+             label: الترتيب
+             widget: number
+             default: 1
+             value_type: int
+             min: 1
+     
       # - label: العلامات
       #   name: tags
       #   required: false
@@ -163,8 +218,7 @@ collections:
     # path: '/aqida/al-ehsan/{{fields.path}}.{{extension}}'
 
 
-    # nested:
-    #   depth: 100 # max depth to show in the collection tree
+
   - label: باب الإحسان
     name: al-ehsan
     create: true
@@ -173,17 +227,29 @@ collections:
       - label: محتوى المقال
         name: body
         widget: markdown
+        show_raw: true
       - label: عنوان المقال
         name: title
         widget: string
-
       - label: رابط المقال
         name: filename
-        widget: string
-      - label: رابط تعديل المقال
-        name: editUrl
-        widget: string 
-        required: false
+        hint: الرابط لازم يكون بالانجليزي وبدون فواصل
+      - label: تاريخ تعديل المقال 
+        name: lastUpdated
+        widget: 'datetime' # e.g. 24.12.2022
+        time_format: false
+        format: 'yyyy-MM-dd' # e.g. 2022-12-24
+      - label: القائمة
+        widget: object
+        name: sidebar
+        fields:
+          -  name: order
+             label: الترتيب
+             widget: number
+             default: 1
+             value_type: int
+             min: 1
+     
       # - label: العلامات
       #   name: tags
       #   required: false

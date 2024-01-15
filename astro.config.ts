@@ -111,14 +111,10 @@ export default defineConfig({
       translations: {
         'en': 'The Book Of Hadith'
       },
-      items: [{
-        collapsed: true,
-        label: 'أحاديث مختارة',
-        translations: {
-          'en': 'Collection of hadiths'
-        },
-        link: '/hadith/hadiths/'
-      }]
+      autogenerate: {
+        directory: 'hadith'
+      }
+    
     }
     // {
     // 	label: 'Reference',

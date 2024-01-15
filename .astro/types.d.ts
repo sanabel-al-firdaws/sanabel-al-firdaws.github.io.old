@@ -174,11 +174,11 @@ declare module 'astro:content' {
 			? {
 					collection: C;
 					slug: ValidContentEntrySlug<C>;
-			  }
+				}
 			: {
 					collection: C;
 					id: keyof DataEntryMap[C];
-			  }
+				}
 	>;
 	// Allow generic `string` to avoid excessive type errors in the config
 	// if `dev` is not running to update as you edit.
@@ -199,126 +199,140 @@ declare module 'astro:content' {
   slug: "ar/aqida/al-ehsan/intro";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
+} & { render(): Render[".mdoc"] };
+"ar/aqida/al-eman/arkan.mdoc": {
+	id: "ar/aqida/al-eman/arkan.mdoc";
+  slug: "ar/aqida/al-eman/arkan";
+  body: string;
+  collection: "docs";
+  data: any
 } & { render(): Render[".mdoc"] };
 "ar/aqida/al-eman/intro.mdoc": {
 	id: "ar/aqida/al-eman/intro.mdoc";
   slug: "ar/aqida/al-eman/intro";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdoc"] };
 "ar/aqida/al-islam/arkan.mdoc": {
 	id: "ar/aqida/al-islam/arkan.mdoc";
   slug: "ar/aqida/al-islam/arkan";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdoc"] };
 "ar/aqida/al-islam/intro.mdoc": {
 	id: "ar/aqida/al-islam/intro.mdoc";
   slug: "ar/aqida/al-islam/intro";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdoc"] };
 "ar/aqida/intro.mdoc": {
 	id: "ar/aqida/intro.mdoc";
   slug: "ar/aqida/intro";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
+} & { render(): Render[".mdoc"] };
+"ar/hadith/one.mdoc": {
+	id: "ar/hadith/one.mdoc";
+  slug: "ar/hadith/one";
+  body: string;
+  collection: "docs";
+  data: any
 } & { render(): Render[".mdoc"] };
 "ar/index.mdoc": {
 	id: "ar/index.mdoc";
   slug: "ar";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdoc"] };
 "ar/intro.mdoc": {
 	id: "ar/intro.mdoc";
   slug: "ar/intro";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdoc"] };
 "ar/theme.mdx": {
 	id: "ar/theme.mdx";
   slug: "ar/theme";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdx"] };
 "en/aqida/al-ehsan/intro.mdoc": {
 	id: "en/aqida/al-ehsan/intro.mdoc";
   slug: "en/aqida/al-ehsan/intro";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdoc"] };
 "en/aqida/al-eman/intro.mdoc": {
 	id: "en/aqida/al-eman/intro.mdoc";
   slug: "en/aqida/al-eman/intro";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdoc"] };
 "en/aqida/al-islam/arkan.mdoc": {
 	id: "en/aqida/al-islam/arkan.mdoc";
   slug: "en/aqida/al-islam/arkan";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdoc"] };
 "en/aqida/al-islam/intro.mdoc": {
 	id: "en/aqida/al-islam/intro.mdoc";
   slug: "en/aqida/al-islam/intro";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdoc"] };
 "en/aqida/intro.mdoc": {
 	id: "en/aqida/intro.mdoc";
   slug: "en/aqida/intro";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdoc"] };
 "en/index.mdoc": {
 	id: "en/index.mdoc";
   slug: "en";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdoc"] };
 "en/intro.mdoc": {
 	id: "en/intro.mdoc";
   slug: "en/intro";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdoc"] };
 "en/theme.mdx": {
 	id: "en/theme.mdx";
   slug: "en/theme";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdx"] };
 "index.mdoc": {
 	id: "index.mdoc";
   slug: "index";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdoc"] };
 "intro.mdoc": {
 	id: "intro.mdoc";
   slug: "intro";
   body: string;
   collection: "docs";
-  data: InferEntrySchema<"docs">
+  data: any
 } & { render(): Render[".mdoc"] };
 };
 
@@ -330,5 +344,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = typeof import("../src/content/config");
+	type ContentConfig = never;
 }
