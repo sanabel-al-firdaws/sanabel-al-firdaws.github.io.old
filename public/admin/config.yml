@@ -30,7 +30,7 @@ backend:
     deleteMedia: Delete "{{path}}"
   
 # * for Production
-
+disable_local_backup: true
 collections:
   - label: كتاب العقيدة
     name: aqida
