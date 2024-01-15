@@ -2,32 +2,32 @@
 # when using the default proxy server port
 # * for devolopment
 
-local_backend: true
+# local_backend: true
 
-backend:
-  name: git-gateway
-editor:
-  preview: false
-  frame: false
+# backend:
+#   name: git-gateway
+# editor:
+#   preview: false
+#   frame: false
 
 # * for devolopment
 
 # * for Production
 
-# publish_mode: editorial_workflow
-# backend:
-#   name: github
-#   repo: sanabel-al-firdaws/sanabel-al-firdaws.github.io
-#   branch: main
-#   auth_scope: repo
-#   open_authoring: true
-#   base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev
-#   commit_messages:
-#     create: "{{slug}} أضفت {{collection}}"
-#     update: "{{slug}} غيرت على {{collection}}"
-#     delete: "{{slug}} حذفت {{collection}}"
-#     uploadMedia: Upload "{{path}}"
-#     deleteMedia: Delete "{{path}}"
+publish_mode: editorial_workflow
+backend:
+  name: github
+  repo: sanabel-al-firdaws/sanabel-al-firdaws.github.io
+  branch: main
+  auth_scope: repo
+  open_authoring: true
+  base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev
+  commit_messages:
+    create: "{{slug}} أضفت {{collection}}"
+    update: "{{slug}} غيرت على {{collection}}"
+    delete: "{{slug}} حذفت {{collection}}"
+    uploadMedia: Upload "{{path}}"
+    deleteMedia: Delete "{{path}}"
   
 # * for Production
 
