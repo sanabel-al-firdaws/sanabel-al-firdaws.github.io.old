@@ -5,11 +5,14 @@
 # local_backend: true
 
 # backend:
-#   name: local
-
+#   name: git-gateway
+# editor:
+#   preview: false
+#   frame: false
 # * for devolopment
 
 # * for Production
+
 publish_mode: editorial_workflow
 backend:
   name: github
@@ -36,6 +39,7 @@ collections:
       - label: محتوى المقال
         name: body
         widget: markdown
+
       - label: عنوان المقال
         name: title
         widget: string
@@ -98,6 +102,7 @@ collections:
       - label: محتوى المقال
         name: body
         widget: markdown
+        show_raw: true
       - label: عنوان المقال
         name: title
         widget: string
