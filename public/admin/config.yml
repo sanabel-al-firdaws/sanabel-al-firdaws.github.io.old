@@ -1,4 +1,5 @@
 ---
+
 # when using the default proxy server port
 # * for devolopment
 
@@ -6,9 +7,6 @@
 
 # backend:
 #   name: git-gateway
-# editor:
-#   preview: false
-#   frame: false
 
 # * for devolopment
 
@@ -20,7 +18,7 @@ backend:
   repo: sanabel-al-firdaws/sanabel-al-firdaws.github.io
   branch: main
   auth_scope: repo
-  open_authoring: true
+  open_authoring: false
   base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev
   commit_messages:
     create: "{{slug}} أضفت {{collection}}"
@@ -30,56 +28,16 @@ backend:
     deleteMedia: Delete "{{path}}"
   
 # * for Production
+site_url: /
+logo_url : /favicon.svg
+media_folder: public/img
+editor:
+  preview: false
+  frame: false
 disable_local_backup: true
+
+
 collections:
-  - label: كتاب العقيدة
-    name: aqida
-    create: true
-  
-    fields:
-      - label: محتوى المقال
-        name: body
-        widget: markdown
-         
-
-      - label: عنوان المقال
-        name: title
-        widget: string
-
-      - label: رابط المقال
-        name: filename
-        hint: الرابط لازم يكون بالانجليزي وبدون فواصل
-        widget: string
-
-      - label: تاريخ تعديل المقال 
-        name: lastUpdated
-        widget: 'datetime' # e.g. 24.12.2022
-        time_format: false
-        format: 'yyyy-MM-dd' # e.g. 2022-12-24
-      - label: القائمة
-        widget: object
-        name: sidebar
-        fields:
-          -  name: order
-             label: الترتيب
-             widget: number
-             default: 1
-             value_type: int
-             min: 1
-     
-
-
-      # - label: العلامات
-      #   name: tags
-      #   required: false
-      #   widget: list
-
-    # path: "{{slug}}"
-    slug: "{{fields.filename}}"
-    extension: mdoc
-    format: frontmatter
-    folder: /src/content/docs/ar/aqida
-
   - label: كتاب الحديث
     name: hadith
     create: true
@@ -88,14 +46,13 @@ collections:
       - label: محتوى المقال
         name: body
         widget: markdown
-         
+        hint: هنا تكتب النص
       - label: عنوان المقال
         name: title
         widget: string
-
       - label: رابط المقال
         name: filename
-        hint: الرابط لازم يكون بالانجليزي وبدون فواصل
+        hint: الرابط لازم يكون بالانجليزي وبدون فراغات
       - label: تاريخ تعديل المقال 
         name: lastUpdated
         widget: 'datetime' # e.g. 24.12.2022
@@ -106,23 +63,56 @@ collections:
         name: sidebar
         fields:
           -  name: order
+             hint: هنا ترتيب المقال من الاعلى الى الاسفل داخل الموقع
              label: الترتيب
              widget: number
              default: 1
              value_type: int
              min: 1
-     
-      # - label: العلامات
-      #   name: tags
-      #   required: false
-      #   widget: list
-
-    # path: "{{slug}}"
     slug: "{{fields.filename}}"
     extension: mdoc
     format: frontmatter
     folder: /src/content/docs/ar/hadith/
-    # path: '/aqida/al-ehsan/{{fields.path}}.{{extension}}'
+  - label: كتاب العقيدة
+    name: aqida
+    create: true
+  
+    fields:
+      - label: محتوى المقال
+        name: body
+        widget: markdown
+        hint: هنا تكتب النص
+         
+
+      - label: عنوان المقال
+        name: title
+        widget: string
+
+      - label: رابط المقال
+        name: filename
+        hint: الرابط لازم يكون بالانجليزي وبدون فراغات
+        widget: string
+
+      - label: تاريخ تعديل المقال 
+        name: lastUpdated
+        widget: 'datetime' # e.g. 24.12.2022
+        time_format: false
+        format: 'yyyy-MM-dd' # e.g. 2022-12-24
+      - label: القائمة
+        widget: object
+        name: sidebar
+        fields:
+          -  name: order
+             hint: هنا ترتيب المقال من الاعلى الى الاسفل داخل الموقع
+             label: الترتيب
+             widget: number
+             default: 1
+             value_type: int
+             min: 1
+    slug: "{{fields.filename}}"
+    extension: mdoc
+    format: frontmatter
+    folder: /src/content/docs/ar/aqida
   - label: باب الإسلام
     name: al-islam
     create: true
@@ -131,6 +121,7 @@ collections:
       - label: محتوى المقال
         name: body
         widget: markdown
+        hint: هنا تكتب النص
          
 
       - label: عنوان المقال
@@ -138,7 +129,7 @@ collections:
         widget: string
       - label: رابط المقال
         name: filename
-        hint: الرابط لازم يكون بالانجليزي وبدون فواصل
+        hint: الرابط لازم يكون بالانجليزي وبدون فراغات
       - label: تاريخ تعديل المقال 
         name: lastUpdated
         widget: 'datetime' # e.g. 24.12.2022
@@ -149,6 +140,7 @@ collections:
         name: sidebar
         fields:
           -  name: order
+             hint: هنا ترتيب المقال من الاعلى الى الاسفل داخل الموقع
              label: الترتيب
              widget: number
              default: 1
@@ -160,16 +152,10 @@ collections:
       #   required: false
       #   widget: list
 
-    # path: "{{slug}}"
     slug: "{{fields.filename}}"
     extension: mdoc
     format: frontmatter
     folder: /src/content/docs/ar/aqida/al-islam
-    # path: '/aqida/al-ehsan/{{fields.path}}.{{extension}}'
-
-
-    # nested:
-    #   depth: 100 # max depth to show in the collection tree
   - label: باب الإيمان
     name: al-eman
     create: true
@@ -178,6 +164,7 @@ collections:
       - label: محتوى المقال
         name: body
         widget: markdown
+        hint: هنا تكتب النص
          
 
   
@@ -187,7 +174,7 @@ collections:
 
       - label: رابط المقال
         name: filename
-        hint: الرابط لازم يكون بالانجليزي وبدون فواصل
+        hint: الرابط لازم يكون بالانجليزي وبدون فراغات
         widget: string
       - label: تاريخ تعديل المقال 
         name: lastUpdated
@@ -199,6 +186,7 @@ collections:
         name: sidebar
         fields:
           -  name: order
+             hint: هنا ترتيب المقال من الاعلى الى الاسفل داخل الموقع
              label: الترتيب
              widget: number
              default: 1
@@ -216,9 +204,6 @@ collections:
     format: frontmatter
     folder: src/content/docs/ar/aqida/al-eman
     # path: '/aqida/al-ehsan/{{fields.path}}.{{extension}}'
-
-
-
   - label: باب الإحسان
     name: al-ehsan
     create: true
@@ -227,13 +212,13 @@ collections:
       - label: محتوى المقال
         name: body
         widget: markdown
-         
+        hint: هنا تكتب النص       
       - label: عنوان المقال
         name: title
         widget: string
       - label: رابط المقال
         name: filename
-        hint: الرابط لازم يكون بالانجليزي وبدون فواصل
+        hint: الرابط لازم يكون بالانجليزي وبدون فراغات
       - label: تاريخ تعديل المقال 
         name: lastUpdated
         widget: 'datetime' # e.g. 24.12.2022
@@ -244,31 +229,21 @@ collections:
         name: sidebar
         fields:
           -  name: order
+             hint: هنا ترتيب المقال من الاعلى الى الاسفل داخل الموقع
              label: الترتيب
              widget: number
              default: 1
              value_type: int
              min: 1
      
-      # - label: العلامات
-      #   name: tags
-      #   required: false
-      #   widget: list
-
-    # path: "{{slug}}"
+   
     slug: "{{fields.filename}}"
     extension: mdoc
     format: frontmatter
     folder: src/content/docs/ar/aqida/al-ehsan
-    # path: '/aqida/al-ehsan/{{fields.path}}.{{extension}}'
-
-
-    # nested:
-    #   depth: 100 # max depth to show in the collection tree
 
 
 
-site_url: https://sanabel-al-firdaws.github.io/
+ 
 
-logo_url : /favicon.svg
-media_folder: public/img
+

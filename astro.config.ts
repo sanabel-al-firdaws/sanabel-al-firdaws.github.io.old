@@ -36,9 +36,10 @@ export default defineConfig({
   ],
     components: {
       // Override the default `SocialIcons` component.
-      ThemeProvider: './src/components/ThemeProvider.astro',
-      EditLink: './src/components/EditLink.astro',
-      ThemeSelect: './src/components/ThemeSelect.astro'
+      ThemeProvider: './src/components/starlight/ThemeProvider.astro',
+      // EditLink: './src/components/starlight/EditLink.astro',
+      ThemeSelect: './src/components/starlight/ThemeSelect.astro',
+      SocialIcons:'./src/components/starlight/SocialIcons.astro'
     },
     title: 'سنابل الفردوس',
     description: 'موقع يهتم بنشر العلم النافع',
@@ -61,8 +62,6 @@ export default defineConfig({
     },
     social: {
       github: 'https://github.com/sanabel-al-firdaws/sanabel-al-firdaws.github.io/',
-      gitlab: 'https://sanabel-al-firdaws.github.io/admin/index.html',
-      'x.com': 'https://sanabel-al-firdaws.github.io/admin-en/index.html'
     },
     sidebar: [{
       label: 'كتاب العقيدة',

@@ -1,132 +1,238 @@
 ---
+
 # when using the default proxy server port
 # * for devolopment
 
 # local_backend: true
 
 # backend:
-#   name: local
+#   name: git-gateway
 
 # * for devolopment
 
 # * for Production
 
+publish_mode: editorial_workflow
 backend:
   name: github
   repo: sanabel-al-firdaws/sanabel-al-firdaws.github.io
   branch: main
+  auth_scope: repo
+  open_authoring: false
   base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev
-
+  commit_messages:
+    create: "added {{collection}}{{slug}}"
+    update: "moddifed {{collection}}{{slug}}"
+    delete: " deleted  {{collection}}{{slug}}"
+    uploadMedia: Upload "{{path}}"
+    deleteMedia: Delete "{{path}}"
+  
 # * for Production
+site_url: /
+logo_url : /favicon.svg
+media_folder: public/img
+editor:
+  preview: false
+  frame: false
+disable_local_backup: true
+
 
 collections:
-   
-  - label: Al-Islam Chapter
-    name: al-islam-en
+  - label: The Book Of Hadith
+    name: hadith
     create: true
   
     fields:
-      - label: محتوى المقال
+      - label: Content Body
         name: body
         widget: markdown
-      - label: عنوان المقال
+        hint: Content Goes Here
+      - label: Title Of The Page
         name: title
         widget: string
-
-      - label: رابط المقال
+      - label: Link For The Page
         name: filename
-        widget: string
-        
-      - label: رابط تعديل المقال
-        name: editUrl
-        widget: string 
-        required: false
-      # - label: العلامات
-      #   name: tags
-      #   required: false
-      #   widget: list
-
-    # path: "{{slug}}"
+        hint: Must match the Arabic url for example 'arkan' 
+      - label: Last Updated
+        name: lastUpdated
+        widget: 'datetime' # e.g. 24.12.2022
+        time_format: false
+        format: 'yyyy-MM-dd' # e.g. 2022-12-24
+      - label: Sidebar
+        widget: object
+        name: sidebar
+        fields:
+          -  name: order
+             hint: This is the order in whitch the page will show up in the side bar the number 1 means its the first item to show up
+             label: The Order
+             widget: number
+             default: 1
+             value_type: int
+             min: 1
     slug: "{{fields.filename}}"
     extension: mdoc
     format: frontmatter
-    folder: src/content/docs/en/aqida/al-islam
-    # path: '/aqida/al-ehsan/{{fields.path}}.{{extension}}'
-
-
-    # nested:
-    #   depth: 100 # max depth to show in the collection tree
-  - label: Al-Eman Chapter
-    name: al-eman-en
+    folder: /src/content/docs/en/hadith/
+  - label: The Book Of Aqida
+    name: aqida
     create: true
   
     fields:
-      - label: محتوى المقال
+      - label: Content Body
         name: body
         widget: markdown
-      - label: عنوان المقال
+        hint: Content Goes Here
+         
+
+      - label: Title Of The Page
         name: title
         widget: string
 
-      - label: رابط المقال
+      - label: Link For The Page
         name: filename
+        hint: Must Match The Arabic Url for example 'arkan' 
         widget: string
-      - label: رابط تعديل المقال
-        name: editUrl
-        widget: string 
-        required: false
-      # - label: العلامات
-      #   name: tags
-      #   required: false
-      #   widget: list
 
-    # path: "{{slug}}"
+      - label: Last Updated
+        name: lastUpdated
+        widget: 'datetime' # e.g. 24.12.2022
+        time_format: false
+        format: 'yyyy-MM-dd' # e.g. 2022-12-24
+      - label: Sidebar
+        widget: object
+        name: sidebar
+        fields:
+          -  name: order
+             hint: This is the order in whitch the page will show up in the side bar the number 1 means its the first item to show up
+             label: The Order
+             widget: number
+             default: 1
+             value_type: int
+             min: 1
+    slug: "{{fields.filename}}"
+    extension: mdoc
+    format: frontmatter
+    folder: /src/content/docs/en/aqida
+  - label: The Islam Chapter
+    name: al-islam
+    create: true
+  
+    fields:
+      - label: Content Body
+        name: body
+        widget: markdown
+        hint: Content Goes Here
+         
+
+      - label: Title Of The Page
+        name: title
+        widget: string
+      - label: Link For The Page
+        name: filename
+        hint: Must Match The Arabic Url for example 'arkan' 
+      - label: Last Updated
+        name: lastUpdated
+        widget: 'datetime' # e.g. 24.12.2022
+        time_format: false
+        format: 'yyyy-MM-dd' # e.g. 2022-12-24
+      - label: Sidebar
+        widget: object
+        name: sidebar
+        fields:
+          -  name: order
+             hint: This is the order in whitch the page will show up in the side bar the number 1 means its the first item to show up
+             label: The Order
+             widget: number
+             default: 1
+             value_type: int
+             min: 1
+     
+    slug: "{{fields.filename}}"
+    extension: mdoc
+    format: frontmatter
+    folder: /src/content/docs/en/aqida/al-islam
+  - label: The Eman Chapter
+    name: al-eman
+    create: true
+  
+    fields:
+      - label: Content Body
+        name: body
+        widget: markdown
+        hint: Content Goes Here
+         
+
+  
+      - label: Title Of The Page
+        name: title
+        widget: string
+
+      - label: Link For The Page
+        name: filename
+        hint: Must Match The Arabic Url for example 'arkan' 
+        widget: string
+      - label: Last Updated
+        name: lastUpdated
+        widget: 'datetime' # e.g. 24.12.2022
+        time_format: false
+        format: 'yyyy-MM-dd' # e.g. 2022-12-24
+      - label: Sidebar
+        widget: object
+        name: sidebar
+        fields:
+          -  name: order
+             hint: This is the order in whitch the page will show up in the side bar the number 1 means its the first item to show up
+             label: The Order
+             widget: number
+             default: 1
+             value_type: int
+             min: 1
+     
+
     slug: "{{fields.filename}}"
     extension: mdoc
     format: frontmatter
     folder: src/content/docs/en/aqida/al-eman
-    # path: '/aqida/al-ehsan/{{fields.path}}.{{extension}}'
-
-
-    # nested:
-    #   depth: 100 # max depth to show in the collection tree
-  - label: Al-Ehsan Chapter
-    name: al-ehsan-en
+  - label: The Ehsan Chapter
+    name: al-ehsan
     create: true
   
     fields:
-      - label: محتوى المقال
+      - label: Content Body
         name: body
         widget: markdown
-      - label: عنوان المقال
+        hint: Content Goes Here       
+      - label: Title Of The Page
         name: title
         widget: string
-
-      - label: رابط المقال
+      - label: Link For The Page
         name: filename
-        widget: string
-      - label: رابط تعديل المقال
-        name: editUrl
-        widget: string 
-        required: false
-      # - label: العلامات
-      #   name: tags
-      #   required: false
-      #   widget: list
-
-    # path: "{{slug}}"
+        hint: Must Match The Arabic Url for example 'arkan' 
+      - label: Last Updated
+        name: lastUpdated
+        widget: 'datetime' # e.g. 24.12.2022
+        time_format: false
+        format: 'yyyy-MM-dd' # e.g. 2022-12-24
+      - label: Sidebar
+        widget: object
+        name: sidebar
+        fields:
+          -  name: order
+             hint: This is the order in whitch the page will show up in the side bar the number 1 means its the first item to show up
+             label: The Order
+             widget: number
+             default: 1
+             value_type: int
+             min: 1
+     
+   
     slug: "{{fields.filename}}"
     extension: mdoc
     format: frontmatter
     folder: src/content/docs/en/aqida/al-ehsan
-    # path: '/aqida/al-ehsan/{{fields.path}}.{{extension}}'
 
 
-    # nested:
-    #   depth: 100 # max depth to show in the collection tree
+
+ 
 
 
-site_url: https://sanabel-al-firdaws.github.io/
-
-logo_url : /favicon.svg
-media_folder: public/img

@@ -4,9 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "  conc \" node \"_dorar-hadith-api-1/app.js\" \" \" astro dev --host\"   --success \"first\" --kill-others",
-    "r2mdoc": " renamer --find /.md$/ --replace .mdoc src/content/**",
-    "r2md": " renamer --find /.mdoc$/ --replace .md src/content/**",
-    "build": "  npx renamer --find /.md$/ --replace .mdoc \"src/content/**\" && conc \" node \"_dorar-hadith-api-1/app.js\" \" \" astro build \"   --success \"first\" --kill-others",
+    "build": " conc \" node \"_dorar-hadith-api-1/app.js\" \" \" astro build \"   --success \"first\" --kill-others",
     "preview": "astro preview",
     "astro": "astro",
     "generate-pwa-assets": "pwa-assets-generator --preset minimal public/favicon.svg"
@@ -37,7 +35,8 @@
     "@vite-pwa/astro": "^0.2.0",
     "concurrently": "^8.2.2",
     "nodemon": "^2.0.15",
-    "renamer": "^4.0.0",
+
+    "vite-plugin-pwa": "^0.17.4",
     "workbox-window": "^7.0.0"
   }
 }
