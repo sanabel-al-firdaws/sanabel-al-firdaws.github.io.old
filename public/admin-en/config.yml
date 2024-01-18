@@ -39,6 +39,18 @@ editor:
   preview: false
   frame: false
 disable_local_backup: true
+theme:
+  include_built_in_themes: false
+  themes:
+    - name: blue
+      extends: dark
+      primary:
+        main: '#003e56'
+      background:
+        main: '#001b29'
+      text:
+        primary: '#dbf2ff'
+        disabled: '#001b29'
 
 
 collections:
