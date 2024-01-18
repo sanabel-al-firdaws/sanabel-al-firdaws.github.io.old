@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "  conc \" node \"_dorar-hadith-api-1/app.js\" \" \" astro dev --host\"   --success \"first\" --kill-others",
+    "dev": "  conc \" node \"_dorar-hadith-api-1/app.js\" \" \" astro dev \"   --success \"first\" --kill-others",
     "build": " conc \" node \"_dorar-hadith-api-1/app.js\" \" \" astro build \"   --success \"first\" --kill-others",
     "preview": "astro preview",
     "astro": "astro",

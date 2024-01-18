@@ -4,7 +4,6 @@
 # * for devolopment
 
 # local_backend: true
-
 # backend:
 #   name: git-gateway
 
@@ -18,7 +17,7 @@ backend:
   repo: sanabel-al-firdaws/sanabel-al-firdaws.github.io
   branch: main
   auth_scope: repo
-  open_authoring: false
+  open_authoring: true
   base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev
   commit_messages:
     create: "{{slug}} أضفت {{collection}}"

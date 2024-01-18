@@ -3,7 +3,11 @@
 # when using the default proxy server port
 # * for devolopment
 
-# local_backend: true
+# local_backend:
+#   # when using a custom proxy server port
+
+#   # when accessing the local site from a host other than 'localhost' or '127.0.0.1'
+#   allowed_hosts: ['192.168.8.117','localhost','fgbn6ixmab9r.share.zrok.io']
 
 # backend:
 #   name: git-gateway
@@ -18,7 +22,7 @@ backend:
   repo: sanabel-al-firdaws/sanabel-al-firdaws.github.io
   branch: main
   auth_scope: repo
-  open_authoring: false
+  open_authoring: true
   base_url: https://sveltia-cms-auth.abdullhakim-sami.workers.dev
   commit_messages:
     create: "added {{collection}}{{slug}}"
