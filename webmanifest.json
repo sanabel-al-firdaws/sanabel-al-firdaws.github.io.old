@@ -6,8 +6,8 @@
     "description": "موقع يهتم بنشر العلم النافع",
     "orientation": "any",
     "display": "fullscreen",
-    "theme_color": "#073737",
-    "background_color": "#073737",
+    "theme_color": "#001b29",
+    "background_color": "#001b29",
     "icons": [
       {
         "src": "pwa-64x64.png",
