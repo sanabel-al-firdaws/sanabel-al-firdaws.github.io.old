@@ -9,7 +9,7 @@ import starlightBlog from "starlight-blog";
 import starlightViewModes from "starlight-view-modes";
 import { remarkMark } from "remark-mark-highlight";
 // import { remarkCode } from "remark-code";
-
+import mdx from '@astrojs/mdx'; 
 import AutoImport from 'astro-auto-import';
 
 import starlightUtils from "@lorenzo_lewis/starlight-utils";
@@ -43,7 +43,10 @@ export default defineConfig({
         // Add your Note component to the auto-imports:
         './src/components/Question.astro',
       ],
-    }),starlight({
+    }),
+mdx()
+,
+starlight({
     plugins: [
     // starlightImageZoom({
     //   // Configuration options go here.
