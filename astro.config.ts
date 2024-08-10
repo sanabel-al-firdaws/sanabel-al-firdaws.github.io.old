@@ -42,7 +42,7 @@ export default defineConfig({
 AutoImport({
       imports: [
         // Add your Note component to the auto-imports:
-        "./src/components//Question.astro",
+        "./src/components/Question.astro",
       ],
     }),
 starlight({
