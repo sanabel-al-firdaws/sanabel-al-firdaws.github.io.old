@@ -16,7 +16,7 @@ import starlightUtils from "@lorenzo_lewis/starlight-utils";
 import d2 from "astro-d2";
 import compress from "astro-compress";
 
-import markdoc from "@astrojs/markdoc";
+import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
@@ -197,7 +197,18 @@ starlight({
       default: "200"
     }
     //  fonts: { regular: './TNB.ttf',  italic: './TNB.ttf',bold: './TNB.ttf'},
-  }), compress(), 
+  }), compress(), mdx(
+{
+    rehypePlugins: [[rehypeAutolinkHeadings, {
+      // Wrap the heading text in a link.
+      behavior: "wrap",
+      properties: {
+        className: ["section_heading"]
+      }
+    }]],
+    remarkPlugins: [remarkCustomHeaderId, remarkMark]
+  }
+)
 
     // Make sure the MDX integration is included AFTER astro-auto-import
      ]
