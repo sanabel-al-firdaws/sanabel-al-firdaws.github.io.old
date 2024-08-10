@@ -40,9 +40,10 @@ export default defineConfig({
 
   integrations: [AutoImport({
       imports: [
-        // Add your Note component to the auto-imports:
-        './src/components/Question.astro'
-      ],
+  {
+    './src/components/Question.astro': [['default', 'Question']],
+  },
+];
     }),
 starlight({
     plugins: [
