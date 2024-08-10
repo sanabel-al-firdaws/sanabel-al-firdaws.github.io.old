@@ -43,7 +43,7 @@ export default defineConfig({
   {
     './src/components/Question.astro': [['default', 'Question']],
   },
-];
+]
     }),
 starlight({
     plugins: [
