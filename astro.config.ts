@@ -38,12 +38,12 @@ export default defineConfig({
   },
   // trailingSlash: "always",
 
-  integrations: [AutoImport({
+  integrations: [
+AutoImport({
       imports: [
-  {
-    './src/components/Question.astro': [['default', 'Question']],
-  },
-]
+        // Add your Note component to the auto-imports:
+        "./src/components//Question.astro",
+      ],
     }),
 starlight({
     plugins: [
