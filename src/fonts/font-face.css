@@ -1,0 +1,30 @@
+
+   @font-face {
+	font-family: 'Scheherazade New';
+	font-style: normal;
+	font-display: block;
+	font-weight: 700;
+	src: url(./ScheherazadeNew-Bold.woff2) format('woff2'), url(./ScheherazadeNew-Bold.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'Scheherazade New';
+	font-style: normal;
+	font-display: block;
+	font-weight: 600;
+	src: url(./ScheherazadeNew-SemiBold.woff2) format('woff2'), url(./ScheherazadeNew-SemiBold.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'Scheherazade New';
+	font-style: normal;
+	font-display: block;
+	font-weight: 500;
+	src: url(./ScheherazadeNew-Medium.woff2) format('woff2'), url(./ScheherazadeNew-Medium.woff) format('woff');
+  }
+
+  @font-face {
+	font-family: 'Scheherazade New';
+	font-style: normal;
+	font-display: block;
+	font-weight: 400;
+	src: url(./ScheherazadeNew-Regular.woff2) format('woff2'), url(./ScheherazadeNew-Regular.woff) format('woff');
+  }

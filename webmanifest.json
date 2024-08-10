@@ -1,0 +1,100 @@
+{
+  "name": "سنابل الفردوس",
+  "short_name": "سنابل الفردوس",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#001b29",
+  "lang": "ar",
+  "scope": "/",
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "id": "sanabel-al-firdaws",
+  "description": "موقع يهتم بنشر المنهج السلفي",
+  "orientation": "any",
+  "theme_color": "#001b29",
+  "icons": [
+    {
+      "src": "pwa-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "maskable-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+       "name": "المدونة",
+       "url": "/blog",
+       "description": "مقالات منوعة مفيدة ونافعة",
+       "icons": [
+        {
+          "src": "pwa-64x64.png",
+          "sizes": "64x64",
+          "type": "image/png"
+        }
+       ]
+    },
+    {
+      "name": "اللغة العربية",
+      "url": "/arabic/intro",
+      "description": "تعلم اللغة العربية",
+      "icons": [
+        {
+          "src": "pwa-64x64.png",
+          "sizes": "64x64",
+          "type": "image/png"
+        }
+       ]
+   },
+   {
+    "name": "القرآن الكريم",
+    "url": "/quran/intro",
+    "description": "تعلم القراءة الصحيحة للقرآن الكريم",
+    "icons": [
+      {
+        "src": "pwa-64x64.png",
+        "sizes": "64x64",
+        "type": "image/png"
+      }
+     ]
+ },
+ {
+  "name": "العقيدة",
+  "url": "/aqida/intro",
+  "description": "تعلم العقيدة الصحيحة لأهل السنة و الجماعة",
+  "icons": [
+    {
+      "src": "pwa-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+   ]
+},
+ {
+  "name": "الرقائق و الآداب",
+  "url": "/raqaiq/intro",
+  "description": "تعلم أخلاقيات المسلم السليمة",
+  "icons": [
+    {
+      "src": "pwa-64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+   ]
+}
+  ]
+}

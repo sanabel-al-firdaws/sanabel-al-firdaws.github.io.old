@@ -1,0 +1,25 @@
+---
+import type { Icons } from '../../../node_modules/@astrojs/starlight/components/Icons';
+import { TabItemTagname } from '../../../node_modules/@astrojs/starlight/user-components/rehype-tabs';
+
+interface Props {
+	icon?: keyof typeof Icons;
+	label: string;
+}
+
+const { icon, label } = Astro.props;
+
+if (!label) {
+	throw new Error('Missing prop `label` on `<TabItem>` component.');
+}
+
+const html = await Astro.slots.render('default')
+if (html !== null) {
+    console.log(html)
+}
+
+---
+
+<TabItemTagname data-label={label} data-icon={icon}>
+	<slot />
+</TabItemTagname>

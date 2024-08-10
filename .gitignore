@@ -1,0 +1,8 @@
+
+.astro/
+.obsidian
+.trash
+.vscode
+node_modules
+dist/
+dev-dist/

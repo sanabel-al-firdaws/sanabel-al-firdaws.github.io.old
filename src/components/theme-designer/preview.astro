@@ -1,0 +1,22 @@
+---
+
+
+const { labels, ...attrs } = Astro.props;
+
+---
+
+<div class="preview-card" {...attrs}>
+<slot/>
+	
+</div>
+
+<style>
+	.preview-card {
+		margin: 0 !important;
+		/* border: 1px solid var(--sl-color-gray-5); */
+		padding: 1rem;
+		/* background-color: var(--sl-color-black); */
+		
+	}
+
+</style>
