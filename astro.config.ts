@@ -204,9 +204,9 @@ starlight({
       default: "200"
     }
     //  fonts: { regular: './TNB.ttf',  italic: './TNB.ttf',bold: './TNB.ttf'},
-  }), compress(), 
+  }), compress(),  mdx() 
 
-   
+   /
      ]
 });
 
