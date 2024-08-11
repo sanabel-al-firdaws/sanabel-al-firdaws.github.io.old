@@ -33,7 +33,7 @@
     "starlight-view-modes": "file:packages/starlight-view-modes",
     "theme-change": "^2.5.0",
     "typescript": "^5.3.3",
-    "astro-m2dx": "^0.7.16"
+    "astro-auto-import": "^0.4.2"
   },
   "devDependencies": {
     "@vite-pwa/assets-generator": "^0.2.2",
