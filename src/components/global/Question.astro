@@ -8,9 +8,9 @@ const val = Array.from(children);
 
 
 ---
-<h1>
+<h2>
 	{val[0]}
-</h1>
+</h2>
 
 <multiple-choice
 	data-correct-label="الجواب صحيح"
@@ -39,6 +39,9 @@ const val = Array.from(children);
 </multiple-choice>
 
 <style>
+	button {
+		font-size: xx-large !important;
+	}
 	multiple-choice {
 		display: block;
 		padding-bottom: 1rem;
@@ -69,13 +72,13 @@ const val = Array.from(children);
 
 	.submit {
 		cursor: pointer;
-		color: var(--sl-color-accent);
+		color: var(--sl-color-gray-1);
 		background-color: transparent ;
 		border-color: var(--sl-color-gray-1) ;
 	}
 
 	.submit:focus {
-		background-color: hsl(224, 20%, 94%);
+		background-color: var(--sl-color-gray-1);
 		outline: 3px solid var(--sl-color-accent);
 		outline-offset: -3px;
 	}
@@ -89,15 +92,13 @@ const val = Array.from(children);
 		color: var(--sl-color-black);
 		border-color: transparent;
 	}
-
 	.submit:disabled,
 	.submit:active {
 		transform: translateY(0.25rem);
 	}
-
 	.submit:disabled {
-		background-color: hsl(224, 20%, 94%);
-		color: hsl(224, 7%, 36%);
+		background-color: var(--sl-color-gray-3);
+		color:  var(--sl-color-gray-2) !important;
 		opacity: 0.65;
 		cursor: not-allowed;
 	}
