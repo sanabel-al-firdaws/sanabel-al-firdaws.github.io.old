@@ -44,12 +44,6 @@ export default defineConfig({
   // trailingSlash: "always",
 
   integrations: [
-AutoImport({
-      imports: [
-        // Add your Note component to the auto-imports:
-        "./src/components/Question.astro",
-      ],
-    }),
 starlight({
     plugins: [
     // starlightImageZoom({
