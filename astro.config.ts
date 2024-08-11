@@ -17,7 +17,7 @@ import AutoImport from 'astro-auto-import';
 import { readdirSync } from 'node:fs';
 
 // Get a list of all the components in a specific directory:
-const componentDir = './src/components/';
+const componentDir = './src/components/global/';
 const components = readdirSync(componentDir);
 
 

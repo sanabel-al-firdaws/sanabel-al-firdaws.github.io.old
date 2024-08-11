@@ -1,5 +1,5 @@
 ---
-import Answer from "./Answer.astro";
+import Answer from "../Answer.astro";
 import { parseHTML } from "linkedom";
 const html = await Astro.slots.render("default");
 const { document } = parseHTML(html);
