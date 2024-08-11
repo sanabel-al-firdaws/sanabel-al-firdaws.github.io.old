@@ -51,7 +51,7 @@ export default defineConfig({
         // Add paths to each component to the auto-import array:
         ...components.map(filename => componentDir + filename),
       ],
-    })
+    }),
 starlight({
     plugins: [
     // starlightImageZoom({
