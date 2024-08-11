@@ -1,0 +1,20 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+const { labels, lang, lastUpdated } = Astro.props;
+---
+
+{
+    lastUpdated && (
+        <p>
+            {labels["page.lastUpdated"]}{" "}
+            <time datetime={lastUpdated.toISOString()}>
+                {new Intl.DateTimeFormat("ar-SA", {
+                     "day": "numeric",
+  "month": "long",
+  "year": "numeric",
+  "numberingSystem": "latn"
+                }).format(lastUpdated)}
+            </time>
+        </p>
+    )
+}
