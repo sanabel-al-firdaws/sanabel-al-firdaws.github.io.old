@@ -10,19 +10,21 @@ import starlightViewModes from "starlight-view-modes";
 import { remarkMark } from "remark-mark-highlight";
 // import { remarkCode } from "remark-code";
 
-import m2dx from 'astro-m2dx';
+import AutoImport from 'astro-auto-import';
+
+
+import { readdirSync } from 'node:fs';
+
+// Get a list of all the components in a specific directory:
+const componentDir = './src/components/';
+const components = readdirSync(componentDir);
+
 
 import starlightUtils from "@lorenzo_lewis/starlight-utils";
 import d2 from "astro-d2";
 import compress from "astro-compress";
 
-import mdx from "@astrojs/mdx";
 
-/** @type {import('astro-m2dx').Options} */
-const m2dxOptions = {
-  autoImports: true
-  // activate any required feature here 
-};
 // https://astro.build/config
 export default defineConfig({
   markdown: {
@@ -33,7 +35,7 @@ export default defineConfig({
         className: ["section_heading"]
       }
     }]],
-    remarkPlugins: [m2dx,remarkCustomHeaderId, remarkMark]
+    remarkPlugins: [remarkCustomHeaderId, remarkMark]
   },
   site: "https://sanabel-al-firdaws.github.io",
   server: {
@@ -43,7 +45,12 @@ export default defineConfig({
   },
   // trailingSlash: "always",
 
-  integrations: [
+  integrations: [ AutoImport({
+      imports: [
+        // Add paths to each component to the auto-import array:
+        ...components.map(filename => componentDir + filename),
+      ],
+    }),
 starlight({
     plugins: [
     // starlightImageZoom({
@@ -198,45 +205,7 @@ starlight({
     //  fonts: { regular: './TNB.ttf',  italic: './TNB.ttf',bold: './TNB.ttf'},
   }), compress(), 
 
-    // Make sure the MDX integration is included AFTER astro-auto-import
+   
      ]
 });
 
-// , AstroPWA({
-//   mode: "development",
-//   // injectRegister: 'script',
-//   // injectRegister: null,
-//   workbox: {
-//     // cleanupOutdatedCaches: false,
-//     globPatterns: ['**/*.{js,css,png,svg,ico,ttf}'],
-//     //  navigateFallback: undefined,
-//     // clientsClaim: true,
-//     // skipWaiting: true,
-//     runtimeCaching: [
-//       {
-//         urlPattern: ({ request }) => request.mode === 'navigate',
-//         handler: 'NetworkFirst',
-//         options: {
-//           cacheName: 'global-cache'
-//         }
-//       }
-
-//     ]
-//     //   {
-
-//   },
-//   registerType: 'autoUpdate',
-// //  injectRegister: 'script',
-// //   strategies: 'injectManifest',
-// //   srcDir: 'src',
-// //   filename: 'pwa.ts',
-//   experimental: {
-//     directoryAndTrailingSlashHandler: true
-//   },
-
-//   // devOptions: {
-//   //   enabled: true
-//   //   /* other options */
-//   // },
-//   manifest: (manifest as Partial<ManifestOptions>)
-// }),
