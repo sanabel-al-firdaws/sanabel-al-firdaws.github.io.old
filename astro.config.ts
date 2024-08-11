@@ -10,7 +10,7 @@ import starlightViewModes from "starlight-view-modes";
 import { remarkMark } from "remark-mark-highlight";
 // import { remarkCode } from "remark-code";
 
-import AutoImport from 'astro-auto-import';
+import m2dx from 'astro-m2dx';
 
 import starlightUtils from "@lorenzo_lewis/starlight-utils";
 import d2 from "astro-d2";
@@ -18,6 +18,11 @@ import compress from "astro-compress";
 
 import mdx from "@astrojs/mdx";
 
+/** @type {import('astro-m2dx').Options} */
+const m2dxOptions = {
+  autoImports: true
+  // activate any required feature here 
+};
 // https://astro.build/config
 export default defineConfig({
   markdown: {
@@ -28,7 +33,7 @@ export default defineConfig({
         className: ["section_heading"]
       }
     }]],
-    remarkPlugins: [remarkCustomHeaderId, remarkMark]
+    remarkPlugins: [m2dx,remarkCustomHeaderId, remarkMark]
   },
   site: "https://sanabel-al-firdaws.github.io",
   server: {
@@ -197,18 +202,7 @@ starlight({
       default: "200"
     }
     //  fonts: { regular: './TNB.ttf',  italic: './TNB.ttf',bold: './TNB.ttf'},
-  }), compress(), mdx(
-{
-    rehypePlugins: [[rehypeAutolinkHeadings, {
-      // Wrap the heading text in a link.
-      behavior: "wrap",
-      properties: {
-        className: ["section_heading"]
-      }
-    }]],
-    remarkPlugins: [remarkCustomHeaderId, remarkMark]
-  }
-)
+  }), compress(), 
 
     // Make sure the MDX integration is included AFTER astro-auto-import
      ]
