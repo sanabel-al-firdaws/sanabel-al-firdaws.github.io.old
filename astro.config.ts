@@ -9,6 +9,7 @@ import starlightBlog from "starlight-blog";
 import starlightViewModes from "starlight-view-modes";
 import { remarkMark } from "remark-mark-highlight";
 // import { remarkCode } from "remark-code";
+import mdx from '@astrojs/mdx';
 
 import AutoImport from 'astro-auto-import';
 
@@ -50,7 +51,7 @@ export default defineConfig({
         // Add paths to each component to the auto-import array:
         ...components.map(filename => componentDir + filename),
       ],
-    }),
+    }),mdx(),
 starlight({
     plugins: [
     // starlightImageZoom({
