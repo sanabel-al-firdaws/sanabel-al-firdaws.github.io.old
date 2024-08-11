@@ -1,0 +1,13 @@
+---
+import { parseHTML } from "linkedom";
+const html = await Astro.slots.render("default");
+const { document } = parseHTML(html);
+const children = document.children;
+const val = Array.from(children);
+
+
+---
+<details>
+<summary>
+	{val[0]}
+</summary>{val.slice(1)}</details>
