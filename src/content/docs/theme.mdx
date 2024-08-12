@@ -8,11 +8,11 @@ tableOfContents: false
 
 import Preview from '../../components/theme-designer/preview.astro';
 
-import ThemeDesigner from '../../components/theme-designer-copy.astro';
+import ThemeDesigner from '../../components/theme-designer.astro';
 
 <Preview>
 
-## لَيْسَ الغَريبُ [laysa-al-gharib]
+##   لَيْسَ الغَريبُ  %%.%%
 
 ---
 
@@ -30,7 +30,46 @@ import ThemeDesigner from '../../components/theme-designer-copy.astro';
 
 </Preview>
 
-<ThemeDesigner/>
+<ThemeDesigner
 
+	labels=\{\{
+
+		presets: \{
+
+			label: 'المظاهر',
+
+			ocean: 'سماوي',
+
+			forest: 'غابة',
+
+			oxide: 'صدأ',
+
+			nebula: 'بنفسجي',
+
+			default: 'الافتراضي',
+
+			random: 'عشوائي',
+
+		\},
+
+		editor: \{
+
+			accentColor: 'اللون الأساسي',
+
+			grayColor: 'اللون الرمادي',
+
+			hue: 'درجة اللون',
+
+			chroma: 'تشبع اللون',
+
+			pickColor: 'اختر الألوان',
+
+		\},
+
+	\}\}
+
+>
+
+</ThemeDesigner>
 
 
