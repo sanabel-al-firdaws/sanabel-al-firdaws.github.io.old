@@ -4,25 +4,15 @@ const html = await Astro.slots.render("default");
 const { document } = parseHTML(html);
 const children = document.children;
 const val = Array.from(children);
-var stringToHTML = function (str: string) {
-	var dom = document.createElement('span');
-	dom.innerHTML = str;
-	return dom;
-};
 
-var text = val[0].innerHTML.replace(/==/, '<mark>')
-var text2 = text.replace(/==/, '</mark>')
+
+
 ---
 <details>
 <summary >
 	{
-		val[0] = stringToHTML(text2) 
+		val[0]
 	}
 	
-
-	<!-- {
-    
-	val[0] = stringToHTML(`<h1>hey</h1>`)
-	} -->
 
 </summary>{val.slice(1)}</details>

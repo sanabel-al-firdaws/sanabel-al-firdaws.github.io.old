@@ -6,7 +6,11 @@ const { document } = parseHTML(html);
 const children = document.children;
 const val = Array.from(children);
 
-
+var stringToHTML = function (str: string) {
+	var dom = document.createElement('span');
+	dom.innerHTML = str;
+	return dom;
+};
 ---
 <h2>
 	{val[0]}
@@ -21,10 +25,10 @@ const val = Array.from(children);
 			{
 				val.slice(1).map((data) => {
 					if (data.innerHTML.search(/صحيح/) == -1) {
-						return <Answer>{data.innerHTML.trim()}</Answer>;
+						return <Answer>{stringToHTML(data.innerHTML.trim())}</Answer>;
 					} else {
 						let value = data.innerHTML.replace(/صحيح/, "");
-						return <Answer isCorrect>{value.trim()}</Answer>;
+						return <Answer isCorrect>{stringToHTML(value.trim())}</Answer>;
 					}
 				})
 			}
