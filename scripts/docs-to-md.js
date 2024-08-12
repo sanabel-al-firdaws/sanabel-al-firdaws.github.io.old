@@ -18,7 +18,7 @@ const arabic = [
  ];
  const blog = [
    '15azTT_OD1Tl1Gth-IrujKp2ILdcPkAXdTtPZZ0AsQsE:al-inkar-al-alani.mdx',
-   '1F087SRbpwDUfmWPNs4yA54oEpqZkfdUzxbahZkDEiBY:othr-bil-jahl.mdx'
+   '1F087SRbpwDUfmWPNs4yA54oEpqZkfdUzxbahZkDEiBY:al-hokm-bil-qawanin.mdx'
  ];
  const quran = [
   '120YJOnTvDJgS9s4D0Ejk3PM4LtN-UagMikJyIfThOSE:intro.mdx',
