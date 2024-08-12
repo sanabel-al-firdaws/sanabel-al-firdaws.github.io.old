@@ -37,19 +37,15 @@ mark {
 
 .section_heading::before {
     
-    content: '✿'; 
-    width: 20px;
+    content: '✦ \00a0'; 
     display: inline-block;
-    margin-left: 10px;
+  
     
 }
 .section_heading::after {
     
-    content: '✿'; 
-    width: 20px;
+    content: '\00a0 \00a0 ✦'; 
     display: inline-block;
-    margin-right: 10px;
-    
 }
 .sl-markdown-content code:not(:where(.not-content *)) {
     background-color: var(--sl-color-bg-inline-code);
