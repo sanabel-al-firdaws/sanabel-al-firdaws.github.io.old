@@ -1,0 +1,21 @@
+---
+import { Icon } from "@astrojs/starlight/components";
+import { parseHTML } from "linkedom";
+const html = await Astro.slots.render("default");
+const { document } = parseHTML(html);
+const children = document.children;
+const val = Array.from(children);
+
+
+
+---
+
+<blockquote>{val.slice(1)}</blockquote>
+
+<a class="not-content" href={val[0].innerHTML}>
+   <span style="color: var(--sl-color-white)">المصدر</span> <Icon name="external" color="var(--sl-color-white)" />
+</a>
+
+
+
+

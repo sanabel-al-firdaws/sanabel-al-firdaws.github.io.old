@@ -29,6 +29,7 @@ import compress from "astro-compress";
 // https://astro.build/config
 export default defineConfig({
   markdown: {
+    gfm: false,
     rehypePlugins: [[rehypeAutolinkHeadings, {
       // Wrap the heading text in a link.
       behavior: "wrap",
