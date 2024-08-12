@@ -5,17 +5,27 @@ const html = await Astro.slots.render("default");
 const { document } = parseHTML(html);
 const children = document.children;
 const val = Array.from(children);
-
-
-
 ---
 
-<blockquote>{val.slice(1)}</blockquote>
+<blockquote>{val.slice(1,val.length -1)}
+
+
+</blockquote>
 
 <a class="not-content" href={val[0].innerHTML}>
-   <span style="color: var(--sl-color-white)">المصدر</span> <Icon name="external" color="var(--sl-color-white)" />
+    <span style="color: var(--sl-color-white) ; "
+        >{val[val.length - 1].innerHTML}</span
+    >
+    <Icon name="external" color="var(--sl-color-white)"/>
 </a>
 
 
+<style>
+    a {
+        text-decoration: underline;
+        text-underline-position: below;
+        text-underline-offset: 60%;
+    
+    }
 
-
+</style>
