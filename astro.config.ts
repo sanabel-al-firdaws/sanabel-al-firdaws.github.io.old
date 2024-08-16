@@ -92,7 +92,7 @@ starlight({
     components: {
       // Override the default `SocialIcons` component.
       ThemeProvider: "./src/components/starlight/ThemeProvider.astro",
-      // EditLink: './src/components/starlight/EditLink.astro',
+      EditLink: './src/components/starlight/EditLink.astro',
       ThemeSelect: "./src/components/blog-override/ThemeSelect.astro",
       SocialIcons: "./src/components/starlight/SocialIcons.astro",
       Pagination: "./src/components/starlight/Pagination.astro",
