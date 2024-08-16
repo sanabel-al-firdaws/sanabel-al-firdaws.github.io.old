@@ -1,0 +1,254 @@
+---
+import Icon from '../../../node_modules/@astrojs/starlight/user-components/Icon.astro';
+import TableOfContentsList from '../../../node_modules/@astrojs/starlight/components/TableOfContents/TableOfContentsList.astro';
+import type { Props } from '@astrojs/starlight/props';
+
+const { labels, toc } = Astro.props;
+---
+
+{
+	toc && (
+		<mobile-starlight-toc data-min-h={toc.minHeadingLevel} data-max-h={toc.maxHeadingLevel}>
+			<nav aria-labelledby="starlight__on-this-page--mobile">
+				<details id="starlight__mobile-toc">
+					<summary id="starlight__on-this-page--mobile" class="sl-flex">
+						<div class="toggle sl-flex">
+							{labels['tableOfContents.onThisPage']}
+							<Icon name={'right-caret'} class="caret" size="1rem" />
+						</div>
+						<span class="display-current" />
+					</summary>
+					<div class="dropdown">
+						<TableOfContentsList toc={toc.items} isMobile />
+					</div>
+				</details>
+			</nav>
+		</mobile-starlight-toc>
+	)
+}
+
+<style>
+  TableOfContentsList{
+    color: var(--sl-color-gray-5)!important;
+  }
+	nav {
+		position: fixed;
+		z-index: var(--sl-z-index-toc);
+		top: calc(var(--sl-nav-height) - 1px);
+		inset-inline: 0;
+		border-top: 1px solid var(--sl-color-gray-5);
+		background-color: var(--sl-color-bg-nav);
+	}
+	@media (min-width: 50rem) {
+		nav {
+			inset-inline-start: var(--sl-content-inline-start, 0);
+		}
+	}
+
+	summary {
+		gap: 0.5rem;
+		align-items: center;
+		height: var(--sl-mobile-toc-height);
+		border-bottom: 1px solid var(--sl-color-hairline-shade);
+		padding: 0.5rem 1rem;
+		font-size: var(--sl-text-xs);
+		outline-offset: var(--sl-outline-offset-inside);
+	}
+	summary::marker,
+	summary::-webkit-details-marker {
+		display: none;
+	}
+
+	.toggle {
+		flex-shrink: 0;
+		gap: 1rem;
+		align-items: center;
+		justify-content: space-between;
+		border: 1px solid var(--sl-color-gray-5);
+		border-radius: 0.5rem;
+		padding-block: 0.5rem;
+		padding-inline-start: 0.75rem;
+		padding-inline-end: 0.5rem;
+		line-height: 1;
+		background-color: var(--sl-color-black);
+		user-select: none;
+		cursor: pointer;
+	}
+	details[open] .toggle {
+		color: var(--sl-color-white);
+		border-color: var(--sl-color-accent);
+	}
+	details .toggle:hover {
+		color: var(--sl-color-white);
+		border-color: var(--sl-color-gray-2);
+	}
+
+	:global([dir='rtl']) .caret {
+		transform: rotateZ(180deg);
+	}
+	details[open] .caret {
+		transform: rotateZ(90deg);
+	}
+
+	.display-current {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		color: var(--sl-color-white);
+	}
+
+	.dropdown {
+		--border-top: 1px;
+		margin-top: calc(-1 * var(--border-top));
+		border: var(--border-top) solid var(--sl-color-gray-6);
+		border-top-color: var(--sl-color-hairline-shade);
+		max-height: calc(85vh - var(--sl-nav-height) - var(--sl-mobile-toc-height));
+		overflow-y: auto;
+		background-color: var(--sl-color-black);
+		box-shadow: var(--sl-shadow-md);
+		overscroll-behavior: contain;
+	}
+</style>
+
+<script>
+export class StarlightTOC extends HTMLElement {
+	private _current = this.querySelector('a[aria-current="true"]') as HTMLAnchorElement | null;
+	private minH = parseInt(this.dataset.minH || '2', 10);
+	private maxH = parseInt(this.dataset.maxH || '3', 10);
+
+	protected set current(link: HTMLAnchorElement) {
+		if (link === this._current) return;
+		if (this._current) this._current.removeAttribute('aria-current');
+		link.setAttribute('aria-current', 'true');
+		this._current = link;
+	}
+
+	constructor() {
+		super();
+
+		/** All the links in the table of contents. */
+		const links = [...this.querySelectorAll('a')];
+
+		/** Test if an element is a table-of-contents heading. */
+		const isHeading = (el: Element): el is HTMLHeadingElement => {
+			if (el instanceof HTMLHeadingElement) {
+				// Special case for page title h1
+				if (el.id === PAGE_TITLE_ID) return true;
+				// Check the heading level is within the user-configured limits for the ToC
+				const level = el.tagName[1];
+				if (level) {
+					const int = parseInt(level, 10);
+					if (int >= this.minH && int <= this.maxH) return true;
+				}
+			}
+			return false;
+		};
+
+		/** Walk up the DOM to find the nearest heading. */
+		const getElementHeading = (el: Element | null): HTMLHeadingElement | null => {
+			if (!el) return null;
+			const origin = el;
+			while (el) {
+				if (isHeading(el)) return el;
+				// Assign the previous sibling’s last, most deeply nested child to el.
+				el = el.previousElementSibling;
+				while (el?.lastElementChild) {
+					el = el.lastElementChild;
+				}
+				// Look for headings amongst siblings.
+				const h = getElementHeading(el);
+				if (h) return h;
+			}
+			// Walk back up the parent.
+			return getElementHeading(origin.parentElement);
+		};
+
+		/** Handle intersections and set the current link to the heading for the current intersection. */
+		const setCurrent: IntersectionObserverCallback = (entries) => {
+			for (const { isIntersecting, target } of entries) {
+				if (!isIntersecting) continue;
+				const heading = getElementHeading(target);
+				if (!heading) continue;
+				const link = links.find((link) => link.hash === '#' + encodeURIComponent(heading.id));
+				if (link) {
+					this.current = link;
+					break;
+				}
+			}
+		};
+
+		// Observe elements with an `id` (most likely headings) and their siblings.
+		// Also observe direct children of `.content` to include elements before
+		// the first heading.
+		const toObserve = document.querySelectorAll('main [id], main [id] ~ *, main .content > *');
+
+		let observer: IntersectionObserver | undefined;
+		const observe = () => {
+			if (observer) observer.disconnect();
+			observer = new IntersectionObserver(setCurrent, { rootMargin: this.getRootMargin() });
+			toObserve.forEach((h) => observer!.observe(h));
+		};
+		observe();
+
+		const onIdle = window.requestIdleCallback || ((cb) => setTimeout(cb, 1));
+		let timeout: NodeJS.Timeout;
+		window.addEventListener('resize', () => {
+			// Disable intersection observer while window is resizing.
+			if (observer) observer.disconnect();
+			clearTimeout(timeout);
+			timeout = setTimeout(() => onIdle(observe), 200);
+		});
+	}
+
+	private getRootMargin(): `-${number}px 0% ${number}px` {
+		const navBarHeight = document.querySelector('header')?.getBoundingClientRect().height || 0;
+		// `<summary>` only exists in mobile ToC, so will fall back to 0 in large viewport component.
+		const mobileTocHeight = this.querySelector('summary')?.getBoundingClientRect().height || 0;
+		/** Start intersections at nav height + 2rem padding. */
+		const top = navBarHeight + mobileTocHeight + 32;
+		/** End intersections `53px` later. This is slightly more than the maximum `margin-top` in Markdown content. */
+		const bottom = top + 53;
+		const height = document.documentElement.clientHeight;
+		return `-${top}px 0% ${bottom - height}px`;
+	}
+}
+
+
+	class MobileStarlightTOC extends StarlightTOC {
+		override set current(link: HTMLAnchorElement) {
+			super.current = link;
+			const display = this.querySelector('.display-current') as HTMLSpanElement;
+			if (display) display.textContent = link.textContent;
+		}
+
+		constructor() {
+			super();
+			const details = this.querySelector('details');
+			if (!details) return;
+			const closeToC = () => {
+				details.open = false;
+			};
+			// Close the table of contents whenever a link is clicked.
+			details.querySelectorAll('a').forEach((a) => {
+				a.addEventListener('click', closeToC);
+			});
+			// Close the table of contents when a user clicks outside of it.
+			window.addEventListener('click', (e) => {
+				if (!details.contains(e.target as Node)) closeToC();
+			});
+			// Or when they press the escape key.
+			window.addEventListener('keydown', (e) => {
+				if (e.key === 'Escape' && details.open) {
+					const hasFocus = details.contains(document.activeElement);
+					closeToC();
+					if (hasFocus) {
+						const summary = details.querySelector('summary');
+						if (summary) summary.focus();
+					}
+				}
+			});
+		}
+	}
+
+	customElements.define('mobile-starlight-toc', MobileStarlightTOC);
+</script>

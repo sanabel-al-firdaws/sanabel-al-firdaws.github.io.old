@@ -2,7 +2,9 @@
 
 ---
 
-
+<button onclick='reset()'>
+  الحجم الافتراضي
+</button>
     <h1>
          العنوان الرئيسي
     
@@ -40,7 +42,7 @@
         النص
         <span id="main"></span>
     </p>
-    <input type="range" id="font-size-main" min="15" max="60" value="36" />
+    <input type="range" id="font-size-main" min="15" max="100" value="30" />
 
 
 
@@ -53,16 +55,45 @@ const fontSizeH2 = document.getElementById("font-size-h2");
 const fontSizeH3 = document.getElementById("font-size-h3");
 const fontSizeH4 = document.getElementById("font-size-h4");
 const fontSizeH5 = document.getElementById("font-size-h5");
-const fontSizemain = document.getElementById("font-size-main");
+const fontSizeMain = document.getElementById("font-size-main");
 
 const H1 = document.getElementById("h1");
 const H2 = document.getElementById("h2");
 const H3 = document.getElementById("h3");
 const H4 = document.getElementById("h4");
 const H5 = document.getElementById("h5");
-const main = document.getElementById("main");
+const Main = document.getElementById("main");
 
+ H1.innerHTML = '('+ fontSizeH1.value  + ')';
+ H2.innerHTML = '('+ fontSizeH2.value  + ')';
+ H3.innerHTML = '('+ fontSizeH3.value  + ')';
+ H4.innerHTML = '('+ fontSizeH4.value  + ')';
+ H5.innerHTML = '('+ fontSizeH5.value  + ')';
+ Main.innerHTML = '('+ fontSizeMain.value  + ')';
 
+function reset() {
+  localStorage.setItem(`--sl-text-h1`, '35' + 'px');
+  localStorage.setItem(`--sl-text-h2`, '29' + 'px');
+  localStorage.setItem(`--sl-text-h3`, '24' + 'px');
+  localStorage.setItem(`--sl-text-h4`, '20' + 'px');
+  localStorage.setItem(`--sl-text-h5`, '18' + 'px');
+  localStorage.setItem(`--sl-text-main`, '30' + 'px');
+
+  fontSizeH1.value = localStorage.getItem('--sl-text-h1').slice(0,2);
+  fontSizeH2.value = localStorage.getItem('--sl-text-h2').slice(0,2);
+  fontSizeH3.value = localStorage.getItem('--sl-text-h3').slice(0,2);
+  fontSizeH4.value = localStorage.getItem('--sl-text-h4').slice(0,2);
+  fontSizeH5.value = localStorage.getItem('--sl-text-h5').slice(0,2);
+  fontSizeMain.value = localStorage.getItem('--sl-text-main').slice(0,2);
+
+  H1.innerHTML = '('+ localStorage.getItem('--sl-text-h1').slice(0,2)  + ')';
+  H2.innerHTML = '('+ localStorage.getItem('--sl-text-h2').slice(0,2)  + ')';
+  H3.innerHTML = '('+ localStorage.getItem('--sl-text-h3').slice(0,2)  + ')';
+  H4.innerHTML = '('+ localStorage.getItem('--sl-text-h4').slice(0,2)  + ')';
+  H5.innerHTML = '('+ localStorage.getItem('--sl-text-h5').slice(0,2)  + ')';
+  Main.innerHTML = '('+ localStorage.getItem('--sl-text-main').slice(0,2)  + ')';
+  
+}
 if (localStorage.getItem('--sl-text-h1') !== null) {
   H1.innerHTML = '('+ localStorage.getItem('--sl-text-h1').slice(0,2)  + ')';
   fontSizeH1.value = localStorage.getItem('--sl-text-h1').slice(0,2);
@@ -84,6 +115,11 @@ if (localStorage.getItem('--sl-text-h4') !== null) {
 if (localStorage.getItem('--sl-text-h5') !== null) {
   H5.innerHTML = '('+ localStorage.getItem('--sl-text-h5').slice(0,2)  + ')';
   fontSizeH5.value = localStorage.getItem('--sl-text-h5').slice(0,2);
+}
+
+if (localStorage.getItem('--sl-text-main') !== null) {
+  Main.innerHTML = '('+ localStorage.getItem('--sl-text-main').slice(0,2)  + ')';
+  fontSizeMain.value = localStorage.getItem('--sl-text-main').slice(0,2);
 }
 
 
@@ -122,10 +158,10 @@ fontSizeH5.addEventListener("input", () => {
   H5.innerHTML = '('+ fontSizeH5.value + ')';
   localStorage.setItem(`--sl-text-h5`, fontSize + 'px');
 });
-fontSizemain.addEventListener("input", () => {
-  const fontSize = fontSizemain.value;
+fontSizeMain.addEventListener("input", () => {
+  const fontSize = fontSizeMain.value;
   r.style.setProperty(`--sl-text-main`, fontSize + 'px');
-  main.innerHTML = '('+ fontSizemain.value + ')';
+  Main.innerHTML = '('+ fontSizeMain.value + ')';
   localStorage.setItem(`--sl-text-main`, fontSize + 'px');
 });
 

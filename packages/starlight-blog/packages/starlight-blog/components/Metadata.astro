@@ -1,0 +1,91 @@
+---
+import { Badge } from '@astrojs/starlight/components'
+
+import { getBlogEntryMetadata, type StarlightBlogEntry } from '../libs/content'
+
+import Author from './Author.astro'
+
+interface Props {
+  entry: StarlightBlogEntry
+  showBadges?: boolean
+}
+
+const { entry, showBadges = true } = Astro.props
+const { authors, lastUpdated } = getBlogEntryMetadata(entry)
+
+const hasAuthors = authors.length > 0
+---
+
+<div class="metadata not-content"> 
+  {
+    hasAuthors ? (
+      <div class="authors">
+        {authors.map((author) => (
+          <Author {author} />
+        ))}
+      </div>
+    ) : null
+  }
+  <div class="dates">
+    <time datetime={entry.data.date.toISOString()}>
+      {new Intl.DateTimeFormat("ar-SA", {
+        "day": "numeric",
+"month": "long",
+"year": "numeric",
+"numberingSystem": "latn"
+   }).format(entry.data.date)}
+    </time>
+    {
+      lastUpdated !== undefined &&
+      typeof entry.data.lastUpdated !== 'boolean' &&
+      entry.data.lastUpdated?.toISOString() !== entry.data.date.toISOString() ? (
+        <span class="update-date">
+          - آخر تحديث:
+          <time datetime={entry.data.lastUpdated?.toISOString()}>{new Intl.DateTimeFormat("ar-SA", {
+        "day": "numeric",
+"month": "long",
+"year": "numeric",
+"numberingSystem": "latn"
+   }).format(entry.data.lastUpdated)}</time>
+        </span>
+      ) : null
+    }
+  </div>
+
+  {
+    showBadges && (entry.data?.draft || entry.data.featured) && (
+      <div class="badges">
+        {entry.data.draft && <Badge size="medium" text="Draft" variant="caution" />}
+        {entry.data.featured && <Badge size="medium" text="Featured" variant="note" />}
+      </div>
+    )
+  }
+</div>
+
+<style>
+  .metadata {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .dates {
+    font-size: var(--sl-text-sm);
+  }
+
+  .update-date {
+    color: var(--sl-color-gray-3);
+  }
+
+  .authors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+  }
+
+  .badges {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+</style>

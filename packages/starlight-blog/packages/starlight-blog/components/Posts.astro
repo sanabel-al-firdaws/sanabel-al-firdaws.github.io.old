@@ -1,0 +1,33 @@
+---
+import type { StarlightBlogEntry } from '../libs/content'
+
+import Preview from './Preview.astro'
+
+interface Props {
+  entries: StarlightBlogEntry[]
+}
+
+const { entries } = Astro.props
+---
+
+<div class="posts">
+  {entries.map((entry) => 
+  <Preview {entry}
+  
+  />
+<hr>
+)
+  
+  }
+</div>
+
+<style>
+  hr{
+    border: 5px solid var(--sl-color-gray-6) !important;
+  }
+  .posts {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+</style>
