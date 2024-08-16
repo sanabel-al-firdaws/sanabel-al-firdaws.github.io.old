@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 main{
-	font-size: 1.5rem;
+	font-size: var(--sl-text-main);
 }
 mark {
     background-color: var(--sl-color-accent-low);
@@ -55,7 +55,7 @@ mark {
     background-color: var(--sl-color-bg-inline-code);
 	margin-top: 10px !important;
     padding: 0rem 0.2rem !important; 
-    font-size: var(--sl-text-code-sm);
+    font-size: var(--sl-text-main) !important;
     color: var(--sl-color-gray-1);
 	font-family: var(--sl-font)
 } 
@@ -72,24 +72,12 @@ mark {
 	border:2px solid var(--sl-color-gray-2);
 }
 :root{
-	 
-      .r {
-	    color: var(--sl-color-red);
-      }
-      .o {
-	    color: var(--sl-color-orange);
-      }
-      .g {
-	    color: var(--sl-color-green);
-      }
-      .s {
-	    color: var(--sl-color-text-accent);
-      } 
+	 --sl-text-main: 3rem;
 
 	  --sl-text-sm: 1rem ;
 	  --sl-text-xs: 1rem ;
 	  --sl-content-width: 60rem;
-	  --sl-line-height: 3rem;
+	  --sl-line-height: var(--sl-text-main)/2;
 	  --sl-line-height-headings: 2 ;
 	
 	--sl-font: 'Scheherazade New', serif;

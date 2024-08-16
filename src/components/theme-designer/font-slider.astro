@@ -1,0 +1,175 @@
+---
+
+---
+
+
+    <h1>
+         العنوان الرئيسي
+    
+    <span id="h1"></span>
+    </h1>
+    <input type="range" id="font-size-h1" min="15" max="100"  value="36"  />
+   
+    <h2>
+        العنوان 2 
+        <span id="h2"></span>
+    </h2>
+    <input type="range" id="font-size-h2" min="15" max="100" value="36" />
+
+
+    <h3>
+        العنوان 3 
+        <span id="h3"></span>
+    </h3>
+    <input type="range" id="font-size-h3" min="15" max="100" value="36" />
+
+
+    <h4>
+        العنوان 4 
+        <span id="h4"></span>
+    </h4>
+    <input type="range" id="font-size-h4" min="15" max="100" value="36" />
+
+    <h5>
+        العنوان 5 
+        <span id="h5"></span>
+    </h5>
+    <input type="range" id="font-size-h5" min="15" max="100" value="36" />
+
+    <p>
+        النص
+        <span id="main"></span>
+    </p>
+    <input type="range" id="font-size-main" min="15" max="60" value="36" />
+
+
+
+
+
+  <script is:inline>
+
+const fontSizeH1 = document.getElementById("font-size-h1");
+const fontSizeH2 = document.getElementById("font-size-h2");
+const fontSizeH3 = document.getElementById("font-size-h3");
+const fontSizeH4 = document.getElementById("font-size-h4");
+const fontSizeH5 = document.getElementById("font-size-h5");
+const fontSizemain = document.getElementById("font-size-main");
+
+const H1 = document.getElementById("h1");
+const H2 = document.getElementById("h2");
+const H3 = document.getElementById("h3");
+const H4 = document.getElementById("h4");
+const H5 = document.getElementById("h5");
+const main = document.getElementById("main");
+
+
+if (localStorage.getItem('--sl-text-h1') !== null) {
+  H1.innerHTML = '('+ localStorage.getItem('--sl-text-h1').slice(0,2)  + ')';
+  fontSizeH1.value = localStorage.getItem('--sl-text-h1').slice(0,2);
+}
+
+if (localStorage.getItem('--sl-text-h2') !== null) {
+  H2.innerHTML = '('+ localStorage.getItem('--sl-text-h2').slice(0,2)  + ')';
+  fontSizeH2.value = localStorage.getItem('--sl-text-h2').slice(0,2);
+}
+
+if (localStorage.getItem('--sl-text-h3') !== null) {
+  H3.innerHTML = '('+ localStorage.getItem('--sl-text-h3').slice(0,2)  + ')';
+  fontSizeH3.value = localStorage.getItem('--sl-text-h3').slice(0,2);
+}
+if (localStorage.getItem('--sl-text-h4') !== null) {
+  H4.innerHTML = '('+ localStorage.getItem('--sl-text-h4').slice(0,2)  + ')';
+  fontSizeH4.value = localStorage.getItem('--sl-text-h4').slice(0,2);
+}
+if (localStorage.getItem('--sl-text-h5') !== null) {
+  H5.innerHTML = '('+ localStorage.getItem('--sl-text-h5').slice(0,2)  + ')';
+  fontSizeH5.value = localStorage.getItem('--sl-text-h5').slice(0,2);
+}
+
+
+
+
+
+var r = document.querySelector(':root');
+
+fontSizeH1.addEventListener("input", () => {
+  const fontSize = fontSizeH1.value;
+  r.style.setProperty(`--sl-text-h1`, fontSize + 'px');
+  H1.innerHTML = '('+ fontSizeH1.value + ')';
+  localStorage.setItem(`--sl-text-h1`, fontSize + 'px');
+});
+fontSizeH2.addEventListener("input", () => {
+  const fontSize = fontSizeH2.value;
+  r.style.setProperty(`--sl-text-h2`, fontSize + 'px');
+  H2.innerHTML = '('+ fontSizeH2.value + ')';
+  localStorage.setItem(`--sl-text-h2`, fontSize + 'px');
+});
+fontSizeH3.addEventListener("input", () => {
+  const fontSize = fontSizeH3.value;
+  r.style.setProperty(`--sl-text-h3`, fontSize + 'px');
+  H3.innerHTML = '('+ fontSizeH3.value + ')';
+  localStorage.setItem(`--sl-text-h3`, fontSize + 'px');
+});
+fontSizeH4.addEventListener("input", () => {
+  const fontSize = fontSizeH4.value;
+  r.style.setProperty(`--sl-text-h4`, fontSize + 'px');
+  H4.innerHTML = '('+ fontSizeH4.value + ')';
+  localStorage.setItem(`--sl-text-h4`, fontSize + 'px');
+});
+fontSizeH5.addEventListener("input", () => {
+  const fontSize = fontSizeH5.value;
+  r.style.setProperty(`--sl-text-h5`, fontSize + 'px');
+  H5.innerHTML = '('+ fontSizeH5.value + ')';
+  localStorage.setItem(`--sl-text-h5`, fontSize + 'px');
+});
+fontSizemain.addEventListener("input", () => {
+  const fontSize = fontSizemain.value;
+  r.style.setProperty(`--sl-text-main`, fontSize + 'px');
+  main.innerHTML = '('+ fontSizemain.value + ')';
+  localStorage.setItem(`--sl-text-main`, fontSize + 'px');
+});
+
+
+    </script>
+
+<style>
+
+   input[type=range] {
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: #007bff;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px rgb(143, 143, 143);
+  -webkit-appearance: none;
+  margin-top: -3.6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #007bff;
+}
+
+.display-text {
+  text-align: center;
+  padding-top: 2rem;
+}
+</style>

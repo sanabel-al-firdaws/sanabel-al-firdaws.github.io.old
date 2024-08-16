@@ -83,6 +83,14 @@ if ('serviceWorker' in navigator) {
 	  const c_sl_color_gray_7 = localStorage.getItem('--c-sl-color-gray-7');
 	  const c_sl_color_black = localStorage.getItem('--c-sl-color-black');
 
+    const sl_text_h1 = localStorage.getItem('--sl-text-h1');
+    const sl_text_h2 = localStorage.getItem('--sl-text-h2');
+    const sl_text_h3 = localStorage.getItem('--sl-text-h3');
+    const sl_text_h4 = localStorage.getItem('--sl-text-h4');
+    const sl_text_h5 = localStorage.getItem('--sl-text-h5');
+    const sl_text_main = localStorage.getItem('--sl-text-main');
+
+
 if (c_sl_color_accent_low !== null) {
   document.documentElement.style.setProperty('--c-sl-color-accent-low', c_sl_color_accent_low);
 }
@@ -120,6 +128,24 @@ if (c_sl_color_black !== null) {
   document.documentElement.style.setProperty('--c-sl-color-black', c_sl_color_black);
 }
 
+if (sl_text_h1 !== null) {
+  document.documentElement.style.setProperty('--sl-text-h1', sl_text_h1);
+}
+if (sl_text_h2 !== null) {
+  document.documentElement.style.setProperty('--sl-text-h2', sl_text_h2);
+}
+if (sl_text_h3 !== null) {
+  document.documentElement.style.setProperty('--sl-text-h3', sl_text_h3);
+}
+if (sl_text_h4 !== null) {
+  document.documentElement.style.setProperty('--sl-text-h4', sl_text_h4);
+}
+if (sl_text_h5 !== null) {
+  document.documentElement.style.setProperty('--sl-text-h5', sl_text_h5);
+}
+if (sl_text_main !== null) {
+  document.documentElement.style.setProperty('--sl-text-main', sl_text_main);
+}
 
 	// ☝️ This script prevent the FART effect.
 	if (localStorage.getItem("theme") === null) {

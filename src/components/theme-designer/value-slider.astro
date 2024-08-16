@@ -19,6 +19,7 @@ const value = store[storeKey].get()[type];
 		<span class="value">{value}</span>
 	</label>
 </value-slider>
+<br>
 
 <script>
 	import { store } from './store';
@@ -46,17 +47,43 @@ const value = store[storeKey].get()[type];
 </script>
 
 <style>
-	label {
-		display: grid;
-		grid-template-columns: auto 1fr 2.5rem;
-		align-items: center;
-		gap: 0.75rem;
-	}
-	input {
-		min-width: 5rem;
-	}
-	.value {
-		font-size: var(--sl-text-sm);
-		color: var(--sl-color-gray-2);
-	}
+
+
+
+input[type=range] {
+-webkit-appearance: none;
+margin: 10px 0;
+width: 100%;
+}
+input[type=range]:focus {
+outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+width: 100%;
+height: 12.8px;
+cursor: pointer;
+animate: 0.2s;
+box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+background: #007bff;
+border-radius: 25px;
+border: 0px solid #000101;
+}
+input[type=range]::-webkit-slider-thumb {
+box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+border: 0px solid #000000;
+height: 20px;
+width: 39px;
+border-radius: 7px;
+background: #fff;
+cursor: pointer;
+box-shadow: 0px 0px 5px rgb(143, 143, 143);
+-webkit-appearance: none;
+margin-top: -3.6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+background: #007bff;
+}
+
+
+
 </style>

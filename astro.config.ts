@@ -99,6 +99,7 @@ starlight({
       Search: "./src/components/starlight/Search.astro",
       Sidebar: "./src/components/starlight/Sidebar.astro",
       LastUpdated: "./src/components/starlight/LastUpdated.astro",
+      SiteTitle: "./src/components/starlight/SiteTitle.astro",
       PageFrame: "./src/components/starlight/PageFrame.astro"
     },
     title: "سَنَابِلُ الْفِرْدَوْسِ",
