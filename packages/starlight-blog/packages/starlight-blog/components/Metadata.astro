@@ -16,17 +16,8 @@ const { authors, lastUpdated } = getBlogEntryMetadata(entry)
 const hasAuthors = authors.length > 0
 ---
 
-<div class="metadata not-content"> 
-  {
-    hasAuthors ? (
-      <div class="authors">
-        {authors.map((author) => (
-          <Author {author} />
-        ))}
-      </div>
-    ) : null
-  }
-  <div class="dates">
+<div class="metadata not-content">
+  <div >
     <time datetime={entry.data.date.toISOString()}>
       {new Intl.DateTimeFormat("ar-SA", {
         "day": "numeric",
@@ -50,7 +41,17 @@ const hasAuthors = authors.length > 0
         </span>
       ) : null
     }
-  </div>
+  </div> 
+  {
+    hasAuthors ? (
+      <div class="authors">
+        {authors.map((author) => (
+          <Author {author} />
+        ))}
+      </div>
+    ) : null
+  }
+
 
   {
     showBadges && (entry.data?.draft || entry.data.featured) && (
@@ -63,15 +64,8 @@ const hasAuthors = authors.length > 0
 </div>
 
 <style>
-  .metadata {
-    display: flex;
-    flex-direction: column;
 
-  }
 
-  .dates {
-    font-size: var(--sl-text-sm);
-  }
 
   .update-date {
     color: var(--sl-color-gray-3);

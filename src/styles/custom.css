@@ -72,9 +72,9 @@ mark {
 	border:2px solid var(--sl-color-gray-2);
 }
 :root{
-	 --sl-text-main: 30px;
+	 --sl-text-main: 25px;
 	 --sl-text-h6: var(--sl-text-h5);
-	  --sl-text-sm: 1rem ;
+
 	  --sl-text-xs: 1rem ;
 	  --sl-content-width: 50rem;
 	  --sl-line-height: var(--sl-text-main)/2;
