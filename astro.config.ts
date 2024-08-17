@@ -96,7 +96,7 @@ starlight({
       ThemeSelect: "./src/components/blog-override/ThemeSelect.astro",
       SocialIcons: "./src/components/starlight/SocialIcons.astro",
       Pagination: "./src/components/starlight/Pagination.astro",
-      Search: "./src/components/starlight/Search.astro",
+    //  Search: "./src/components/starlight/Search.astro",
       // Sidebar: "./src/components/starlight/Sidebar.astro",
       LastUpdated: "./src/components/starlight/LastUpdated.astro",
       SiteTitle: "./src/components/starlight/SiteTitle.astro",
