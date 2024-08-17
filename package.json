@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "build": " astro build && npm run pagefind-fix",
     "preview": "astro preview",
-    "astro": "astro",
+    "check": "astro check",
     "pagefind-fix": "sed -i 's/?ts=${Date.now()}//g' dist/pagefind/pagefind.js",
     "generate-pwa-assets": "pwa-assets-generator --preset minimal public/favicon.svg"
   },
