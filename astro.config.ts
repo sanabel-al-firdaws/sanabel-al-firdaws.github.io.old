@@ -101,7 +101,7 @@ starlight({
       LastUpdated: "./src/components/starlight/LastUpdated.astro",
       SiteTitle: "./src/components/starlight/SiteTitle.astro",
       TableOfContents: "./src/components/starlight/TableOfContents.astro",
-      PageFrame: "./src/components/starlight/PageFrame.astro"
+      // PageFrame: "./src/components/starlight/PageFrame.astro"
     },
     title: "سَنَابِلُ الْفِرْدَوْسِ",
   
@@ -197,7 +197,7 @@ starlight({
     experimental: {
       directoryAndTrailingSlashHandler: true
     },
-    mode: "development",
+    mode: "production",
     registerType: "autoUpdate",
     manifest: manifest as Partial<ManifestOptions>
   }), d2({
